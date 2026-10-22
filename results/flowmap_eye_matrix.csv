@@ -1,0 +1,8 @@
+,Demyelinating / CNS (MS),"Cerebrovascular (stroke, TIA)",Peripheral / autonomic NEUROPATHY,"Neurodegenerative (Parkinson, dementia)","Cardiometabolic-renal (CKD, HF, diabetes)","Haematologic / oncologic (anemia, leukemia)","Infection / inflammatory (sepsis, autoimmune)",Hepatic / visceral (cirrhosis)
+"Optic-nerve (neuritis, atrophy)",2.5,-0.05,-0.31,-0.22,-0.35,-0.28,-0.23,-0.51
+"Oculomotor / pupil (ptosis, diplopia)",0.51,0.56,-0.22,0.19,-0.23,-0.11,0.01,-0.24
+"Neuro-visual (field defect, nystagmus)",-0.03,1.82,-0.52,0.14,-0.03,-0.39,-0.51,-0.66
+Retinal vascular occl. (artery/vein),-0.93,0.43,-0.31,-0.27,0.28,-0.35,-0.1,0.06
+Retinal microvascular (diabetic/HTN retinopathy),-1.09,0.26,2.82,0.15,1.96,0.82,0.57,0.77
+"Ocular surface / autonomic (dry eye, tear film)",-0.14,-0.3,-0.06,0.37,0.05,0.6,0.74,0.51
+"Structural / aging (cataract, glaucoma, AMD)",-0.6,-0.75,-0.3,0.02,0.09,0.05,0.05,-0.2

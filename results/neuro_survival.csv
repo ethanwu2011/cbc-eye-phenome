@@ -1,0 +1,17 @@
+endpoint,lead,n,events,c_base,c_eye,c_cbc,c_both,c_gain,eye_minus_cbc,c_ablated,ablation_survives,tdauc_1y,tdauc_3y,tdauc_5y
+Cerebrovascular disease (any),≥1 yr lead,5910,590,0.576,0.576,0.575,0.571,-0.005,0.001,0.573,False,0.531,0.6,0.625
+Transient cerebral ischemia,≥1 yr lead,6556,341,0.602,0.64,0.643,0.649,0.047,-0.003,0.642,True,0.636,0.644,0.646
+Ischemic stroke (occlusion w/ infarction),≥1 yr lead,6839,239,0.602,0.616,0.589,0.599,-0.003,0.028,0.601,False,0.615,0.628,0.629
+Dementia / cognitive (any),≥1 yr lead,6776,820,0.752,0.753,0.758,0.757,0.005,-0.005,0.758,False,0.757,0.794,0.795
+Peripheral neuropathy (any),≥1 yr lead,5836,454,0.583,0.65,0.593,0.645,0.062,0.057,0.645,True,0.674,0.657,0.663
+Polyneuropathy in diabetes,≥1 yr lead,6350,170,0.603,0.725,0.621,0.745,0.142,0.104,0.745,True,0.731,0.762,
+Epilepsy / seizure (any),≥1 yr lead,6633,453,0.578,0.576,0.589,0.596,0.018,-0.013,0.592,False,0.588,0.658,0.65
+Parkinsonism / movement (any),≥1 yr lead,6929,323,0.548,0.562,0.582,0.584,0.036,-0.02,0.584,True,0.611,0.615,0.64
+Cerebrovascular disease (any),≥2 yr lead,4533,432,0.606,0.601,0.602,0.6,-0.006,-0.0,0.6,False,0.635,0.632,0.64
+Transient cerebral ischemia,≥2 yr lead,5005,232,0.604,0.648,0.614,0.64,0.036,0.033,0.621,False,0.694,0.641,0.655
+Ischemic stroke (occlusion w/ infarction),≥2 yr lead,5296,180,0.608,0.603,0.573,0.575,-0.033,0.03,0.574,False,0.59,0.592,0.61
+Dementia / cognitive (any),≥2 yr lead,5218,665,0.761,0.761,0.763,0.762,0.001,-0.002,0.762,False,0.785,0.787,0.804
+Peripheral neuropathy (any),≥2 yr lead,4394,319,0.584,0.603,0.584,0.6,0.016,0.02,0.603,False,0.629,0.624,0.638
+Polyneuropathy in diabetes,≥2 yr lead,4818,112,0.511,0.645,0.614,0.74,0.229,0.031,0.74,True,0.746,0.726,
+Epilepsy / seizure (any),≥2 yr lead,5098,341,0.6,0.619,0.603,0.609,0.009,0.016,0.602,False,0.645,0.623,0.624
+Parkinsonism / movement (any),≥2 yr lead,5345,259,0.57,0.576,0.607,0.603,0.033,-0.03,0.607,True,0.615,0.634,0.644

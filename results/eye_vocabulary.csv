@@ -1,0 +1,188 @@
+code,n,title,category
+H409,3511,Unspecified glaucoma,glaucoma/IOP
+3659,2986,Unspecified glaucoma,glaucoma/IOP
+36201,1978,Background diabetic retinopathy,retinal/vascular
+36250,989,"Macular degeneration (senile), unspecified",retinal/vascular
+3669,975,Unspecified cataract,lens/cataract
+H538,972,Other visual disturbances,neuro-ophthalmic
+H3530,889,Unspecified macular degeneration,retinal/vascular
+H269,859,Unspecified cataract,lens/cataract
+3694,773,"Legal blindness, as defined in U.S.A.",neuro-ophthalmic
+H532,734,Diplopia,neuro-ophthalmic
+H548,674,"Legal blindness, as defined in USA",neuro-ophthalmic
+3688,639,Other specified visual disturbances,neuro-ophthalmic
+3682,502,Diplopia,neuro-ophthalmic
+36960,389,"Profound impairment, one eye, impairment level not further specified",other
+36846,371,Homonymous bilateral field defects,neuro-ophthalmic
+37230,348,"Conjunctivitis, unspecified",surface/adnexa
+H547,333,Unspecified visual loss,neuro-ophthalmic
+H109,305,Unspecified conjunctivitis,surface/adnexa
+H5702,299,Anisocoria,neuro-ophthalmic
+36570,285,"Glaucoma stage, unspecified",glaucoma/IOP
+36900,273,"Profound impairment, both eyes, impairment level not further specified",other
+37430,244,"Ptosis of eyelid, unspecified",neuro-ophthalmic
+H53462,234,"Homonymous bilateral field defects, left side",neuro-ophthalmic
+36816,227,Psychophysical visual disturbances,neuro-ophthalmic
+H53461,220,"Homonymous bilateral field defects, right side",neuro-ophthalmic
+H04129,201,Dry eye syndrome of unspecified lacrimal gland,surface/adnexa
+H5462,200,"Unqualified visual loss, left eye, normal vision right eye",neuro-ophthalmic
+37272,193,Conjunctival hemorrhage,surface/adnexa
+H04123,190,Dry eye syndrome of bilateral lacrimal glands,surface/adnexa
+H5500,187,Unspecified nystagmus,neuro-ophthalmic
+H5461,187,"Unqualified visual loss, right eye, normal vision left eye",neuro-ophthalmic
+37941,170,Anisocoria,neuro-ophthalmic
+H5347,169,Heteronymous bilateral field defects,neuro-ophthalmic
+H539,162,Unspecified visual disturbance,neuro-ophthalmic
+37854,161,Sixth or abducens nerve palsy,neuro-ophthalmic
+H4010X0,156,"Unspecified open-angle glaucoma, stage unspecified",glaucoma/IOP
+37515,154,"Tear film insufficiency, unspecified",surface/adnexa
+H02402,153,Unspecified ptosis of left eyelid,neuro-ophthalmic
+36813,147,Visual discomfort,other
+3668,147,Other cataract,lens/cataract
+37950,141,"Nystagmus, unspecified",neuro-ophthalmic
+3699,133,Unspecified visual loss,neuro-ophthalmic
+H5440,133,"Blindness, one eye, unspecified eye",neuro-ophthalmic
+H02401,133,Unspecified ptosis of right eyelid,neuro-ophthalmic
+3689,128,Unspecified visual disturbance,neuro-ophthalmic
+H5509,117,Other forms of nystagmus,neuro-ophthalmic
+36510,115,"Open-angle glaucoma, unspecified",glaucoma/IOP
+3698,114,"Unqualified visual loss, one eye",neuro-ophthalmic
+37991,111,Pain in or around eye,other
+36840,107,"Visual field defect, unspecified",neuro-ophthalmic
+36210,100,"Background retinopathy, unspecified",retinal/vascular
+H5442,98,"Blindness, left eye, normal vision right eye",neuro-ophthalmic
+H469,98,Unspecified optic neuritis,neuro-ophthalmic
+37851,97,"Third or oculomotor nerve palsy, partial",neuro-ophthalmic
+36202,97,Proliferative diabetic retinopathy,retinal/vascular
+H4922,96,"Sixth [abducent] nerve palsy, left eye",neuro-ophthalmic
+H42,90,Glaucoma in diseases classified elsewhere,glaucoma/IOP
+H1132,84,"Conjunctival hemorrhage, left eye",surface/adnexa
+H53149,83,"Visual discomfort, unspecified",other
+H5441,83,"Blindness, right eye, normal vision left eye",neuro-ophthalmic
+H543,82,"Unqualified visual loss, both eyes",neuro-ophthalmic
+H540,78,"Blindness, both eyes",neuro-ophthalmic
+H1131,76,"Conjunctival hemorrhage, right eye",surface/adnexa
+H1089,72,Other conjunctivitis,surface/adnexa
+H4902,70,"Third [oculomotor] nerve palsy, left eye",neuro-ophthalmic
+H4921,70,"Sixth [abducent] nerve palsy, right eye",neuro-ophthalmic
+H5712,69,"Ocular pain, left eye",other
+H5340,67,Unspecified visual field defects,neuro-ophthalmic
+H209,65,Unspecified iridocyclitis,uvea/inflam
+H4901,65,"Third [oculomotor] nerve palsy, right eye",neuro-ophthalmic
+36203,64,Nonproliferative diabetic retinopathy NOS,retinal/vascular
+37300,63,"Blepharitis, unspecified",surface/adnexa
+36234,63,Transient retinal arterial occlusion,retinal/vascular
+37730,63,"Optic neuritis, unspecified",neuro-ophthalmic
+H5789,61,Other specified disorders of eye and adnexa,other
+36230,60,"Retinal vascular occlusion, unspecified",retinal/vascular
+H4089,58,Other specified glaucoma,glaucoma/IOP
+H5711,58,"Ocular pain, right eye",other
+H3500,57,Unspecified background retinopathy,retinal/vascular
+3619,57,Unspecified retinal detachment,retinal/vascular
+36511,56,Primary open angle glaucoma,glaucoma/IOP
+3643,56,Unspecified iridocyclitis,uvea/inflam
+37601,56,Orbital cellulitis,other
+36812,55,Transient visual loss,neuro-ophthalmic
+H518,55,Other specified disorders of binocular movement,other
+36281,54,Retinal hemorrhage,retinal/vascular
+37923,53,Vitreous hemorrhage,retinal/vascular
+H40059,53,"Ocular hypertension, unspecified eye",glaucoma/IOP
+37956,52,Other forms of nystagmus,neuro-ophthalmic
+H0520,51,Unspecified exophthalmos,other
+37273,49,Conjunctival edema,surface/adnexa
+H524,48,Presbyopia,other
+37200,47,"Acute conjunctivitis, unspecified",surface/adnexa
+H5704,47,Mydriasis,other
+37630,47,"Exophthalmos, unspecified",other
+37921,47,Vitreous degeneration,retinal/vascular
+H578,47,Other specified disorders of eye and adnexa,other
+H3411,46,"Central retinal artery occlusion, right eye",retinal/vascular
+H4710,45,Unspecified papilledema,neuro-ophthalmic
+H401190,45,"Primary open-angle glaucoma, unspecified eye, stage unspecified",glaucoma/IOP
+H01003,44,"Unspecified blepharitis right eye, unspecified eyelid",surface/adnexa
+36207,44,Diabetic macular edema,retinal/vascular
+37943,42,"Mydriasis (persistent), not due to mydriatics",other
+37992,42,Swelling or mass of eye,other
+3789,42,Unspecified disorder of eye movements,other
+H01006,41,"Unspecified blepharitis left eye, unspecified eyelid",surface/adnexa
+37924,41,Other vitreous opacities,retinal/vascular
+37313,41,Abscess of eyelid,surface/adnexa
+H349,40,Unspecified retinal vascular occlusion,retinal/vascular
+36251,40,Nonexudative senile macular degeneration,retinal/vascular
+H4020X0,40,"Unspecified primary angle-closure glaucoma, stage unspecified",glaucoma/IOP
+H468,40,Other optic neuritis,neuro-ophthalmic
+37239,40,Other conjunctivitis,surface/adnexa
+36211,39,Hypertensive retinopathy,retinal/vascular
+H35039,38,"Hypertensive retinopathy, unspecified eye",retinal/vascular
+36274,38,Pigmentary retinal dystrophy,retinal/vascular
+37810,38,"Exotropia, unspecified",other
+37739,37,Other optic neuritis,neuro-ophthalmic
+H43399,37,"Other vitreous opacities, unspecified eye",retinal/vascular
+H5010,36,Unspecified exotropia,other
+H02403,36,Unspecified ptosis of bilateral eyelids,neuro-ophthalmic
+36252,36,Exudative senile macular degeneration,retinal/vascular
+H353190,34,"Nonexudative age-related macular degeneration, unspecified eye, stage unspecified",retinal/vascular
+37993,34,Redness or discharge of eye,other
+37034,33,Exposure keratoconjunctivitis,surface/adnexa
+37741,33,Ischemic optic neuropathy,neuro-ophthalmic
+H510,33,Palsy (spasm) of conjugate gaze,neuro-ophthalmic
+H509,33,Unspecified strabismus,neuro-ophthalmic
+H4311,33,"Vitreous hemorrhage, right eye",retinal/vascular
+H4312,32,"Vitreous hemorrhage, left eye",retinal/vascular
+36844,32,Other localized visual field defect,neuro-ophthalmic
+H401130,32,"Primary open-angle glaucoma, bilateral, stage unspecified",glaucoma/IOP
+H53451,32,"Other localized visual field defect, right eye",neuro-ophthalmic
+H579,32,Unspecified disorder of eye and adnexa,other
+H189,31,Unspecified disorder of cornea,surface/adnexa
+H3412,31,"Central retinal artery occlusion, left eye",retinal/vascular
+H53452,30,"Other localized visual field defect, left eye",neuro-ophthalmic
+H5210,30,"Myopia, unspecified eye",other
+37887,30,Other dissociated deviation of eye movements,other
+3674,30,Presbyopia,other
+37852,29,"Third or oculomotor nerve palsy, total",neuro-ophthalmic
+H4920,29,"Sixth [abducent] nerve palsy, unspecified eye",neuro-ophthalmic
+H4900,29,"Third [oculomotor] nerve palsy, unspecified eye",neuro-ophthalmic
+H43819,28,"Vitreous degeneration, unspecified eye",retinal/vascular
+37853,28,Fourth or trochlear nerve palsy,neuro-ophthalmic
+H3552,28,Pigmentary retinal dystrophy,retinal/vascular
+36520,28,"Primary angle-closure glaucoma, unspecified",glaucoma/IOP
+36320,28,"Chorioretinitis, unspecified",uvea/inflam
+H2513,27,"Age-related nuclear cataract, bilateral",lens/cataract
+H01009,27,"Unspecified blepharitis unspecified eye, unspecified eyelid",surface/adnexa
+37749,27,Other disorders of optic nerve,neuro-ophthalmic
+36800,26,"Amblyopia, unspecified",other
+37999,25,Other ill-defined disorders of eye,other
+3693,25,"Unqualified visual loss, both eyes",neuro-ophthalmic
+H259,25,Unspecified age-related cataract,lens/cataract
+H02409,24,Unspecified ptosis of unspecified eyelid,neuro-ophthalmic
+37900,24,"Scleritis, unspecified",surface/adnexa
+36204,24,Mild nonproliferative diabetic retinopathy,retinal/vascular
+H5713,24,"Ocular pain, bilateral",other
+H3562,24,"Retinal hemorrhage, left eye",retinal/vascular
+H3320,24,"Serous retinal detachment, unspecified eye",retinal/vascular
+36589,24,Other specified glaucoma,glaucoma/IOP
+36616,24,Senile nuclear sclerosis,other
+H53122,24,"Transient visual loss, left eye",neuro-ophthalmic
+37140,23,"Corneal degeneration, unspecified",surface/adnexa
+37800,23,"Esotropia, unspecified",other
+37633,23,Orbital edema or congestion,other
+36231,23,Central retinal artery occlusion,retinal/vascular
+36205,23,Moderate nonproliferative diabetic retinopathy,retinal/vascular
+36970,22,"Moderate or severe impairment, one eye, impairment level not further specified",other
+H5000,22,Unspecified esotropia,other
+37990,22,"Disorder of eye, unspecified",other
+3798,22,Other specified disorders of eye and adnexa,other
+H35033,22,"Hypertensive retinopathy, bilateral",retinal/vascular
+3671,22,Myopia,other
+36910,22,"Moderate or severe impairment, better eye, impairment level not further specified",other
+36504,21,Ocular hypertension,glaucoma/IOP
+H3561,21,"Retinal hemorrhage, right eye",retinal/vascular
+36500,21,"Preglaucoma, unspecified",glaucoma/IOP
+H43392,21,"Other vitreous opacities, left eye",retinal/vascular
+H3581,20,Retinal edema,retinal/vascular
+37700,20,"Papilledema, unspecified",neuro-ophthalmic
+H04122,20,Dry eye syndrome of left lacrimal gland,surface/adnexa
+37775,20,Cortical blindness,neuro-ophthalmic
+H40053,20,"Ocular hypertension, bilateral",glaucoma/IOP
+H5703,20,Miosis,other
+H168,20,Other keratitis,surface/adnexa

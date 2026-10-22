@@ -1,0 +1,560 @@
+phecode,description,group,n_cases,auc_eye,auc_cbc,auc_both,klass
+428.2,Heart failure NOS,circulatory system,3855,0.701,0.824,0.833,CBC-specific
+427.2,Atrial fibrillation and flutter,circulatory system,3711,0.711,0.792,0.795,CBC-specific
+458.9,Hypotension NOS,circulatory system,2929,0.576,0.668,0.667,CBC-specific
+401.2,Hypertensive heart and/or renal disease,circulatory system,1959,0.673,0.798,0.804,CBC-specific
+401.21,Hypertensive heart disease,circulatory system,1927,0.676,0.748,0.749,CBC-specific
+458.1,Orthostatic hypotension,circulatory system,1700,0.567,0.605,0.607,CBC-specific
+395.1,Nonrheumatic mitral valve disorders,circulatory system,1539,0.54,0.609,0.613,CBC-specific
+427.7,Tachycardia NOS,circulatory system,1331,0.545,0.594,0.6,CBC-specific
+425.1,Primary/intrinsic cardiomyopathies,circulatory system,1168,0.541,0.625,0.634,CBC-specific
+415,Pulmonary heart disease,circulatory system,913,0.536,0.626,0.628,CBC-specific
+427.12,Paroxysmal ventricular tachycardia,circulatory system,877,0.534,0.627,0.619,CBC-specific
+395.6,Heart valve replaced,circulatory system,851,0.51,0.621,0.619,CBC-specific
+427.11,Paroxysmal supraventricular tachycardia,circulatory system,750,0.598,0.682,0.69,CBC-specific
+394.7,Disease of tricuspid valve,circulatory system,557,0.532,0.662,0.655,CBC-specific
+420.2,Pericarditis,circulatory system,507,0.511,0.652,0.645,CBC-specific
+427.42,Cardiac arrest,circulatory system,497,0.6,0.703,0.712,CBC-specific
+447,Other disorders of arteries and arterioles,circulatory system,474,0.54,0.623,0.629,CBC-specific
+394,Rheumatic disease of the heart valves,circulatory system,454,0.639,0.729,0.73,CBC-specific
+429.2,Abnormal function study of cardiovascular system,circulatory system,452,0.579,0.635,0.645,CBC-specific
+426.24,"Atrioventricular block, complete",circulatory system,439,0.565,0.623,0.638,CBC-specific
+394.2,Mitral valve disease,circulatory system,438,0.575,0.723,0.717,CBC-specific
+414,Other forms of chronic heart disease,circulatory system,374,0.499,0.58,0.576,CBC-specific
+426.8,Other cardiac conduction disorders,circulatory system,353,0.509,0.64,0.63,CBC-specific
+420.3,Endocarditis,circulatory system,299,0.508,0.712,0.726,CBC-specific
+450,Noninfectious disorders of lymphatic channels,circulatory system,241,0.517,0.635,0.632,CBC-specific
+440,Atherosclerosis,circulatory system,211,0.548,0.682,0.676,CBC-specific
+443.1,Raynaud's syndrome,circulatory system,192,0.497,0.61,0.591,CBC-specific
+444,Arterial embolism and thrombosis,circulatory system,191,0.521,0.628,0.63,CBC-specific
+441.1,Acute vascular insufficiency of intestine,circulatory system,183,0.508,0.661,0.663,CBC-specific
+459,Other disorders of circulatory system,circulatory system,181,0.465,0.66,0.66,CBC-specific
+425.2,Secondary/extrinsic cardiomyopathies,circulatory system,179,0.466,0.702,0.706,CBC-specific
+441,Vascular insufficiency of intestine,circulatory system,175,0.422,0.634,0.635,CBC-specific
+426.3,Bundle branch block,circulatory system,154,0.401,0.58,0.567,CBC-specific
+458.2,Iatrogenic hypotension,circulatory system,1229,0.575,0.584,0.599,comparable
+426.32,Left bundle branch block,circulatory system,606,0.547,0.562,0.577,comparable
+452.2,Deep vein thrombosis [DVT],circulatory system,577,0.654,0.672,0.691,comparable
+427.8,Sinoatrial node dysfunction (Bradycardia),circulatory system,570,0.542,0.547,0.549,comparable
+426.31,Right bundle branch block,circulatory system,561,0.543,0.571,0.568,comparable
+433.2,Occlusion of cerebral arteries,circulatory system,525,0.701,0.668,0.725,comparable
+455,Hemorrhoids,circulatory system,519,0.639,0.619,0.643,comparable
+427.22,Atrial flutter,circulatory system,512,0.648,0.641,0.659,comparable
+433.12,Cerebral atherosclerosis,circulatory system,451,0.545,0.539,0.577,comparable
+433.5,Cerebral aneurysm,circulatory system,437,0.597,0.593,0.62,comparable
+442.11,Abdominal aortic aneurysm,circulatory system,415,0.54,0.529,0.533,comparable
+415.11,"Pulmonary embolism and infarction, acute",circulatory system,406,0.567,0.615,0.63,comparable
+429.9,"Cardiac complications, not elsewhere classified",circulatory system,359,0.659,0.623,0.625,comparable
+433.11,"Occlusion of cerebral arteries, with cerebral infarction",circulatory system,357,0.573,0.595,0.611,comparable
+433,Cerebrovascular disease,circulatory system,338,0.569,0.575,0.568,comparable
+427.9,Palpitations,circulatory system,335,0.524,0.555,0.564,comparable
+426.21,First degree AV block,circulatory system,322,0.575,0.63,0.611,comparable
+426.23,Second degree AV block,circulatory system,303,0.539,0.605,0.61,comparable
+451,Phlebitis and thrombophlebitis,circulatory system,299,0.529,0.599,0.608,comparable
+394.1,Mitral valve stenosis and aortic valve stenosis,circulatory system,274,0.653,0.652,0.669,comparable
+427.6,Premature beats,circulatory system,251,0.518,0.558,0.56,comparable
+394.3,Aortic valve disease,circulatory system,246,0.579,0.638,0.638,comparable
+433.3,Cerebral ischemia,circulatory system,185,0.567,0.584,0.589,comparable
+444.1,Arterial embolism and thrombosis of lower extremity artery,circulatory system,163,0.611,0.578,0.632,comparable
+447.1,Stricture of artery,circulatory system,161,0.541,0.578,0.59,comparable
+395.3,Nonrheumatic tricuspid valve disorders,circulatory system,160,0.559,0.629,0.644,comparable
+396,Abnormal heart sounds,circulatory system,155,0.513,0.597,0.597,comparable
+457.3,Encounter for long-term (current) use of aspirin,circulatory system,2733,0.708,0.582,0.699,eye-specific
+433.31,Transient cerebral ischemia,circulatory system,2088,0.649,0.543,0.631,eye-specific
+418,Nonspecific chest pain,circulatory system,2086,0.647,0.537,0.641,eye-specific
+433.21,"Cerebral artery occlusion, with cerebral infarction",circulatory system,1946,0.685,0.536,0.667,eye-specific
+433.8,Late effects of cerebrovascular disease,circulatory system,1942,0.669,0.52,0.641,eye-specific
+457,"Encounter for long-term (current) use of anticoagulants, antithrombotics, aspirin",circulatory system,1521,0.689,0.624,0.689,eye-specific
+433.1,Occlusion and stenosis of precerebral arteries,circulatory system,1290,0.587,0.544,0.582,eye-specific
+430.2,Intracerebral hemorrhage,circulatory system,1072,0.667,0.569,0.67,eye-specific
+395.2,Nonrheumatic aortic valve disorders,circulatory system,848,0.658,0.584,0.633,eye-specific
+411.3,Angina pectoris,circulatory system,606,0.623,0.552,0.596,eye-specific
+440.21,Atherosclerosis of native arteries of the extremities with ulceration or gangrene,circulatory system,470,0.827,0.722,0.833,eye-specific
+411.1,Unstable angina (intermediate coronary syndrome),circulatory system,465,0.672,0.54,0.643,eye-specific
+457.2,Encounter for long-term (current) use of antiplatelets/antithrombotics,circulatory system,462,0.692,0.556,0.688,eye-specific
+430.1,Subarachnoid hemorrhage,circulatory system,296,0.594,0.498,0.551,eye-specific
+426.7,Abnormal electrocardiogram [ECG] [EKG],circulatory system,252,0.619,0.542,0.566,eye-specific
+440.22,Atherosclerosis of native arteries of the extremities with intermittent claudication,circulatory system,218,0.638,0.502,0.622,eye-specific
+401.1,Essential hypertension,circulatory system,7507,0.554,0.554,0.576,synergy
+411.4,Coronary atherosclerosis,circulatory system,6670,0.589,0.633,0.658,synergy
+401.22,Hypertensive chronic kidney disease,circulatory system,5110,0.644,0.694,0.733,synergy
+411.2,Myocardial infarction,circulatory system,4024,0.584,0.632,0.648,synergy
+459.9,Circulatory disease NEC,circulatory system,3937,0.675,0.729,0.743,synergy
+428.1,Congestive heart failure (CHF) NOS,circulatory system,3395,0.749,0.747,0.8,synergy
+427.21,Atrial fibrillation,circulatory system,3184,0.716,0.694,0.753,synergy
+452,Other venous embolism and thrombosis,circulatory system,2114,0.526,0.634,0.645,synergy
+428.4,Heart failure with preserved EF [Diastolic heart failure],circulatory system,1946,0.738,0.714,0.774,synergy
+443.9,"Peripheral vascular disease, unspecified",circulatory system,1705,0.643,0.647,0.704,synergy
+428.3,Heart failure with reduced EF [Systolic or combined heart failure],circulatory system,1563,0.729,0.715,0.763,synergy
+415.2,Chronic pulmonary heart disease,circulatory system,1301,0.669,0.708,0.726,synergy
+426.91,Cardiac pacemaker in situ,circulatory system,1201,0.549,0.57,0.589,synergy
+411.8,"Other chronic ischemic heart disease, unspecified",circulatory system,1169,0.576,0.647,0.668,synergy
+440.2,Atherosclerosis of the extremities,circulatory system,913,0.646,0.657,0.732,synergy
+443.7,Peripheral angiopathy in diseases classified elsewhere,circulatory system,908,0.711,0.726,0.782,synergy
+456,Chronic venous insufficiency [CVI],circulatory system,876,0.626,0.638,0.662,synergy
+411.9,Other acute and subacute forms of ischemic heart disease,circulatory system,737,0.574,0.687,0.705,synergy
+442.1,Aortic aneurysm,circulatory system,345,0.507,0.598,0.625,synergy
+458,Hypotension,circulatory system,257,0.604,0.654,0.682,synergy
+426.92,Cardiac defibrillator in situ,circulatory system,250,0.543,0.664,0.691,synergy
+747.13,Congenital anomalies of great vessels,congenital anomalies,728,0.645,0.7,0.712,CBC-specific
+707.1,Decubitus ulcer,dermatologic,1330,0.614,0.722,0.728,CBC-specific
+681.3,Cellulitis and abscess of arm/hand,dermatologic,959,0.592,0.665,0.665,CBC-specific
+939,Atopic/contact dermatitis due to other or unspecified,dermatologic,957,0.546,0.595,0.606,CBC-specific
+698,Pruritus and related conditions,dermatologic,518,0.529,0.637,0.638,CBC-specific
+689,Disorder of skin and subcutaneous tissue NOS,dermatologic,289,0.507,0.673,0.67,CBC-specific
+686.1,Carbuncle and furuncle,dermatologic,245,0.548,0.651,0.649,CBC-specific
+686,Other local infections of skin and subcutaneous tissue,dermatologic,181,0.466,0.595,0.592,CBC-specific
+695.42,Systemic lupus erythematosus,dermatologic,162,0.456,0.595,0.595,CBC-specific
+681.7,Cellulitis and abscess of trunk,dermatologic,431,0.559,0.613,0.625,comparable
+681.2,Cellulitis and abscess of face/neck,dermatologic,267,0.544,0.533,0.526,comparable
+696.41,Psoriasis vulgaris,dermatologic,206,0.564,0.527,0.526,comparable
+696.4,Psoriasis,dermatologic,182,0.615,0.692,0.694,comparable
+705.8,Hyperhidrosis,dermatologic,152,0.524,0.578,0.573,comparable
+681.5,"Cellulitis and abscess of leg, except foot",dermatologic,751,0.681,0.612,0.673,eye-specific
+681.1,Cellulitis and abscess of fingers/toes,dermatologic,393,0.684,0.611,0.716,eye-specific
+707.2,Chronic ulcer of leg or foot,dermatologic,988,0.815,0.727,0.84,synergy
+707,Chronic ulcer of skin,dermatologic,808,0.681,0.779,0.799,synergy
+687.1,Rash and other nonspecific skin eruption,dermatologic,687,0.551,0.618,0.636,synergy
+681.6,"Cellulitis and abscess of foot, toe",dermatologic,401,0.787,0.655,0.817,synergy
+530.11,GERD,digestive,7532,0.566,0.598,0.608,CBC-specific
+573.9,Abnormal serum enzyme levels,digestive,1715,0.612,0.695,0.696,CBC-specific
+562.1,Diverticulosis,digestive,1534,0.538,0.604,0.604,CBC-specific
+537,Other disorders of stomach and duodenum,digestive,927,0.592,0.74,0.748,CBC-specific
+578.2,Blood in stool,digestive,884,0.559,0.665,0.665,CBC-specific
+560.1,Paralytic ileus,digestive,732,0.544,0.609,0.613,CBC-specific
+572,Ascites (non malignant),digestive,701,0.529,0.731,0.736,CBC-specific
+571.8,Liver abscess and sequelae of chronic liver disease,digestive,698,0.537,0.783,0.778,CBC-specific
+578.9,Hemorrhage of gastrointestinal tract,digestive,682,0.517,0.676,0.679,CBC-specific
+571.5,Other chronic nonalcoholic liver disease,digestive,639,0.539,0.605,0.596,CBC-specific
+574.1,Cholelithiasis,digestive,581,0.551,0.635,0.641,CBC-specific
+567,Peritonitis and retroperitoneal infections,digestive,518,0.489,0.674,0.673,CBC-specific
+560.4,Other intestinal obstruction,digestive,513,0.521,0.605,0.594,CBC-specific
+571.81,Portal hypertension,digestive,454,0.473,0.859,0.86,CBC-specific
+575.2,Obstruction of bile duct,digestive,426,0.511,0.628,0.618,CBC-specific
+569,Other disorders of intestine,digestive,410,0.478,0.624,0.619,CBC-specific
+530.2,Esophageal bleeding (varices/hemorrhage),digestive,399,0.519,0.808,0.81,CBC-specific
+535,Gastritis and duodenitis,digestive,390,0.588,0.74,0.738,CBC-specific
+565,Anal and rectal conditions,digestive,387,0.492,0.584,0.592,CBC-specific
+564.9,Personal history of diseases of digestive system,digestive,380,0.571,0.635,0.64,CBC-specific
+575.1,Cholangitis,digestive,377,0.571,0.65,0.653,CBC-specific
+569.1,Toxic gastroenteritis and colitis,digestive,374,0.605,0.766,0.768,CBC-specific
+531.1,Hemorrhage from gastrointestinal ulcer,digestive,354,0.523,0.682,0.681,CBC-specific
+571.51,Cirrhosis of liver without mention of alcohol,digestive,352,0.57,0.736,0.746,CBC-specific
+579.8,Nonspecific abnormal findings in stool contents,digestive,322,0.538,0.672,0.672,CBC-specific
+575.8,Other disorders of biliary tract,digestive,320,0.493,0.577,0.572,CBC-specific
+568.1,Peritoneal adhesions (postoperative) (postinfection),digestive,318,0.506,0.576,0.579,CBC-specific
+578.1,Hematemesis,digestive,316,0.563,0.658,0.669,CBC-specific
+531.2,Gastric ulcer,digestive,276,0.499,0.611,0.612,CBC-specific
+577.2,Chronic pancreatitis,digestive,260,0.45,0.596,0.594,CBC-specific
+550.4,Umbilical hernia,digestive,242,0.459,0.609,0.606,CBC-specific
+577.3,Cyst and pseudocyst of pancreas,digestive,240,0.475,0.581,0.578,CBC-specific
+573.4,Acute and subacute necrosis of liver,digestive,191,0.546,0.772,0.776,CBC-specific
+531.3,Duodenal ulcer,digestive,189,0.457,0.635,0.629,CBC-specific
+550,Abdominal hernia,digestive,174,0.487,0.616,0.621,CBC-specific
+573.5,Jaundice (not of newborn),digestive,170,0.58,0.729,0.733,CBC-specific
+573.1,Chronic passive congestion of liver,digestive,167,0.585,0.741,0.749,CBC-specific
+568,Other disorders of peritoneum,digestive,160,0.481,0.628,0.629,CBC-specific
+579.2,Splenomegaly,digestive,159,0.468,0.821,0.818,CBC-specific
+521.1,Dental caries,digestive,155,0.463,0.63,0.631,CBC-specific
+561,Symptoms involving digestive system,digestive,1797,0.657,0.635,0.672,comparable
+550.2,Diaphragmatic hernia,digestive,922,0.521,0.56,0.556,comparable
+558,Noninfectious gastroenteritis,digestive,750,0.564,0.588,0.6,comparable
+573.6,Nonspecific elevation of levels of transaminase or lactic acid dehydrogenase [LDH],digestive,675,0.624,0.608,0.646,comparable
+564.1,Irritable Bowel Syndrome,digestive,576,0.557,0.549,0.547,comparable
+530.1,"Esophagitis, GERD and related diseases",digestive,535,0.567,0.606,0.617,comparable
+577.1,Acute pancreatitis,digestive,531,0.533,0.541,0.536,comparable
+531.4,"Peptic ulcer, site unspecified",digestive,437,0.574,0.567,0.574,comparable
+569.2,Gastrointestinal complications,digestive,424,0.611,0.559,0.575,comparable
+573,Other disorders of liver,digestive,392,0.521,0.568,0.578,comparable
+577,Diseases of pancreas,digestive,369,0.549,0.588,0.598,comparable
+574.2,Calculus of bile duct,digestive,357,0.574,0.556,0.542,comparable
+578.8,Hemorrhage of rectum and anus,digestive,312,0.538,0.604,0.597,comparable
+535.6,Duodenitis,digestive,260,0.554,0.61,0.61,comparable
+550.5,Ventral hernia,digestive,254,0.545,0.598,0.598,comparable
+530.5,Disorders of esophageal motility,digestive,244,0.541,0.562,0.572,comparable
+574.3,Cholecystitis without cholelithiasis,digestive,229,0.526,0.606,0.596,comparable
+530.3,Stricture and stenosis of esophagus,digestive,219,0.517,0.586,0.581,comparable
+550.1,Inguinal hernia,digestive,205,0.509,0.555,0.562,comparable
+562.2,Diverticulitis,digestive,199,0.592,0.514,0.545,comparable
+539,Bariatric surgery,digestive,188,0.555,0.575,0.577,comparable
+559,Ileostomy status,digestive,174,0.528,0.604,0.588,comparable
+573.7,Abnormal results of function study of liver,digestive,171,0.511,0.567,0.566,comparable
+574.11,Cholelithiasis with acute cholecystitis,digestive,167,0.512,0.587,0.589,comparable
+560.3,Peritoneal or intestinal adhesions,digestive,162,0.5,0.575,0.58,comparable
+564,Functional digestive disorders,digestive,2206,0.692,0.626,0.7,eye-specific
+535.9,"Gastritis and duodenitis, NOS",digestive,483,0.659,0.605,0.632,eye-specific
+536.3,Gastroparesis,digestive,394,0.787,0.632,0.776,eye-specific
+530.13,Barrett's esophagus,digestive,205,0.604,0.481,0.543,eye-specific
+532,Dysphagia,digestive,2308,0.593,0.621,0.634,synergy
+276.12,Hyposmolality and/or hyponatremia,endocrine/metabolic,3984,0.574,0.664,0.669,CBC-specific
+244.4,Hypothyroidism NOS,endocrine/metabolic,3748,0.516,0.57,0.575,CBC-specific
+276.41,Acidosis,endocrine/metabolic,3701,0.582,0.719,0.719,CBC-specific
+278.1,Obesity,endocrine/metabolic,3598,0.564,0.648,0.658,CBC-specific
+276.14,Hypopotassemia,endocrine/metabolic,2485,0.539,0.649,0.656,CBC-specific
+260,Protein-calorie malnutrition,endocrine/metabolic,2355,0.535,0.686,0.691,CBC-specific
+276.11,Hyperosmolality and/or hypernatremia,endocrine/metabolic,1997,0.567,0.679,0.681,CBC-specific
+274.1,Gout,endocrine/metabolic,1898,0.522,0.639,0.642,CBC-specific
+275.53,Disorders of phosphorus metabolism,endocrine/metabolic,1825,0.594,0.714,0.721,CBC-specific
+261.4,Vitamin D deficiency,endocrine/metabolic,1336,0.572,0.624,0.634,CBC-specific
+275.3,Disorders of magnesium metabolism,endocrine/metabolic,1103,0.589,0.66,0.66,CBC-specific
+276.42,Alkalosis,endocrine/metabolic,788,0.552,0.66,0.664,CBC-specific
+253.7,Other disorders of neurohypophysis,endocrine/metabolic,764,0.531,0.635,0.639,CBC-specific
+261.2,Vitamin B-complex deficiencies,endocrine/metabolic,752,0.51,0.573,0.555,CBC-specific
+275.5,Disorders of calcium/phosphorus metabolism,endocrine/metabolic,747,0.597,0.721,0.719,CBC-specific
+277,Other disorders of metabolism,endocrine/metabolic,627,0.506,0.616,0.622,CBC-specific
+260.1,Cachexia,endocrine/metabolic,563,0.516,0.731,0.726,CBC-specific
+252.1,Hyperparathyroidism,endocrine/metabolic,475,0.553,0.621,0.637,CBC-specific
+260.6,Anorexia,endocrine/metabolic,401,0.515,0.626,0.625,CBC-specific
+255.21,Glucocorticoid deficiency,endocrine/metabolic,371,0.539,0.706,0.701,CBC-specific
+270.32,Paraproteinemia,endocrine/metabolic,324,0.507,0.638,0.647,CBC-specific
+275.6,Hypercalcemia,endocrine/metabolic,291,0.594,0.674,0.674,CBC-specific
+279.1,Immunity deficiency,endocrine/metabolic,256,0.599,0.748,0.749,CBC-specific
+279.11,Deficiency of humoral immunity,endocrine/metabolic,216,0.517,0.688,0.694,CBC-specific
+277.4,Disorders of bilirubin excretion,endocrine/metabolic,208,0.578,0.768,0.768,CBC-specific
+271.3,Intestinal disaccharidase deficiencies and disaccharide malabsorption,endocrine/metabolic,163,0.466,0.566,0.572,CBC-specific
+246,Other disorders of thyroid,endocrine/metabolic,153,0.445,0.626,0.625,CBC-specific
+274.21,Chondrocalcinosis,endocrine/metabolic,153,0.471,0.591,0.595,CBC-specific
+250.42,Other abnormal glucose,endocrine/metabolic,655,0.577,0.582,0.6,comparable
+244.1,Secondary hypothyroidism,endocrine/metabolic,460,0.511,0.526,0.54,comparable
+270.33,Amyloidosis,endocrine/metabolic,316,0.557,0.539,0.591,comparable
+274.11,Gouty arthropathy,endocrine/metabolic,277,0.598,0.635,0.635,comparable
+275.51,Hypocalcemia,endocrine/metabolic,274,0.597,0.651,0.662,comparable
+241.2,Nontoxic multinodular goiter,endocrine/metabolic,242,0.527,0.552,0.555,comparable
+244.2,Acquired hypothyroidism,endocrine/metabolic,236,0.499,0.572,0.571,comparable
+242,Thyrotoxicosis with or without goiter,endocrine/metabolic,186,0.522,0.546,0.57,comparable
+244.5,Congenital hypothyroidism,endocrine/metabolic,183,0.549,0.613,0.61,comparable
+272.11,Hypercholesterolemia,endocrine/metabolic,4017,0.589,0.546,0.592,eye-specific
+277.5,Other disorders of lipoid metabolism,endocrine/metabolic,1003,0.67,0.6,0.651,eye-specific
+278,"Overweight, obesity and other hyperalimentation",endocrine/metabolic,261,0.631,0.513,0.576,eye-specific
+272.1,Hyperlipidemia,endocrine/metabolic,7739,0.6,0.602,0.632,synergy
+276.5,Hypovolemia,endocrine/metabolic,4947,0.576,0.632,0.648,synergy
+250.3,Insulin pump user,endocrine/metabolic,2847,0.821,0.683,0.841,synergy
+276.13,Hyperpotassemia,endocrine/metabolic,2759,0.61,0.734,0.751,synergy
+276.1,Electrolyte imbalance,endocrine/metabolic,2427,0.667,0.634,0.682,synergy
+276.6,Fluid overload,endocrine/metabolic,1342,0.559,0.707,0.717,synergy
+278.11,Morbid obesity,endocrine/metabolic,1049,0.649,0.639,0.675,synergy
+276.4,Acid-base balance disorder,endocrine/metabolic,500,0.552,0.744,0.758,synergy
+250.41,Impaired fasting glucose,endocrine/metabolic,446,0.614,0.666,0.697,synergy
+260.3,Adult failure to thrive,endocrine/metabolic,443,0.646,0.672,0.711,synergy
+251.1,Hypoglycemia,endocrine/metabolic,308,0.59,0.636,0.669,synergy
+269,Proteinuria,endocrine/metabolic,191,0.543,0.586,0.616,synergy
+593,Hematuria,genitourinary,1086,0.569,0.613,0.614,CBC-specific
+595,Hydronephrosis,genitourinary,565,0.562,0.643,0.634,CBC-specific
+590,Pyelonephritis,genitourinary,564,0.568,0.638,0.626,CBC-specific
+596.5,Functional disorders of bladder,genitourinary,373,0.582,0.648,0.651,CBC-specific
+580.32,Nephritis and nephropathy with pathological lesion,genitourinary,368,0.56,0.717,0.715,CBC-specific
+588,Disorders resulting from impaired renal function,genitourinary,348,0.592,0.766,0.77,CBC-specific
+586.4,Stricture/obstruction of ureter,genitourinary,281,0.524,0.598,0.593,CBC-specific
+592.1,Cystitis,genitourinary,266,0.59,0.667,0.673,CBC-specific
+586.2,"Cyst of kidney, acquired",genitourinary,229,0.477,0.577,0.574,CBC-specific
+599,Other symptoms/disorders or the urinary system,genitourinary,227,0.468,0.598,0.598,CBC-specific
+608,Other disorders of male genital organs,genitourinary,167,0.485,0.637,0.639,CBC-specific
+600,Hyperplasia of prostate,genitourinary,2721,0.555,0.574,0.576,comparable
+599.4,Urinary incontinence,genitourinary,1479,0.548,0.533,0.539,comparable
+586,Other disorders of the kidney and ureters,genitourinary,594,0.574,0.555,0.559,comparable
+599.5,Frequency of urination and polyuria,genitourinary,517,0.542,0.564,0.571,comparable
+596,Other disorders of bladder,genitourinary,414,0.551,0.555,0.546,comparable
+598,Abnormal findings on examination of urine,genitourinary,351,0.569,0.563,0.565,comparable
+599.3,Dysuria,genitourinary,349,0.556,0.532,0.544,comparable
+594.1,Calculus of kidney,genitourinary,335,0.539,0.535,0.541,comparable
+599.6,Oliguria and anuria,genitourinary,310,0.559,0.614,0.619,comparable
+593.1,Gross hematuria,genitourinary,270,0.595,0.649,0.668,comparable
+594,Urinary calculus,genitourinary,270,0.57,0.511,0.528,comparable
+599.9,Other abnormality of urination,genitourinary,249,0.506,0.57,0.568,comparable
+597.2,Urinary complications NEC,genitourinary,174,0.626,0.608,0.618,comparable
+592.11,Acute cystitis,genitourinary,157,0.559,0.494,0.505,comparable
+585.4,"Chronic kidney disease, Stage I or II",genitourinary,305,0.67,0.604,0.66,eye-specific
+605,Erectile dysfunction [ED],genitourinary,174,0.701,0.508,0.655,eye-specific
+585.1,Acute renal failure,genitourinary,7645,0.604,0.727,0.741,synergy
+585.3,Chronic renal failure [CKD],genitourinary,5435,0.627,0.715,0.732,synergy
+591,Urinary tract infection,genitourinary,5321,0.584,0.637,0.654,synergy
+599.2,Retention of urine,genitourinary,2929,0.563,0.599,0.61,synergy
+585.33,"Chronic Kidney Disease, Stage III",genitourinary,1368,0.708,0.657,0.732,synergy
+585.31,Renal dialysis,genitourinary,1086,0.727,0.81,0.852,synergy
+580.31,Nephritis and nephropathy in diseases classified elsewhere,genitourinary,942,0.881,0.715,0.902,synergy
+585.32,End stage renal disease,genitourinary,883,0.794,0.799,0.862,synergy
+585.34,"Chronic Kidney Disease, Stage IV",genitourinary,564,0.764,0.753,0.797,synergy
+587,Kidney replaced by transpant,genitourinary,472,0.73,0.752,0.811,synergy
+588.2,Secondary hyperparathyroidism (of renal origin),genitourinary,188,0.696,0.72,0.785,synergy
+280.1,"Iron deficiency anemias, unspecified or not due to blood loss",hematopoietic,2285,0.559,0.706,0.709,CBC-specific
+288,Diseases of white blood cells,hematopoietic,1840,0.664,0.737,0.741,CBC-specific
+286.7,Other and unspecified coagulation defects,hematopoietic,860,0.54,0.724,0.725,CBC-specific
+281.9,Deficiency anemias,hematopoietic,644,0.516,0.808,0.805,CBC-specific
+286.4,Acquired coagulation factor deficiency,hematopoietic,617,0.561,0.781,0.786,CBC-specific
+289.4,Lymphadenitis,hematopoietic,497,0.498,0.593,0.595,CBC-specific
+286.6,Defibrination syndrome,hematopoietic,391,0.528,0.688,0.691,CBC-specific
+286.5,Hemorrhagic disorder due to intrinsic circulating anticoagulants,hematopoietic,364,0.595,0.736,0.73,CBC-specific
+288.1,Decreased white blood cell count,hematopoietic,315,0.499,0.736,0.727,CBC-specific
+289,Other diseases of blood and blood-forming organs,hematopoietic,255,0.559,0.776,0.783,CBC-specific
+289.5,Diseases of spleen,hematopoietic,190,0.519,0.767,0.758,CBC-specific
+289.9,Abnormality of red blood cells,hematopoietic,213,0.523,0.586,0.606,comparable
+285,Other anemias,hematopoietic,6251,0.579,0.697,0.708,synergy
+286.2,Encounter for long-term (current) use of anticoagulants,hematopoietic,2408,0.69,0.657,0.713,synergy
+288.2,Elevated white blood cell count,hematopoietic,1191,0.67,0.684,0.719,synergy
+286.9,Abnormal coagulation profile,hematopoietic,932,0.66,0.665,0.7,synergy
+038,Septicemia,infectious diseases,2468,0.586,0.75,0.752,CBC-specific
+041.4,E. coli,infectious diseases,1985,0.572,0.628,0.633,CBC-specific
+041.2,Streptococcus infection,infectious diseases,1493,0.57,0.66,0.668,CBC-specific
+112,Candidiasis,infectious diseases,1450,0.583,0.674,0.679,CBC-specific
+008.52,Intestinal infection due to C. difficile,infectious diseases,1100,0.564,0.685,0.687,CBC-specific
+041.1,Staphylococcus infections,infectious diseases,1015,0.59,0.663,0.669,CBC-specific
+038.1,Gram negative septicemia,infectious diseases,953,0.55,0.684,0.687,CBC-specific
+079,Viral infection,infectious diseases,791,0.539,0.66,0.67,CBC-specific
+038.3,Bacteremia,infectious diseases,711,0.634,0.699,0.707,CBC-specific
+070.3,Viral hepatitis C,infectious diseases,535,0.526,0.655,0.654,CBC-specific
+038.2,Gram positive septicemia,infectious diseases,520,0.593,0.724,0.731,CBC-specific
+070,Viral hepatitis,infectious diseases,422,0.577,0.726,0.726,CBC-specific
+070.9,Hepatitis NOS,infectious diseases,416,0.546,0.643,0.641,CBC-specific
+136,Other infectious and parasitic diseases,infectious diseases,335,0.535,0.626,0.62,CBC-specific
+041.9,Infection with drug-resistant microorganisms,infectious diseases,290,0.615,0.69,0.684,CBC-specific
+070.2,Viral hepatitis B,infectious diseases,247,0.543,0.66,0.651,CBC-specific
+053,Herpes zoster,infectious diseases,239,0.481,0.609,0.619,CBC-specific
+117,Mycoses,infectious diseases,197,0.486,0.713,0.713,CBC-specific
+112.3,Candidiasis of skin and nails,infectious diseases,161,0.449,0.564,0.57,CBC-specific
+081,Infection/inflammation of internal prosthetic device; implant; and graft,infectious diseases,811,0.651,0.686,0.698,comparable
+008.6,Viral Enteritis,infectious diseases,758,0.599,0.58,0.594,comparable
+054,Herpes simplex,infectious diseases,356,0.53,0.55,0.551,comparable
+041.12,Methicillin resistant Staphylococcus aureus,infectious diseases,573,0.742,0.683,0.761,eye-specific
+041.11,Methicillin sensitive Staphylococcus aureus,infectious diseases,476,0.716,0.654,0.701,eye-specific
+041,Bacterial infection NOS,infectious diseases,2230,0.579,0.65,0.662,synergy
+080,Postoperative infection,infectious diseases,955,0.582,0.61,0.628,synergy
+851,Complications of transplants and reattached limbs,injuries & poisonings,2447,0.648,0.754,0.757,CBC-specific
+854,"Complications of cardiac/vascular device, implant, and graft",injuries & poisonings,1497,0.598,0.695,0.703,CBC-specific
+963.1,Antineoplastic and immunosuppressive drugs causing adverse effects,injuries & poisonings,1475,0.56,0.785,0.786,CBC-specific
+969,Poisoning by psychotropic agents,injuries & poisonings,1282,0.573,0.636,0.64,CBC-specific
+964.1,Anticoagulants causing adverse effects,injuries & poisonings,1201,0.539,0.67,0.68,CBC-specific
+990,Effects radiation NOS,injuries & poisonings,1193,0.554,0.643,0.65,CBC-specific
+960,Poisoning by antibiotics,injuries & poisonings,989,0.572,0.684,0.69,CBC-specific
+962,Poisoning by hormones and synthetic substitutes,injuries & poisonings,944,0.655,0.73,0.729,CBC-specific
+979,Adverse drug events and drug allergies,injuries & poisonings,898,0.567,0.627,0.63,CBC-specific
+974,"Poisoning by water, mineral, and uric acid metabolism drugs",injuries & poisonings,731,0.531,0.649,0.653,CBC-specific
+972,Poisoning by agents primarily affecting the cardiovascular system,injuries & poisonings,677,0.559,0.615,0.614,CBC-specific
+994.21,Septic shock,injuries & poisonings,617,0.653,0.765,0.769,CBC-specific
+966,Poisoning by anticonvulsants and anti-Parkinsonism drugs,injuries & poisonings,588,0.554,0.612,0.622,CBC-specific
+818,Intracranial hemorrhage (injury),injuries & poisonings,549,0.587,0.668,0.658,CBC-specific
+800.1,Fracture of neck of femur,injuries & poisonings,495,0.51,0.582,0.577,CBC-specific
+960.2,Allergy/adverse effect of penicillin,injuries & poisonings,419,0.536,0.614,0.607,CBC-specific
+803.3,Fracture of clavicle or scapula,injuries & poisonings,417,0.56,0.641,0.637,CBC-specific
+971,Poisoning by drugs primarily affecting the autonomic nervous system,injuries & poisonings,395,0.493,0.585,0.583,CBC-specific
+800.2,Fracture of unspecified part of femur,injuries & poisonings,361,0.57,0.687,0.67,CBC-specific
+858,Complication of internal orthopedic device,injuries & poisonings,313,0.525,0.609,0.609,CBC-specific
+961,Poisoning by other anti-infectives,injuries & poisonings,306,0.557,0.644,0.647,CBC-specific
+963,Poisoning by primarily systemic agents,injuries & poisonings,215,0.495,0.591,0.595,CBC-specific
+958.1,Postoperative shock,injuries & poisonings,186,0.484,0.645,0.643,CBC-specific
+960.1,Adverse effects of antibacterials (not penicillins),injuries & poisonings,163,0.551,0.69,0.679,CBC-specific
+916,Contusion,injuries & poisonings,1105,0.563,0.554,0.565,comparable
+805,Fracture of vertebral column without mention of spinal cord injury,injuries & poisonings,776,0.523,0.531,0.53,comparable
+850,Hemorrhage or hematoma complicating a procedure,injuries & poisonings,703,0.659,0.642,0.665,comparable
+870.3,Other open wound of head and face,injuries & poisonings,697,0.543,0.534,0.561,comparable
+967,Adverse effects of sedatives or other central nervous system depressants and anesthetics,injuries & poisonings,477,0.569,0.556,0.577,comparable
+962.1,Adrenal cortical steroids causing adverse effects in therapeutic use,injuries & poisonings,432,0.634,0.608,0.644,comparable
+965.1,Opiates and related narcotics causing adverse effects in therapeutic use,injuries & poisonings,429,0.593,0.624,0.631,comparable
+965,"Poisoning by analgesics, antipyretics, and antirheumatics",injuries & poisonings,378,0.492,0.534,0.539,comparable
+857,"Mechanical complication of unspecified genitourinary device, implant, and graft",injuries & poisonings,363,0.627,0.675,0.69,comparable
+961.1,Poisoning/allergy of sulfonamides,injuries & poisonings,286,0.574,0.557,0.555,comparable
+803.1,Fracture of humerus,injuries & poisonings,279,0.5,0.567,0.55,comparable
+803.2,Fracture of radius and ulna,injuries & poisonings,251,0.493,0.561,0.56,comparable
+802,Fracture of pelvis,injuries & poisonings,243,0.569,0.504,0.534,comparable
+818.1,Subdural hemorrhage (injury),injuries & poisonings,202,0.582,0.628,0.635,comparable
+800,Fracture of lower limb,injuries & poisonings,187,0.576,0.594,0.629,comparable
+800.3,Fracture of tibia and fibula,injuries & poisonings,179,0.52,0.583,0.579,comparable
+946,Anaphylactic shock NOS,injuries & poisonings,174,0.461,0.551,0.556,comparable
+801,Fracture of ankle and foot,injuries & poisonings,153,0.536,0.595,0.594,comparable
+819,Skull and face fracture and other intercranial injury,injuries & poisonings,919,0.61,0.568,0.611,eye-specific
+962.2,Insulins and antidiabetic agents causing adverse effects in therapeutic use,injuries & poisonings,208,0.768,0.547,0.744,eye-specific
+994.2,Sepsis,injuries & poisonings,1442,0.687,0.721,0.756,synergy
+859,Complication due to other implant and internal device,injuries & poisonings,520,0.497,0.584,0.603,synergy
+856,Vascular complications of surgery and medical procedures,injuries & poisonings,269,0.642,0.643,0.699,synergy
+874,Complication of amputation stump,injuries & poisonings,247,0.717,0.727,0.795,synergy
+300.1,Anxiety disorder,mental disorders,4573,0.563,0.623,0.628,CBC-specific
+318,Tobacco use disorder,mental disorders,2780,0.535,0.574,0.577,CBC-specific
+316,Substance addiction and disorders,mental disorders,1516,0.546,0.581,0.591,CBC-specific
+317,Alcohol-related disorders,mental disorders,1380,0.589,0.631,0.645,CBC-specific
+317.11,Alcoholic liver damage,mental disorders,400,0.549,0.771,0.774,CBC-specific
+316.1,Polyneuropathy due to drugs,mental disorders,185,0.536,0.708,0.713,CBC-specific
+292.6,Hallucinations,mental disorders,179,0.447,0.604,0.604,CBC-specific
+290,Delirium dementia and amnestic and other cognitive disorders,mental disorders,171,0.586,0.679,0.682,CBC-specific
+293.1,"Swelling, mass, or lump in head and neck [Space-occupying lesion, intracranial NOS]",mental disorders,159,0.457,0.582,0.582,CBC-specific
+290.1,Dementias,mental disorders,2272,0.558,0.57,0.576,comparable
+292.4,Altered mental status,mental disorders,1107,0.557,0.573,0.584,comparable
+317.1,Alcoholism,mental disorders,898,0.622,0.615,0.627,comparable
+290.2,Delirium due to conditions classified elsewhere,mental disorders,896,0.673,0.664,0.684,comparable
+296.1,Bipolar,mental disorders,749,0.565,0.537,0.567,comparable
+291.8,Alteration of consciousness,mental disorders,699,0.609,0.587,0.609,comparable
+290.3,Other persistent mental disorders due to conditions classified elsewhere,mental disorders,696,0.649,0.617,0.642,comparable
+300.4,Dysthymic disorder,mental disorders,682,0.626,0.608,0.642,comparable
+315,Develomental delays and disorders,mental disorders,640,0.554,0.583,0.589,comparable
+290.11,Alzheimer's disease,mental disorders,631,0.524,0.529,0.534,comparable
+300.9,Posttraumatic stress disorder,mental disorders,579,0.538,0.539,0.544,comparable
+304,Adjustment reaction,mental disorders,490,0.567,0.576,0.588,comparable
+296.22,Major depressive disorder,mental disorders,476,0.569,0.554,0.57,comparable
+296,Mood disorders,mental disorders,457,0.509,0.561,0.553,comparable
+295.1,Schizophrenia,mental disorders,394,0.506,0.547,0.56,comparable
+297.2,Suicide or self-inflicted injury,mental disorders,302,0.562,0.596,0.595,comparable
+313.1,Attention deficit hyperactivity disorder,mental disorders,283,0.544,0.501,0.51,comparable
+295.2,Paranoid disorders,mental disorders,200,0.536,0.565,0.578,comparable
+315.3,Mental retardation,mental disorders,194,0.571,0.62,0.653,comparable
+296.2,Depression,mental disorders,3243,0.7,0.605,0.69,eye-specific
+292.1,Aphasia/speech disturbance,mental disorders,1897,0.688,0.584,0.667,eye-specific
+293,Symptoms involving head and neck,mental disorders,1121,0.701,0.545,0.663,eye-specific
+292,Neurological disorders,mental disorders,909,0.663,0.608,0.67,eye-specific
+297.1,Suicidal ideation,mental disorders,402,0.626,0.533,0.568,eye-specific
+292.11,Aphasia,mental disorders,380,0.63,0.647,0.681,synergy
+716.9,Arthropathy NOS,musculoskeletal,1944,0.601,0.627,0.633,CBC-specific
+743.21,Pathologic fracture of vertebrae,musculoskeletal,464,0.528,0.589,0.592,CBC-specific
+743.2,Pathologic fracture,musculoskeletal,347,0.511,0.635,0.631,CBC-specific
+741.4,Joint effusions,musculoskeletal,227,0.492,0.634,0.631,CBC-specific
+736,Other acquired deformities of limbs,musculoskeletal,181,0.549,0.68,0.673,CBC-specific
+720,Spinal stenosis,musculoskeletal,1283,0.563,0.593,0.6,comparable
+721.1,Spondylosis without myelopathy,musculoskeletal,1035,0.567,0.535,0.542,comparable
+733,Other disorders of bone and cartilage,musculoskeletal,738,0.677,0.68,0.69,comparable
+740.1,Osteoarthritis; localized,musculoskeletal,595,0.582,0.55,0.559,comparable
+740.11,"Osteoarthrosis, localized, primary",musculoskeletal,564,0.64,0.675,0.687,comparable
+714.1,Rheumatoid arthritis,musculoskeletal,553,0.527,0.57,0.577,comparable
+720.1,Spinal stenosis of lumbar region,musculoskeletal,332,0.612,0.558,0.607,comparable
+722.1,Displacement of intervertebral disc,musculoskeletal,263,0.578,0.515,0.541,comparable
+737.3,Kyphoscoliosis and scoliosis,musculoskeletal,247,0.577,0.544,0.554,comparable
+735,Acquired foot deformities,musculoskeletal,178,0.621,0.575,0.607,comparable
+711.1,Pyogenic arthritis,musculoskeletal,150,0.567,0.623,0.648,comparable
+740.9,Osteoarthrosis NOS,musculoskeletal,1734,0.642,0.549,0.618,eye-specific
+743.11,Osteoporosis NOS,musculoskeletal,1450,0.675,0.589,0.661,eye-specific
+729,Other disorders of soft tissues,musculoskeletal,759,0.636,0.589,0.627,eye-specific
+743.9,Osteopenia or other disorder of bone and cartilage,musculoskeletal,721,0.608,0.543,0.568,eye-specific
+713.5,Arthropathy associated with neurological disorders,musculoskeletal,154,0.81,0.589,0.802,eye-specific
+745,Pain in joint,musculoskeletal,1975,0.562,0.609,0.623,synergy
+710.19,Unspecified osteomyelitis,musculoskeletal,558,0.666,0.689,0.752,synergy
+710.11,Acute osteomyelitis,musculoskeletal,426,0.74,0.695,0.785,synergy
+710.12,Chronic osteomyelitis,musculoskeletal,409,0.655,0.723,0.767,synergy
+731,Osteitis deformans and osteopathies associated with other disorders classified elsewhere,musculoskeletal,317,0.818,0.711,0.844,synergy
+165.1,Cancer of bronchus; lung,neoplasms,766,0.534,0.604,0.605,CBC-specific
+198.1,Secondary malignancy of lymph nodes,neoplasms,651,0.515,0.7,0.698,CBC-specific
+200,Myeloproliferative disease,neoplasms,620,0.51,0.802,0.796,CBC-specific
+198.6,Secondary malignancy of bone,neoplasms,577,0.546,0.726,0.738,CBC-specific
+198,Secondary malignant neoplasm,neoplasms,564,0.521,0.721,0.727,CBC-specific
+159,Malignant neoplasm of other and ill-defined sites within the digestive organs and peritoneum,neoplasms,528,0.583,0.693,0.694,CBC-specific
+198.2,Secondary malignancy of respiratory organs,neoplasms,525,0.513,0.719,0.726,CBC-specific
+198.4,Secondary malignant neoplasm of liver,neoplasms,510,0.555,0.768,0.779,CBC-specific
+198.5,Secondary malignancy of brain/spine,neoplasms,450,0.578,0.703,0.709,CBC-specific
+198.3,Secondary malignant neoplasm of digestive systems,neoplasms,350,0.488,0.753,0.75,CBC-specific
+189,Cancer of urinary organs (incl. kidney and bladder),neoplasms,338,0.588,0.658,0.642,CBC-specific
+175,Acquired absence of breast,neoplasms,318,0.499,0.57,0.574,CBC-specific
+202,"Cancer of other lymphoid, histiocytic tissue",neoplasms,296,0.532,0.604,0.607,CBC-specific
+157,Pancreatic cancer,neoplasms,228,0.536,0.703,0.703,CBC-specific
+191.11,Cancer of brain,neoplasms,223,0.585,0.677,0.694,CBC-specific
+195,"Cancer, suspected or other",neoplasms,214,0.612,0.807,0.797,CBC-specific
+155.1,"Malignant neoplasm of liver, primary",neoplasms,168,0.463,0.721,0.725,CBC-specific
+860,Bone marrow or stem cell transplant,neoplasms,165,0.485,0.86,0.86,CBC-specific
+208,Benign neoplasm of colon,neoplasms,1033,0.593,0.602,0.614,comparable
+185,Cancer of prostate,neoplasms,770,0.577,0.56,0.555,comparable
+174.11,Malignant neoplasm of female breast,neoplasms,762,0.538,0.55,0.545,comparable
+153.2,Colon cancer,neoplasms,483,0.567,0.536,0.542,comparable
+211,Benign neoplasm of other parts of digestive system,neoplasms,295,0.503,0.562,0.575,comparable
+189.21,Malignant neoplasm of bladder,neoplasms,267,0.58,0.516,0.528,comparable
+172.1,"Melanomas of skin, dx or hx",neoplasms,216,0.568,0.574,0.604,comparable
+189.11,"Malignant neoplasm of kidney, except pelvis",neoplasms,211,0.498,0.569,0.579,comparable
+172.2,Other non-epithelial cancer of skin,neoplasms,735,0.612,0.543,0.587,eye-specific
+195.1,"Malignant neoplasm, other",neoplasms,2590,0.67,0.687,0.697,synergy
+197,Chemotherapy,neoplasms,839,0.678,0.725,0.743,synergy
+349,Other and unspecified disorders of the nervous system,neurological,2436,0.596,0.668,0.676,CBC-specific
+348.8,"Encephalopathy, not elsewhere classified",neurological,2393,0.573,0.636,0.644,CBC-specific
+327.3,Sleep apnea,neurological,2310,0.616,0.695,0.701,CBC-specific
+327.41,Organic or persistent insomnia,neurological,1686,0.673,0.709,0.72,CBC-specific
+357,Inflammatory and toxic neuropathy,neurological,979,0.63,0.679,0.682,CBC-specific
+332,Parkinson's disease,neurological,498,0.475,0.557,0.566,CBC-specific
+348.7,Coma,neurological,460,0.59,0.658,0.667,CBC-specific
+333,Extrapyramidal disease and abnormal movement disorders,neurological,334,0.563,0.665,0.648,CBC-specific
+359.2,Myopathy,neurological,211,0.511,0.66,0.659,CBC-specific
+333.2,Myoclonus,neurological,163,0.508,0.628,0.621,CBC-specific
+345,"Epilepsy, recurrent seizures, convulsions",neurological,1246,0.551,0.581,0.598,comparable
+340,Migraine,neurological,1228,0.558,0.538,0.553,comparable
+345.3,Convulsions,neurological,1100,0.554,0.546,0.555,comparable
+351,Other peripheral nerve disorders,neurological,797,0.588,0.578,0.584,comparable
+350.1,Abnormal involuntary movements,neurological,543,0.53,0.538,0.535,comparable
+345.1,Epilepsy,neurological,526,0.574,0.558,0.579,comparable
+338.1,Acute pain,neurological,468,0.582,0.554,0.557,comparable
+344,Other paralytic syndromes,neurological,452,0.542,0.561,0.577,comparable
+331.1,Hydrocephalus,neurological,424,0.567,0.536,0.545,comparable
+333.1,Essential tremor,neurological,376,0.545,0.551,0.547,comparable
+337,Disorders of the autonomic nervous system,neurological,299,0.543,0.577,0.591,comparable
+334,Degenerative disease of the spinal cord,neurological,274,0.525,0.56,0.551,comparable
+345.12,Partial epilepsy,neurological,267,0.614,0.551,0.574,comparable
+327.71,Restless legs syndrome,neurological,215,0.658,0.581,0.606,comparable
+320,Meningitis,neurological,214,0.523,0.549,0.549,comparable
+327.32,Obstructive sleep apnea,neurological,1623,0.652,0.583,0.638,eye-specific
+350.2,Abnormality of gait,neurological,1553,0.62,0.527,0.576,eye-specific
+342,Hemiplegia,neurological,1423,0.67,0.559,0.65,eye-specific
+348.2,Cerebral edema and compression of brain,neurological,1421,0.644,0.566,0.641,eye-specific
+338.2,Chronic pain,neurological,1383,0.672,0.581,0.645,eye-specific
+339,Other headache syndromes,neurological,1143,0.721,0.666,0.731,eye-specific
+327.4,Insomnia,neurological,908,0.635,0.536,0.587,eye-specific
+356,Hereditary and idiopathic peripheral neuropathy,neurological,696,0.636,0.571,0.635,eye-specific
+350.3,Lack of coordination,neurological,627,0.642,0.559,0.658,eye-specific
+348.9,"Other conditions of brain, NOS",neurological,482,0.594,0.5,0.537,eye-specific
+335,Multiple sclerosis,neurological,246,0.655,0.457,0.544,eye-specific
+337.1,Peripheral autonomic neuropathy,neurological,176,0.749,0.591,0.767,eye-specific
+649,"Other conditions or status of the mother complicating pregnancy, childbirth, or the puerperium",pregnancy complications,194,0.56,0.503,0.533,comparable
+509.1,Respiratory failure,respiratory,3592,0.574,0.737,0.742,CBC-specific
+480,Pneumonia,respiratory,3569,0.578,0.683,0.693,CBC-specific
+496,Chronic airway obstruction,respiratory,2646,0.525,0.635,0.642,CBC-specific
+495,Asthma,respiratory,2515,0.526,0.57,0.576,CBC-specific
+507,Pleurisy; pleural effusion,respiratory,1908,0.539,0.685,0.69,CBC-specific
+501,Pneumonitis due to inhalation of food or vomitus,respiratory,1705,0.548,0.68,0.686,CBC-specific
+480.1,Bacterial pneumonia,respiratory,1440,0.586,0.689,0.697,CBC-specific
+514,Abnormal findings examination of lungs,respiratory,1151,0.612,0.649,0.654,CBC-specific
+512.7,Shortness of breath,respiratory,992,0.56,0.622,0.619,CBC-specific
+512.8,Cough,respiratory,951,0.534,0.602,0.607,CBC-specific
+496.21,Obstructive chronic bronchitis,respiratory,880,0.548,0.638,0.648,CBC-specific
+519.2,Respiratory complications,respiratory,683,0.484,0.659,0.666,CBC-specific
+503,Pulmonary congestion and hypostasis,respiratory,638,0.572,0.674,0.674,CBC-specific
+509.2,Respiratory insufficiency,respiratory,634,0.578,0.716,0.712,CBC-specific
+496.1,Emphysema,respiratory,554,0.478,0.579,0.576,CBC-specific
+479,Other upper respiratory disease,respiratory,528,0.503,0.559,0.56,CBC-specific
+480.2,Viral pneumonia,respiratory,486,0.588,0.697,0.7,CBC-specific
+509.8,Dependence on respirator [Ventilator] or supplemental oxygen,respiratory,470,0.597,0.697,0.705,CBC-specific
+481,Influenza,respiratory,460,0.521,0.616,0.618,CBC-specific
+477,Epistaxis or throat hemorrhage,respiratory,446,0.537,0.733,0.735,CBC-specific
+475,Chronic sinusitis,respiratory,423,0.518,0.611,0.607,CBC-specific
+516.1,Hemoptysis,respiratory,383,0.51,0.713,0.713,CBC-specific
+506,Empyema and pneumothorax,respiratory,357,0.543,0.657,0.653,CBC-specific
+509.3,Pulmonary insufficiency or respiratory failure following trauma and surgery,respiratory,309,0.59,0.659,0.664,CBC-specific
+519.8,"Other diseases of respiratory system, NEC",respiratory,243,0.521,0.663,0.664,CBC-specific
+504,Other alveolar and parietoalveolar pneumonopathy,respiratory,208,0.523,0.691,0.686,CBC-specific
+513.3,Hypoventilation,respiratory,205,0.54,0.764,0.758,CBC-specific
+473,Diseases of the larynx and vocal cords,respiratory,163,0.462,0.566,0.566,CBC-specific
+465,Acute upper respiratory infections of multiple or unspecified sites,respiratory,745,0.571,0.59,0.603,comparable
+512.9,Other dyspnea,respiratory,669,0.558,0.563,0.576,comparable
+510,Other diseases of lung,respiratory,637,0.605,0.613,0.617,comparable
+476,Allergic rhinitis,respiratory,454,0.547,0.568,0.562,comparable
+495.1,Chronic obstructive asthma,respiratory,438,0.612,0.598,0.602,comparable
+502,Postinflammatory pulmonary fibrosis,respiratory,314,0.535,0.594,0.592,comparable
+483,Acute bronchitis and bronchiolitis,respiratory,282,0.544,0.591,0.589,comparable
+496.3,Bronchiectasis,respiratory,266,0.538,0.565,0.579,comparable
+465.2,Acute pharyngitis,respiratory,210,0.506,0.572,0.572,comparable
+505,Other pulmonary inflamation or edema,respiratory,208,0.628,0.679,0.705,comparable
+495.11,Chronic obstructive asthma with exacerbation,respiratory,179,0.564,0.616,0.62,comparable
+464,Acute sinusitis,respiratory,161,0.491,0.56,0.558,comparable
+499,Cystic fibrosis,respiratory,3119,0.697,0.602,0.692,eye-specific
+514.2,Solitary pulmonary nodule,respiratory,321,0.596,0.529,0.538,eye-specific
+508,Pulmonary collapse; interstitial and compensatory emphysema,respiratory,1574,0.544,0.642,0.652,synergy
+783,Fever of unknown origin,symptoms,2033,0.558,0.671,0.677,CBC-specific
+790.6,Other abnormal blood chemistry,symptoms,1203,0.622,0.711,0.714,CBC-specific
+782.3,Edema,symptoms,1170,0.545,0.649,0.653,CBC-specific
+797,Shock,symptoms,754,0.581,0.751,0.758,CBC-specific
+771.1,Swelling of limb,symptoms,604,0.562,0.614,0.621,CBC-specific
+797.1,Cardiogenic shock,symptoms,536,0.592,0.748,0.749,CBC-specific
+766,"Neuralgia, neuritis, and radiculitis NOS",symptoms,428,0.579,0.652,0.641,CBC-specific
+780,Hypothermia/Chills,symptoms,270,0.541,0.649,0.654,CBC-specific
+790,Nonspecific findings on examination of blood,symptoms,246,0.547,0.696,0.702,CBC-specific
+760,Back pain,symptoms,2544,0.562,0.585,0.594,comparable
+798,Malaise and fatigue,symptoms,2054,0.596,0.584,0.598,comparable
+785,Abdominal pain,symptoms,1848,0.579,0.58,0.593,comparable
+781,Symptoms involving nervous and musculoskeletal systems,symptoms,1739,0.708,0.691,0.718,comparable
+788,Syncope and collapse,symptoms,1731,0.545,0.545,0.543,comparable
+761,Cervicalgia,symptoms,666,0.585,0.537,0.563,comparable
+772,Symptoms of the muscles,symptoms,532,0.557,0.607,0.616,comparable
+764,Sciatica,symptoms,347,0.493,0.548,0.555,comparable
+772.3,Muscle weakness,symptoms,218,0.578,0.573,0.586,comparable
+783.1,Postprocedural fever,symptoms,180,0.569,0.52,0.537,comparable
+771,Musculoskeletal symptoms referable to limbs,symptoms,673,0.673,0.528,0.607,eye-specific
+772.6,Facial weakness,symptoms,437,0.719,0.614,0.721,eye-specific
+789,Nausea and vomiting,symptoms,2938,0.576,0.581,0.609,synergy

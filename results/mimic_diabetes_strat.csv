@@ -1,0 +1,19 @@
+disease,system,axis,n_full,eye_full,cbc_full,both_full,eyeadds_full,n_nd,eye_nd,cbc_nd,both_nd,eyeadds_nd,eye_delta,eyeadds_delta
+Ischemic stroke,neuro,neuro,2482,0.71,0.535,0.676,0.141,1429,0.693,0.495,0.642,0.147,-0.017,0.006
+TIA,neuro,neuro,480,0.569,0.537,0.55,0.012,281,0.56,0.53,0.525,-0.005,-0.009,-0.017
+Multiple sclerosis,neuro,neuro,246,0.667,0.507,0.625,0.118,193,0.615,0.528,0.6,0.072,-0.052,-0.046
+Dementia/Alzheimer,neuro,neuro,1826,0.603,0.586,0.587,0.001,1088,0.605,0.572,0.579,0.007,0.002,0.006
+Parkinson disease,neuro,neuro,498,0.491,0.525,0.535,0.011,350,0.515,0.51,0.505,-0.005,0.024,-0.016
+Peripheral neuropathy,neuro,neuro,3017,0.714,0.616,0.742,0.126,895,0.553,0.623,0.614,-0.009,-0.161,-0.135
+Epilepsy,neuro,neuro,1645,0.575,0.547,0.581,0.034,1042,0.568,0.516,0.543,0.027,-0.007,-0.007
+Heart failure,cardiovascular,cardiometabolic/other,6198,0.595,0.702,0.718,0.016,2833,0.549,0.657,0.652,-0.006,-0.046,-0.022
+Ischemic heart disease,cardiovascular,cardiometabolic/other,7298,0.585,0.645,0.665,0.02,3480,0.519,0.57,0.576,0.006,-0.066,-0.014
+Essential hypertension,cardiovascular,cardiometabolic/other,7495,0.553,0.551,0.577,0.025,4596,0.55,0.528,0.542,0.015,-0.003,-0.01
+Chronic kidney disease,renal,cardiometabolic/other,6170,0.634,0.718,0.749,0.03,2389,0.557,0.657,0.665,0.009,-0.077,-0.021
+Atrial fibrillation,cardiovascular,cardiometabolic/other,5889,0.538,0.62,0.627,0.007,3374,0.516,0.603,0.607,0.004,-0.022,-0.003
+Peripheral arterial disease,cardiovascular,cardiometabolic/other,1705,0.65,0.65,0.694,0.044,659,0.521,0.569,0.575,0.006,-0.129,-0.038
+Anemia,heme,cardiometabolic/other,8609,0.616,0.737,0.753,0.017,4636,0.587,0.707,0.72,0.013,-0.029,-0.004
+COPD,pulmonary,cardiometabolic/other,3223,0.538,0.61,0.61,-0.0,1753,0.546,0.608,0.615,0.007,0.008,0.007
+Major depression,psych,neuro,5797,0.54,0.566,0.567,0.001,3324,0.522,0.544,0.559,0.015,-0.018,0.014
+Cirrhosis,hepatic_gi,cardiometabolic/other,861,0.55,0.761,0.762,0.001,420,0.521,0.78,0.779,-0.0,-0.029,-0.001
+Sepsis,infectious,cardiometabolic/other,3390,0.609,0.737,0.745,0.008,1674,0.557,0.718,0.725,0.007,-0.052,-0.001

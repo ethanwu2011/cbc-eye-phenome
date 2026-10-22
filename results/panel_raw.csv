@@ -1,0 +1,55 @@
+phecode,description,group,axis_role,temporal_eligible,reason
+401.1,Essential hypertension,circulatory system,synergy,True,Most common chronic systemic disease; screening-relevant anchor where eye and CBC add complementary signal
+401.22,Hypertensive chronic kidney disease,circulatory system,synergy,True,Common chronic end-organ damage from HTN; strong synergy and high screening value
+411.4,Coronary atherosclerosis,circulatory system,synergy,True,Leading chronic morbid CAD; classic target for early-detection from routine markers
+411.2,Myocardial infarction,circulatory system,synergy,True,Major morbid cardiovascular outcome; incident MI is a meaningful prediction endpoint
+428.1,Congestive heart failure (CHF) NOS,circulatory system,synergy,True,"Common chronic, morbid; high eye+CBC AUC and clear screening relevance"
+427.21,Atrial fibrillation,circulatory system,synergy,True,Highly prevalent chronic arrhythmia; stroke risk makes early detection valuable
+443.9,"Peripheral vascular disease, unspecified",circulatory system,synergy,True,Chronic atherosclerotic disease; retinal microvascular signal is mechanistically apt
+433.21,"Cerebral artery occlusion, with cerebral infarction",circulatory system,eye-specific,False,"Representative ischemic stroke event; acute, so not incident-eligible but key eye-specific signal"
+433.31,Transient cerebral ischemia,circulatory system,eye-specific,True,"TIA is a recognizable warning condition; eye-specific signal, screening-relevant precursor"
+440.21,Atherosclerosis of native arteries of the extremities with ulceration or gangrene,circulatory system,eye-specific,True,"Severe chronic PAD complication; very high eye AUC, microvascular phenotype"
+458.9,Hypotension NOS,circulatory system,CBC-specific,False,Common circulatory CBC-specific representative; often acute/situational at presentation
+272.1,Hyperlipidemia,endocrine/metabolic,synergy,True,Extremely prevalent chronic dyslipidemia; foundational cardiometabolic screening target
+250.41,Impaired fasting glucose,endocrine/metabolic,synergy,True,Prediabetes; ideal early-detection target where eye+CBC synergize
+250.3,Insulin pump user,endocrine/metabolic,synergy,True,Proxy for established/advanced diabetes; very high eye AUC reflecting retinopathy linkage
+278.11,Morbid obesity,endocrine/metabolic,synergy,True,Common chronic morbid metabolic state; screening-relevant cardiometabolic anchor
+244.4,Hypothyroidism NOS,endocrine/metabolic,CBC-specific,True,"Very common chronic endocrine disease; CBC-specific representative, screening-relevant"
+274.1,Gout,endocrine/metabolic,CBC-specific,True,Common chronic metabolic arthropathy; recognizable CBC-specific representative
+261.4,Vitamin D deficiency,endocrine/metabolic,CBC-specific,True,Highly prevalent chronic deficiency; common screening label
+272.11,Hypercholesterolemia,endocrine/metabolic,eye-specific,True,Common chronic lipid disorder; eye-specific axis (arcus/retinal vascular signal)
+585.3,Chronic renal failure [CKD],genitourinary,synergy,True,Common morbid chronic kidney disease; classic eye+CBC microvascular/anemia synergy
+585.33,"Chronic Kidney Disease, Stage III",genitourinary,synergy,True,"Staged CKD; most common detectable stage, ideal early-detection endpoint"
+585.32,End stage renal disease,genitourinary,synergy,True,Severe chronic renal failure anchor; very high combined AUC
+585.1,Acute renal failure,genitourinary,synergy,False,"Common but acute event; strong CBC signal, not an incident-screening target"
+591,Urinary tract infection,genitourinary,synergy,False,Very common but acute infection; included as recognizable genitourinary representative
+585.4,"Chronic kidney disease, Stage I or II",genitourinary,eye-specific,True,Early CKD; eye-specific signal and prime early-detection window
+600,Hyperplasia of prostate,genitourinary,comparable,True,Very common chronic male condition; comparable-axis representative
+285,Other anemias,hematopoietic,synergy,True,"Highly prevalent; canonical CBC condition with retinal pallor signal, screening-relevant"
+280.1,"Iron deficiency anemias, unspecified or not due to blood loss",hematopoietic,CBC-specific,True,Common chronic anemia; quintessential CBC-specific representative
+288,Diseases of white blood cells,hematopoietic,CBC-specific,True,Core hematologic CBC-specific category; screening-relevant blood disorder
+286.9,Abnormal coagulation profile,hematopoietic,synergy,True,Common hematologic synergy representative; recognizable lab-defined condition
+038,Septicemia,infectious diseases,CBC-specific,False,"Major morbid but acute infection; strong CBC signal, not incident-screening eligible"
+480,Pneumonia,infectious diseases,CBC-specific,False,"Common acute infection representative; high CBC AUC, acute event"
+070.3,Viral hepatitis C,infectious diseases,CBC-specific,True,Chronic morbid viral infection; screening-relevant CBC-specific representative
+994.2,Sepsis,injuries & poisonings,synergy,False,"Morbid acute syndrome; strong eye+CBC signal but acute, not incident-eligible"
+300.1,Anxiety disorder,mental disorders,CBC-specific,True,Highly prevalent chronic mental disorder; common screening-relevant representative
+296.2,Depression,mental disorders,eye-specific,True,"Very common chronic mood disorder; notable eye-specific axis, screening-relevant"
+290.1,Dementias,mental disorders,comparable,True,Morbid chronic neurocognitive decline; high-value early-detection target
+317,Alcohol-related disorders,mental disorders,CBC-specific,True,Common chronic disorder; CBC-specific (MCV) representative with screening value
+743.11,Osteoporosis NOS,musculoskeletal,eye-specific,True,"Common chronic bone disease; classic screening target, eye-specific axis"
+714.1,Rheumatoid arthritis,musculoskeletal,comparable,True,Chronic systemic autoimmune disease; recognizable comparable-axis representative
+740.9,Osteoarthrosis NOS,musculoskeletal,eye-specific,True,Extremely common chronic degenerative joint disease; eye-specific (age-correlated) signal
+165.1,Cancer of bronchus; lung,neoplasms,CBC-specific,True,"Leading morbid cancer; screening-relevant, CBC-specific representative neoplasm"
+185,Cancer of prostate,neoplasms,comparable,True,Common chronic malignancy; recognizable comparable-axis cancer with screening relevance
+174.11,Malignant neoplasm of female breast,neoplasms,comparable,True,"Common morbid cancer; high-value screening target, comparable axis"
+332,Parkinson's disease,neurological,CBC-specific,True,"Chronic morbid neurodegeneration; recognizable, early-detection-relevant CBC-specific entry"
+356,Hereditary and idiopathic peripheral neuropathy,neurological,eye-specific,True,"Chronic neuropathy; eye-specific (microvascular/neural) axis, screening-relevant"
+327.3,Sleep apnea,neurological,CBC-specific,True,"Highly prevalent chronic condition; CBC-specific representative, strong screening value"
+345,"Epilepsy, recurrent seizures, convulsions",neurological,comparable,True,Chronic neurological disorder; recognizable comparable-axis representative
+340,Migraine,neurological,comparable,True,"Very common chronic disorder; comparable-axis representative, screening-relevant"
+496,Chronic airway obstruction,respiratory,CBC-specific,True,Common morbid chronic COPD; CBC-specific representative with screening relevance
+495,Asthma,respiratory,CBC-specific,True,Highly prevalent chronic airway disease; recognizable CBC-specific representative
+509.1,Respiratory failure,respiratory,CBC-specific,False,"Morbid but acute respiratory event; strong CBC signal, not incident-eligible"
+327.32,Obstructive sleep apnea,neurological,eye-specific,True,"Common chronic OSA; eye-specific axis, high screening value (distinct from 327.3 representative)"
+782.3,Edema,symptoms,CBC-specific,False,Common cardinal sign of systemic disease; CBC-specific representative from symptoms group

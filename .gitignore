@@ -1,0 +1,25 @@
+# ---- patient-level data must never be committed ----
+# the pipeline's intermediate tables are all parquet; this is the real guard
+*.parquet
+*.csv.gz
+*.xpt
+*.XPT
+# belt and braces, named with extensions so same-named SCRIPTS are not caught
+manifest.csv
+cbc_raw.*
+cbc_long.*
+cbc_features.*
+eye_at_t0.*
+phecode_long.*
+phecode_onset.*
+temporal_base.parquet
+# the aggregate per-phenotype exports are the one data product we do ship
+!results/*.csv
+
+# ---- generated output ----
+figures/*
+!figures/.gitkeep
+__pycache__/
+*.pyc
+.venv/
+.DS_Store

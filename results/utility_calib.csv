@@ -1,0 +1,42 @@
+condition,bin,pred,obs,n
+CKD (eGFR<60),0,0.043,0.058,3005
+CKD (eGFR<60),1,0.143,0.156,982
+CKD (eGFR<60),2,0.245,0.268,518
+CKD (eGFR<60),3,0.346,0.288,319
+CKD (eGFR<60),4,0.448,0.405,284
+CKD (eGFR<60),5,0.548,0.405,153
+CKD (eGFR<60),6,0.646,0.625,120
+CKD (eGFR<60),7,0.741,0.521,71
+CKD (eGFR<60),8,0.836,0.6,25
+Albuminuria (ACR>=30),0,0.069,0.075,2456
+Albuminuria (ACR>=30),1,0.14,0.164,1895
+Albuminuria (ACR>=30),2,0.243,0.218,688
+Albuminuria (ACR>=30),3,0.347,0.334,296
+Albuminuria (ACR>=30),4,0.444,0.409,164
+Albuminuria (ACR>=30),5,0.542,0.478,90
+Albuminuria (ACR>=30),6,0.644,0.5,30
+Albuminuria (ACR>=30),7,0.731,0.5,12
+Memory/confusion problem,0,0.06,0.073,3866
+Memory/confusion problem,1,0.137,0.138,1387
+Memory/confusion problem,2,0.242,0.163,319
+Memory/confusion problem,3,0.34,0.3,90
+Memory/confusion problem,4,0.438,0.242,33
+Any cardiovascular,0,0.054,0.071,2691
+Any cardiovascular,1,0.144,0.161,1370
+Any cardiovascular,2,0.244,0.257,686
+Any cardiovascular,3,0.346,0.307,446
+Any cardiovascular,4,0.447,0.323,260
+Any cardiovascular,5,0.548,0.404,136
+Any cardiovascular,6,0.643,0.364,77
+Any cardiovascular,7,0.749,0.387,31
+Congestive heart failure,0,0.03,0.036,5063
+Congestive heart failure,1,0.138,0.136,425
+Congestive heart failure,2,0.238,0.117,111
+Congestive heart failure,3,0.345,0.227,44
+Congestive heart failure,4,0.454,0.16,25
+Congestive heart failure,5,0.544,0.2,10
+Stroke,0,0.038,0.045,5008
+Stroke,1,0.134,0.118,509
+Stroke,2,0.243,0.155,116
+Stroke,3,0.347,0.079,38
+Stroke,4,0.432,0.0,11

@@ -1,0 +1,32 @@
+phecode,description,group,ever,prevalent_at_T0,pct_prevalent,inc_≥3mo·1yr,ok_≥3mo·1yr,inc_≥1yr·2yr,ok_≥1yr·2yr,inc_≥1yr·3yr,ok_≥1yr·3yr,inc_≥2yr·5yr,ok_≥2yr·5yr
+348.8,"Encephalopathy, not elsewhere classified",neurological,2420,1186,49,94,Y,67,Y,89,Y,94,Y
+290.1,Dementias,mental disorders,2320,1416,61,51,-,61,Y,85,Y,75,Y
+433.31,Transient cerebral ischemia,circulatory system,2108,1474,70,90,Y,69,Y,106,Y,68,Y
+433.21,"Cerebral artery occlusion, with cerebral inf",circulatory system,1972,1574,80,23,-,21,-,30,-,38,-
+433.8,Late effects of cerebrovascular disease,circulatory system,1957,1192,61,58,-,62,Y,82,Y,59,-
+250.6,Polyneuropathy in diabetes,endocrine/metabolic,1753,1427,81,55,-,45,-,69,Y,56,-
+345,"Epilepsy, recurrent seizures, convulsions",neurological,1256,801,64,55,-,36,-,52,-,43,-
+340,Migraine,neurological,1254,952,76,38,-,37,-,54,-,27,-
+345.3,Convulsions,neurological,1116,657,59,51,-,22,-,39,-,42,-
+357,Inflammatory and toxic neuropathy,neurological,990,526,53,50,-,40,-,55,-,53,-
+356,Hereditary and idiopathic peripheral neuropa,neurological,699,475,68,34,-,37,-,36,-,30,-
+290.11,Alzheimer's disease,mental disorders,634,421,66,13,-,13,-,19,-,19,-
+966,Poisoning by anticonvulsants and anti-Parkin,injuries & poisonings,591,319,54,29,-,25,-,36,-,20,-
+345.1,Epilepsy,neurological,532,295,55,27,-,25,-,26,-,29,-
+332,Parkinson's disease,neurological,499,353,71,14,-,11,-,16,-,10,-
+290.16,Vascular dementia,mental disorders,460,230,50,15,-,13,-,17,-,20,-
+433.11,"Occlusion of cerebral arteries, with cerebra",circulatory system,360,289,80,3,-,4,-,10,-,5,-
+377.3,Optic neuritis/neuropathy,sense organs,349,296,85,6,-,6,-,6,-,3,-
+433,Cerebrovascular disease,circulatory system,341,230,67,5,-,14,-,15,-,7,-
+292.3,Memory loss,mental disorders,312,189,61,12,-,11,-,19,-,21,-
+345.12,Partial epilepsy,neurological,268,172,64,13,-,11,-,15,-,10,-
+335,Multiple sclerosis,neurological,246,229,93,3,-,1,-,2,-,2,-
+316.1,Polyneuropathy due to drugs,mental disorders,187,83,44,14,-,4,-,7,-,6,-
+433.3,Cerebral ischemia,circulatory system,187,126,67,3,-,1,-,3,-,6,-
+337.1,Peripheral autonomic neuropathy,neurological,178,82,46,17,-,13,-,24,-,21,-
+290,Delirium dementia and amnestic and other cog,mental disorders,173,67,39,4,-,4,-,8,-,15,-
+292.2,Mild cognitive impairment,mental disorders,141,88,62,3,-,5,-,11,-,12,-
+345.11,Generalized convulsive epilepsy,neurological,137,96,70,6,-,9,-,11,-,7,-
+290.12,Dementia with cerebral degenerations,mental disorders,131,81,62,8,-,4,-,4,-,4,-
+290.13,Senile dementia,mental disorders,78,45,58,5,-,4,-,4,-,1,-
+341,Other demyelinating diseases of central nerv,neurological,73,54,74,2,-,2,-,3,-,3,-

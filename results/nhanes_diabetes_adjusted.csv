@@ -1,0 +1,24 @@
+condition,both_vs_demo,both_vs_demoPlusDiabetes,both_vs_demo_NONdiab,eye_adds_NONdiab
+CKD (eGFR<60),0.006,0.009,0.005,0.005
+Albuminuria (ACR>=30),0.059,0.03,0.031,0.027
+Congestive heart failure,0.092,0.054,0.041,-0.004
+Heart attack (MI),0.03,0.016,-0.03,-0.01
+Coronary heart disease,0.009,-0.002,-0.016,-0.025
+Angina (self-report),0.039,-0.01,-0.04,-0.002
+Stroke,0.03,0.006,-0.001,0.02
+Hypertension,0.007,-0.003,-0.006,0.002
+High CRP (inflammation),0.114,0.082,0.104,-0.004
+Obesity (BMI>=30),0.074,0.034,0.069,0.01
+Low HDL,0.092,0.043,0.056,-0.009
+High triglycerides,0.067,0.041,0.046,-0.002
+Hyperuricaemia,0.018,0.013,0.032,-0.004
+Elevated ALT (liver),0.024,0.04,0.015,0.005
+Elevated GGT,0.036,0.049,0.016,-0.01
+Memory/confusion problem,0.04,0.026,0.03,0.016
+Weak/failing kidneys,0.048,0.064,0.036,-0.013
+Depression (PHQ-9>=10),0.025,0.019,0.03,0.006
+Hyponatraemia (Na<135),0.106,0.085,0.053,-0.009
+High BUN (azotaemia),0.037,0.023,0.013,-0.002
+Any cardiovascular,0.028,0.014,0.007,0.006
+Hearing impairment,-0.009,0.0,-0.002,0.002
+Fair/poor self-rated health,0.06,0.038,0.063,0.022
