@@ -18,7 +18,7 @@ temporal_base.parquet
 
 # ---- generated output ----
 figures/*
-!figures/.gitkeep
+!figures/README.md
 __pycache__/
 *.pyc
 .venv/
