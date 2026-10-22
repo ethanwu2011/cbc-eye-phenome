@@ -29,6 +29,10 @@ Regenerate them from your own credentialed copy of MIMIC-IV.
 **MIMIC-IV v3.1** requires CITI training and a signed data use agreement through PhysioNet:
 https://physionet.org/content/mimiciv/ . The pipeline reads the `hosp` module.
 
+**PheCode v1.2 maps** (`phecode_map.rda`, `phecode_map_icd10.rda`, `pheinfo.rda`) are public from
+the PheWAS Catalog, https://phewascatalog.org/phecodes . Place them in `phecode/` under the
+repository root. They are needed by `phecode_map.py` and `canonical_index_screen.py`.
+
 **NHANES** cycles 2005-2006 and 2007-2008 are public:
 https://www.cdc.gov/nchs/nhanes/ . Retinal grading comes from the ophthalmology
 examination files for those two cycles.
@@ -60,7 +64,7 @@ Build the intermediate tables, then run any stage independently.
 | AUROC inference | `stats_utils.py` (fast DeLong covariance, used throughout) |
 | Concurrent landscape | `landscape_phewide.py`, `mimic_landscape.py`, `make_figures.py` |
 | Complementarity tests | `mimic_orthogonality.py`, `eye_predicts_cbc.py`, `orthogonality_interaction_test.py`, `interaction_fair.py` |
-| Index-anchored landscape | `prospective_landscape.py`, `foldwise_sensitivity.py`, `prospective_significance.py`, `leadtime_organ_partition.py`, `temporal_leadtime.py`, `leadtime_screen.py`, `leadtime_survival.py` |
+| Index-anchored landscape | `prospective_landscape.py`, `canonical_index_screen.py`, `foldwise_sensitivity.py`, `prospective_significance.py`, `leadtime_organ_partition.py`, `temporal_leadtime.py`, `leadtime_screen.py`, `leadtime_survival.py` |
 | Confound controls | `mimic_diabetes_strat.py`, `diabetes_strat_delong.py`, `mimic_neuro_ablation.py` |
 | Neurological and microvascular axis | `neuro_axis.py`, `neuro_why_not.py`, `micro_vs_macro.py` |
 | NHANES replication | `nhanes_validation.py`, `nhanes_diabetes_utility.py`, `utility_rebuild.py` |
@@ -74,7 +78,14 @@ orthogonality and interaction tests.
 `results/landscape_full.csv` holds all 635 screened phenotypes. **The 535-phenotype
 analysis set reported in the paper is the subset with `circularity_tier == "clean"` and
 `klass != "no signal"`.** Filtering on `circularity_tier` alone gives 581 rows and
-different numbers. Class labels in the file are `eye-specific`, `CBC-specific`,
+different numbers. The 449-phenotype index-anchored set is `results/prospective_landscape_B730_canonical.csv`
+filtered to `canonical == True`. `canonical_index_screen.py` produces it by applying the
+concurrent eligibility rule (a PheCode v1.2 description and organ group, sense-organ phenotypes
+excluded) and the concurrent circularity screen to every index-anchored phenotype, with the
+reason any phenotype was dropped in `excluded_because`. The same screen is applied at the 90 and
+365-day leads.
+
+Class labels in the file are `eye-specific`, `CBC-specific`,
 `comparable` and `synergy`; the manuscript renames `comparable` to `indeterminate`.
 
 ```python
@@ -89,7 +100,7 @@ analysis = d[(d.circularity_tier == "clean") & (d.klass != "no signal")]   # 535
 |---|---|
 | Figure 1, Table 1, Table 2 | `landscape_full.csv`, `panel.csv` |
 | Figure 2 complementarity | `orthogonality_results.csv`, `eye_predicts_cbc.csv`, `orthogonality_interaction_test.csv`, `interaction_fair.csv`, `interaction_fair_tuned.csv`, `modality_drivers.csv` |
-| Figure 3 index-anchored | `prospective_landscape_B730.csv`, `prospective_significance_B730.csv`, `temporal_leadtime.csv`, `fig3_stats.csv` |
+| Figure 3 index-anchored | `prospective_landscape_B730_canonical.csv` and the `_B90` and 365-day canonical files, `prospective_significance_B730.csv`, `fig3_stats.csv` |
 | Figure 4 NHANES | `nhanes_validation_results.csv`, `nhanes_diabetes_adjusted.csv` |
 | Figure 5 territories | `fig5_territory.csv`, `triangulation.csv`, `leadtime_organ_partition.csv` |
 | Supplementary Figure 1 | `mimic_diabetes_strat.csv`, `diabetes_strat_delong.csv`, `mimic_neuro_ablation.csv` |

@@ -50,7 +50,8 @@ xs=pd.read_parquet(f"{HERE}/landscape_full.parquet").drop_duplicates("phecode")
 # Same concurrent screen as every other concurrent result, see note in build_fig3_final.py.
 xs=xs[(xs.circularity_tier=="clean")&(xs.klass!="no signal")]
 xs["adv"]=xs.auc_eye-xs.auc_cbc
-pr=pd.read_csv(f"{HERE}/prospective_2yr_final.csv",dtype={"phecode":str}); pr["adv"]=pr.c_eye-pr.c_cbc
+pr=pd.read_csv(f"{HERE}/prospective_landscape_B730_canonical.csv",dtype={"phecode":str})
+pr=pr[pr.canonical].copy(); pr["adv"]=pr.c_eye-pr.c_cbc
 nh=pd.read_csv(f"{HERE}/nhanes_validation_results.csv"); nh["adv"]=nh.eye-nh.cbc
 LEGS=[("Hospital cohort\nconcurrent",xs,"description"),
       ("Same cohort\n≥2 years ahead",pr,"description"),
@@ -67,6 +68,7 @@ for lab,df,col in LEGS:
         rel,rlo,rhi=rel_ci(s.adv,df.adv)
         rows.append(dict(leg=lab,terr=tname,n=len(s),med=m,base=base,rel=rel,lo=rlo,hi=rhi))
 T=pd.DataFrame(rows)
+T.to_csv(f"{HERE}/fig5_territory.csv",index=False)   # feeds the text and Supplementary S16
 
 # ---------------- panels a, b, c : one per design ----------------
 PANEL_FILES=[]

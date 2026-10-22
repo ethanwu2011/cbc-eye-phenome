@@ -32,8 +32,9 @@ xs=xs[(xs.circularity_tier=="clean")&(xs.klass!="no signal")]
 xs["adv_xs"]=xs.auc_eye-xs.auc_cbc; xs=xs.drop_duplicates("phecode")
 
 def load(tag):
-    p=pd.read_csv(f"{HERE}/prospective_landscape{tag}.csv",dtype={"phecode":str}).drop_duplicates("phecode")
-    if "clean" in p.columns: p=p[p.clean]      # circularity screen applies to every panel
+    # canonical_index_screen.py applies the concurrent eligibility rule and circularity screen
+    p=pd.read_csv(f"{HERE}/prospective_landscape{tag}_canonical.csv",dtype={"phecode":str}).drop_duplicates("phecode")
+    p=p[p.canonical]
     p["adv_pr"]=p.c_eye-p.c_cbc; return p
 def boot_rho(a,b,B=1000):
     n=len(a); out=np.empty(B)
@@ -67,8 +68,8 @@ m1=xs[["phecode","adv_xs"]].merge(pr1[["phecode","adv_pr","events","description"
 # ---------------- A (significance-based, not arbitrary cutoffs) ----------------
 # the canonical screened set, 476 of 533, matching the Results and the Figure 3 legend.
 # prospective_2yr_final.csv is a 474-row export missing PheCodes 270.38 and 747.11.
-sig=pd.read_csv(f"{HERE}/prospective_landscape_B730.csv",dtype={"phecode":str})
-sig=sig[sig.clean].copy()
+sig=pd.read_csv(f"{HERE}/prospective_landscape_B730_canonical.csv",dtype={"phecode":str})
+sig=sig[sig.canonical].copy()
 sig["klass"]=sig.klass.replace({"comparable":"indeterminate"})
 excl=pd.DataFrame(columns=sig.columns)   # already screened upstream
 # NOTE: synergy is deliberately NOT a class here. Detecting synergy (both > the BETTER

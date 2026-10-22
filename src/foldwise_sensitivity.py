@@ -42,8 +42,8 @@ DEM = elig[DEMO].to_numpy(float)
 CB = elig[CBC].to_numpy(float)
 og = {k: dict(zip(v.subject_id, v.onset_days)) for k, v in onset.groupby("phecode")}
 
-pub = pd.read_csv(f"{HERE}/prospective_landscape_B730.csv", dtype={"phecode": str})
-pub = pub[pub.clean].set_index("phecode")
+pub = pd.read_csv(f"{HERE}/prospective_landscape_B730_canonical.csv", dtype={"phecode": str})
+pub = pub[pub.canonical].set_index("phecode")
 
 
 def surv(e, t):

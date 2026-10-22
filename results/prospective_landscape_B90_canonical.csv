@@ -1,0 +1,702 @@
+phecode,description,group,n,events,c_base,c_eye,c_cbc,c_both,eye_gain,cbc_gain,both_gain,eye_minus_cbc,eye_over_cbc,klass,circularity_tier,excluded_because,clean,canonical
+588.2,Secondary hyperparathyroidism (of renal origin),genitourinary,9471,65,0.521,0.66,0.719,0.789,0.139,0.198,0.268,-0.059,0.07,synergy,clean,,True,True
+285.21,Anemia in chronic kidney disease,hematopoietic,9053,294,0.518,0.721,0.735,0.785,0.203,0.217,0.267,-0.014,0.05,synergy,tautological,concurrent tier: tautological,False,False
+250.7,Diabetic retinopathy,endocrine/metabolic,8192,111,0.518,0.746,0.697,0.772,0.228,0.179,0.254,0.049,0.075,synergy,expected_manifestation,concurrent tier: expected_manifestation,False,False
+707.2,Chronic ulcer of leg or foot,dermatologic,9057,266,0.535,0.728,0.691,0.765,0.193,0.156,0.23,0.037,0.074,synergy,clean,,True,True
+416,Cardiomegaly,circulatory system,9517,61,0.411,0.631,0.559,0.639,0.22,0.148,0.228,0.071,0.08,eye-specific,clean,,True,True
+195,"Cancer, suspected or other",neoplasms,9520,71,0.479,0.701,0.604,0.703,0.222,0.126,0.224,0.096,0.098,eye-specific,clean,,True,True
+962.2,Insulins and antidiabetic agents causing adverse effects in therapeutic use,injuries & poisonings,9472,76,0.538,0.735,0.598,0.755,0.197,0.06,0.217,0.137,0.157,synergy,clean,prospective vocabulary screen,False,False
+440.21,Atherosclerosis of native arteries of the extremities with ulceration or gangrene,circulatory system,9343,167,0.591,0.785,0.709,0.805,0.194,0.119,0.214,0.075,0.096,synergy,clean,,True,True
+580.31,Nephritis and nephropathy in diseases classified elsewhere,genitourinary,9121,326,0.638,0.78,0.77,0.846,0.142,0.132,0.208,0.01,0.077,synergy,clean,,True,True
+295.2,Paranoid disorders,mental disorders,9520,74,0.416,0.577,0.578,0.624,0.16,0.162,0.208,-0.001,0.046,synergy,clean,,True,True
+250.6,Polyneuropathy in diabetes,endocrine/metabolic,8516,253,0.553,0.721,0.672,0.755,0.168,0.12,0.202,0.048,0.083,synergy,expected_manifestation,concurrent tier: expected_manifestation,False,False
+707.3,Chronic ulcer of unspecified site,dermatologic,9513,54,0.53,0.661,0.676,0.731,0.131,0.146,0.201,-0.015,0.055,synergy,,,True,True
+270.38,Other specified disorders of plasma protein metabolism,endocrine/metabolic,9430,78,0.445,0.638,0.543,0.646,0.194,0.099,0.201,0.095,0.103,eye-specific,,,True,True
+197,Chemotherapy,neoplasms,9192,197,0.518,0.656,0.674,0.718,0.138,0.156,0.2,-0.018,0.043,synergy,care_process,concurrent tier: care_process,True,False
+585.32,End stage renal disease,genitourinary,9082,195,0.633,0.74,0.776,0.832,0.108,0.143,0.199,-0.035,0.056,synergy,clean,,True,True
+681.5,"Cellulitis and abscess of leg, except foot",dermatologic,9220,240,0.519,0.698,0.66,0.717,0.179,0.141,0.198,0.038,0.057,synergy,clean,,True,True
+411.1,Unstable angina (intermediate coronary syndrome),circulatory system,9358,105,0.513,0.686,0.633,0.71,0.173,0.12,0.197,0.054,0.077,synergy,clean,,True,True
+250.41,Impaired fasting glucose,endocrine/metabolic,9448,118,0.517,0.717,0.634,0.714,0.2,0.116,0.196,0.084,0.08,eye-specific,clean,,True,True
+850,Hemorrhage or hematoma complicating a procedure,injuries & poisonings,9259,171,0.508,0.622,0.697,0.703,0.114,0.19,0.195,-0.075,0.006,CBC-specific,clean,,True,True
+585.4,"Chronic kidney disease, Stage I or II",genitourinary,9420,87,0.527,0.693,0.656,0.719,0.166,0.128,0.191,0.037,0.063,synergy,clean,,True,True
+365.11,Primary open angle glaucoma,sense organs,9476,90,0.649,0.847,0.683,0.839,0.199,0.034,0.191,0.165,0.157,eye-specific,,ineligible: sense-organ phenotype,False,False
+284.1,Pancytopenia,hematopoietic,9317,174,0.577,0.607,0.755,0.766,0.03,0.177,0.189,-0.148,0.012,CBC-specific,tautological,concurrent tier: tautological,False,False
+585.34,"Chronic Kidney Disease, Stage IV",genitourinary,9335,185,0.579,0.727,0.728,0.767,0.148,0.149,0.188,-0.0,0.039,synergy,clean,,True,True
+038.3,Bacteremia,infectious diseases,9268,204,0.539,0.677,0.694,0.726,0.137,0.155,0.186,-0.018,0.031,synergy,clean,,True,True
+250.25,Diabetes type 2 with peripheral circulatory disorders,endocrine/metabolic,9433,116,0.629,0.801,0.714,0.812,0.172,0.085,0.183,0.087,0.098,eye-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
+426.7,Abnormal electrocardiogram [ECG] [EKG],circulatory system,9458,81,0.463,0.589,0.605,0.641,0.126,0.142,0.178,-0.016,0.035,synergy,clean,,True,True
+337.1,Peripheral autonomic neuropathy,neurological,9484,70,0.557,0.675,0.687,0.73,0.119,0.13,0.173,-0.011,0.043,synergy,clean,,True,True
+571.51,Cirrhosis of liver without mention of alcohol,digestive,9393,70,0.53,0.587,0.695,0.703,0.057,0.166,0.173,-0.109,0.008,CBC-specific,clean,,True,True
+362.3,Other nondiabetic retinopathy,sense organs,9502,44,0.627,0.781,0.673,0.796,0.153,0.046,0.169,0.107,0.122,eye-specific,,ineligible: sense-organ phenotype,False,False
+288.1,Decreased white blood cell count,hematopoietic,9429,108,0.554,0.613,0.728,0.722,0.06,0.174,0.169,-0.114,-0.006,CBC-specific,clean,prospective vocabulary screen,False,False
+860,Bone marrow or stem cell transplant,neoplasms,9485,50,0.678,0.725,0.857,0.845,0.047,0.18,0.167,-0.133,-0.012,CBC-specific,clean,,True,True
+250.15,Diabetes type 1 with peripheral circulatory disorders,endocrine/metabolic,9528,61,0.74,0.901,0.779,0.905,0.161,0.039,0.165,0.122,0.126,eye-specific,,prospective vocabulary screen,False,False
+452.2,Deep vein thrombosis [DVT],circulatory system,9333,158,0.514,0.661,0.638,0.679,0.147,0.124,0.164,0.023,0.04,synergy,clean,,True,True
+535.9,"Gastritis and duodenitis, NOS",digestive,9335,162,0.545,0.671,0.674,0.707,0.126,0.129,0.162,-0.003,0.033,synergy,clean,,True,True
+731,Osteitis deformans and osteopathies associated with other disorders classified elsewhere,musculoskeletal,9420,120,0.661,0.795,0.735,0.822,0.134,0.074,0.161,0.06,0.087,synergy,clean,,True,True
+276.1,Electrolyte imbalance,endocrine/metabolic,8576,645,0.542,0.67,0.661,0.702,0.128,0.119,0.161,0.009,0.042,synergy,clean,,True,True
+573.5,Jaundice (not of newborn),digestive,9506,52,0.559,0.599,0.737,0.719,0.04,0.177,0.16,-0.138,-0.017,CBC-specific,clean,,True,True
+791,Gangrene,symptoms,9508,61,0.666,0.768,0.757,0.824,0.103,0.091,0.158,0.011,0.067,synergy,,,True,True
+250.3,Insulin pump user,endocrine/metabolic,8010,516,0.589,0.714,0.696,0.747,0.125,0.106,0.157,0.018,0.051,synergy,clean,prospective vocabulary screen,False,False
+681.6,"Cellulitis and abscess of foot, toe",dermatologic,9376,144,0.637,0.785,0.695,0.793,0.148,0.058,0.155,0.09,0.098,eye-specific,clean,,True,True
+041.9,Infection with drug-resistant microorganisms,infectious diseases,9444,90,0.535,0.645,0.653,0.689,0.11,0.119,0.154,-0.008,0.036,synergy,clean,,True,True
+587,Kidney replaced by transpant,genitourinary,9299,131,0.729,0.825,0.828,0.881,0.096,0.099,0.152,-0.003,0.053,synergy,clean,,True,True
+994.2,Sepsis,injuries & poisonings,9118,524,0.578,0.688,0.693,0.729,0.11,0.115,0.151,-0.005,0.036,synergy,clean,,True,True
+284,Aplastic anemia,hematopoietic,9283,344,0.652,0.722,0.782,0.802,0.07,0.13,0.15,-0.06,0.02,synergy,tautological,concurrent tier: tautological,False,False
+455,Hemorrhoids,circulatory system,9319,141,0.533,0.634,0.67,0.68,0.101,0.137,0.147,-0.036,0.01,CBC-specific,clean,,True,True
+830,Dislocation,injuries & poisonings,9530,42,0.461,0.603,0.464,0.607,0.142,0.003,0.146,0.139,0.143,eye-specific,clean,,True,True
+585.31,Renal dialysis,genitourinary,9156,422,0.674,0.75,0.782,0.819,0.076,0.108,0.145,-0.032,0.037,synergy,care_process,concurrent tier: care_process,True,False
+429.9,"Cardiac complications, not elsewhere classified",circulatory system,9448,85,0.572,0.691,0.688,0.716,0.119,0.117,0.145,0.002,0.028,synergy,clean,,True,True
+250.13,Type 1 diabetes with ophthalmic manifestations,endocrine/metabolic,9099,147,0.703,0.834,0.731,0.846,0.131,0.029,0.144,0.102,0.115,eye-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
+081,Infection/inflammation of internal prosthetic device; implant; and graft,infectious diseases,9268,280,0.554,0.655,0.653,0.696,0.101,0.099,0.142,0.003,0.043,synergy,care_process,concurrent tier: care_process,True,False
+324,Other CNS infection and poliomyelitis,neurological,9482,55,0.439,0.489,0.553,0.58,0.05,0.114,0.141,-0.064,0.027,synergy,clean,,True,True
+202,"Cancer of other lymphoid, histiocytic tissue",neoplasms,9483,114,0.581,0.662,0.671,0.721,0.081,0.09,0.141,-0.009,0.051,synergy,clean,,True,True
+509.3,Pulmonary insufficiency or respiratory failure following trauma and surgery,respiratory,9458,73,0.518,0.601,0.669,0.658,0.083,0.151,0.14,-0.068,-0.011,CBC-specific,clean,,True,True
+198.5,Secondary malignancy of brain/spine,neoplasms,9462,87,0.518,0.603,0.601,0.657,0.085,0.083,0.14,0.002,0.056,synergy,clean,,True,True
+250.12,Type 1 diabetes with renal manifestations,endocrine/metabolic,9293,201,0.731,0.848,0.788,0.869,0.117,0.057,0.138,0.06,0.081,synergy,expected_manifestation,concurrent tier: expected_manifestation,False,False
+550.6,Incisional hernia,digestive,9496,44,0.523,0.606,0.635,0.658,0.083,0.112,0.136,-0.029,0.024,synergy,clean,,True,True
+378.5,Paralytic strabismus,sense organs,9365,44,0.424,0.593,0.511,0.559,0.17,0.087,0.136,0.083,0.049,eye-specific,,ineligible: sense-organ phenotype,False,False
+250.14,Type 1 diabetes with neurological manifestations,endocrine/metabolic,9228,87,0.761,0.895,0.806,0.897,0.134,0.045,0.136,0.089,0.091,eye-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
+288.2,Elevated white blood cell count,hematopoietic,9108,333,0.563,0.645,0.676,0.697,0.082,0.113,0.135,-0.031,0.022,synergy,clean,prospective vocabulary screen,False,False
+041.12,Methicillin resistant Staphylococcus aureus,infectious diseases,9341,211,0.601,0.7,0.714,0.736,0.098,0.112,0.135,-0.014,0.022,synergy,clean,,True,True
+368.4,Visual field defects,sense organs,9179,85,0.484,0.612,0.534,0.619,0.128,0.05,0.135,0.077,0.085,eye-specific,,ineligible: sense-organ phenotype,False,False
+729,Other disorders of soft tissues,musculoskeletal,9248,271,0.53,0.648,0.632,0.665,0.118,0.102,0.135,0.016,0.033,synergy,clean,,True,True
+713.5,Arthropathy associated with neurological disorders,musculoskeletal,9481,47,0.739,0.871,0.767,0.874,0.132,0.028,0.135,0.104,0.107,eye-specific,clean,,True,True
+499,Cystic fibrosis,respiratory,8401,861,0.561,0.665,0.654,0.694,0.104,0.093,0.133,0.011,0.04,synergy,,,True,True
+428.1,Congestive heart failure (CHF) NOS,circulatory system,7990,566,0.627,0.739,0.701,0.758,0.112,0.074,0.131,0.038,0.057,synergy,clean,,True,True
+428.3,Heart failure with reduced EF [Systolic or combined heart failure],circulatory system,8904,362,0.608,0.727,0.679,0.738,0.119,0.07,0.13,0.048,0.06,eye-specific,clean,,True,True
+569.2,Gastrointestinal complications,digestive,9371,103,0.45,0.544,0.589,0.578,0.094,0.138,0.127,-0.045,-0.011,CBC-specific,clean,,True,True
+458,Hypotension,circulatory system,9466,91,0.54,0.635,0.66,0.667,0.095,0.12,0.127,-0.025,0.007,comparable,clean,,True,True
+994.21,Septic shock,injuries & poisonings,9408,239,0.634,0.702,0.747,0.759,0.068,0.113,0.125,-0.046,0.012,CBC-specific,clean,,True,True
+536.3,Gastroparesis,digestive,9351,102,0.685,0.788,0.749,0.81,0.103,0.065,0.125,0.038,0.061,synergy,clean,,True,True
+564,Functional digestive disorders,digestive,8628,629,0.56,0.667,0.643,0.683,0.106,0.082,0.122,0.024,0.04,synergy,clean,,True,True
+433.5,Cerebral aneurysm,circulatory system,9437,62,0.558,0.638,0.667,0.68,0.08,0.109,0.122,-0.029,0.013,comparable,clean,,True,True
+296.2,Depression,mental disorders,8027,644,0.552,0.659,0.636,0.673,0.107,0.084,0.121,0.022,0.037,comparable,clean,,True,True
+457.2,Encounter for long-term (current) use of antiplatelets/antithrombotics,circulatory system,9402,200,0.561,0.68,0.616,0.682,0.119,0.055,0.121,0.064,0.066,eye-specific,care_process,concurrent tier: care_process,False,False
+290.3,Other persistent mental disorders due to conditions classified elsewhere,mental disorders,9350,191,0.479,0.608,0.526,0.599,0.129,0.047,0.12,0.082,0.073,eye-specific,clean,,True,True
+277.7,Dysmetabolic syndrome X,endocrine/metabolic,9514,44,0.517,0.565,0.585,0.638,0.048,0.068,0.12,-0.02,0.053,synergy,,,True,True
+415.11,"Pulmonary embolism and infarction, acute",circulatory system,9404,76,0.478,0.547,0.562,0.598,0.07,0.084,0.12,-0.015,0.035,synergy,clean,,True,True
+771,Musculoskeletal symptoms referable to limbs,symptoms,9322,188,0.542,0.644,0.619,0.662,0.103,0.077,0.12,0.025,0.043,synergy,clean,,True,True
+571.81,Portal hypertension,digestive,9372,127,0.677,0.632,0.814,0.797,-0.045,0.137,0.12,-0.182,-0.017,CBC-specific,clean,,True,True
+250.1,Type 1 diabetes,endocrine/metabolic,9243,293,0.715,0.83,0.738,0.834,0.115,0.023,0.119,0.092,0.096,eye-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
+874,Complication of amputation stump,injuries & poisonings,9497,142,0.692,0.78,0.746,0.811,0.088,0.054,0.118,0.034,0.064,synergy,clean,,True,True
+250.11,Type 1 diabetes with ketoacidosis,endocrine/metabolic,9473,133,0.761,0.873,0.798,0.88,0.112,0.037,0.118,0.076,0.082,eye-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
+530.2,Esophageal bleeding (varices/hemorrhage),digestive,9396,119,0.645,0.628,0.769,0.764,-0.017,0.123,0.118,-0.141,-0.005,CBC-specific,clean,,True,True
+316.1,Polyneuropathy due to drugs,mental disorders,9509,73,0.662,0.719,0.754,0.779,0.057,0.092,0.117,-0.035,0.025,synergy,clean,,True,True
+274.11,Gouty arthropathy,endocrine/metabolic,9454,85,0.584,0.679,0.645,0.7,0.095,0.06,0.116,0.035,0.055,synergy,clean,,True,True
+345.12,Partial epilepsy,neurological,9466,81,0.544,0.652,0.57,0.661,0.108,0.026,0.116,0.082,0.091,eye-specific,clean,,True,True
+286.2,Encounter for long-term (current) use of anticoagulants,hematopoietic,8491,495,0.584,0.682,0.663,0.7,0.097,0.078,0.116,0.019,0.038,synergy,care_process,concurrent tier: care_process,False,False
+457.3,Encounter for long-term (current) use of aspirin,circulatory system,8553,901,0.577,0.689,0.637,0.693,0.112,0.06,0.116,0.052,0.056,eye-specific,care_process,concurrent tier: care_process,False,False
+292.6,Hallucinations,mental disorders,9511,67,0.543,0.637,0.636,0.658,0.093,0.092,0.114,0.001,0.022,synergy,clean,,True,True
+585.33,"Chronic Kidney Disease, Stage III",genitourinary,8931,331,0.638,0.734,0.707,0.75,0.096,0.069,0.112,0.027,0.043,synergy,clean,,True,True
+856,Vascular complications of surgery and medical procedures,injuries & poisonings,9462,59,0.519,0.553,0.625,0.631,0.034,0.106,0.112,-0.072,0.006,CBC-specific,clean,,True,True
+418,Nonspecific chest pain,circulatory system,8479,465,0.556,0.643,0.64,0.667,0.087,0.083,0.111,0.004,0.027,synergy,clean,,True,True
+275.6,Hypercalcemia,endocrine/metabolic,9459,92,0.493,0.571,0.59,0.604,0.078,0.097,0.111,-0.019,0.014,comparable,clean,,True,True
+286.9,Abnormal coagulation profile,hematopoietic,9199,308,0.626,0.703,0.711,0.737,0.076,0.085,0.11,-0.009,0.025,synergy,clean,prospective vocabulary screen,False,False
+440.2,Atherosclerosis of the extremities,circulatory system,9245,391,0.642,0.752,0.657,0.751,0.11,0.015,0.109,0.095,0.094,eye-specific,clean,,True,True
+573.6,Nonspecific elevation of levels of transaminase or lactic acid dehydrogenase [LDH],digestive,9298,191,0.553,0.623,0.652,0.662,0.07,0.099,0.109,-0.029,0.01,comparable,clean,,True,True
+428.4,Heart failure with preserved EF [Diastolic heart failure],circulatory system,8642,441,0.657,0.749,0.711,0.766,0.092,0.054,0.109,0.038,0.055,synergy,clean,,True,True
+041.11,Methicillin sensitive Staphylococcus aureus,infectious diseases,9343,154,0.626,0.709,0.719,0.736,0.083,0.093,0.109,-0.01,0.016,synergy,clean,,True,True
+415.2,Chronic pulmonary heart disease,circulatory system,9038,367,0.605,0.674,0.69,0.713,0.069,0.085,0.108,-0.016,0.023,synergy,clean,,True,True
+287.3,Thrombocytopenia,hematopoietic,8685,900,0.631,0.635,0.736,0.737,0.004,0.105,0.107,-0.101,0.002,CBC-specific,tautological,concurrent tier: tautological,False,False
+772.6,Facial weakness,symptoms,9447,80,0.602,0.713,0.615,0.708,0.112,0.014,0.107,0.098,0.093,eye-specific,clean,,True,True
+331.1,Hydrocephalus,neurological,9463,75,0.507,0.536,0.568,0.614,0.029,0.061,0.107,-0.032,0.046,synergy,clean,,True,True
+200,Myeloproliferative disease,neoplasms,9345,184,0.615,0.579,0.724,0.72,-0.036,0.109,0.105,-0.144,-0.003,CBC-specific,clean,prospective vocabulary screen,False,False
+505,Other pulmonary inflamation or edema,respiratory,9491,68,0.564,0.635,0.664,0.669,0.071,0.1,0.105,-0.029,0.005,comparable,clean,,True,True
+573.4,Acute and subacute necrosis of liver,digestive,9510,65,0.575,0.616,0.673,0.68,0.041,0.098,0.105,-0.057,0.007,CBC-specific,clean,,True,True
+457,"Encounter for long-term (current) use of anticoagulants, antithrombotics, aspirin",circulatory system,8939,488,0.55,0.639,0.623,0.653,0.089,0.073,0.104,0.016,0.031,comparable,care_process,concurrent tier: care_process,False,False
+281.9,Deficiency anemias,hematopoietic,9403,297,0.68,0.68,0.782,0.782,-0.0,0.102,0.102,-0.103,-0.001,CBC-specific,clean,prospective vocabulary screen,False,False
+250.23,Type 2 diabetes with ophthalmic manifestations,endocrine/metabolic,8355,344,0.616,0.697,0.666,0.719,0.081,0.05,0.102,0.031,0.053,synergy,expected_manifestation,concurrent tier: expected_manifestation,False,False
+561,Symptoms involving digestive system,digestive,8842,563,0.537,0.586,0.63,0.637,0.049,0.093,0.1,-0.044,0.007,CBC-specific,clean,,True,True
+290.2,Delirium due to conditions classified elsewhere,mental disorders,9283,262,0.623,0.703,0.681,0.724,0.08,0.058,0.1,0.021,0.042,synergy,clean,,True,True
+338.2,Chronic pain,neurological,8882,386,0.558,0.639,0.636,0.658,0.081,0.078,0.1,0.002,0.021,synergy,clean,,True,True
+300.4,Dysthymic disorder,mental disorders,9217,143,0.576,0.659,0.664,0.675,0.084,0.089,0.1,-0.005,0.011,comparable,clean,,True,True
+288.11,Neutropenia,hematopoietic,9098,247,0.589,0.574,0.681,0.687,-0.014,0.092,0.099,-0.106,0.006,CBC-specific,tautological,concurrent tier: tautological,False,False
+198.3,Secondary malignant neoplasm of digestive systems,neoplasms,9499,118,0.491,0.549,0.584,0.588,0.058,0.093,0.097,-0.035,0.004,CBC-specific,clean,,True,True
+327.32,Obstructive sleep apnea,neurological,8678,255,0.565,0.65,0.615,0.661,0.086,0.05,0.096,0.036,0.046,eye-specific,clean,,True,True
+287.32,Secondary thrombocytopenia,hematopoietic,9183,480,0.66,0.668,0.748,0.755,0.008,0.088,0.095,-0.081,0.006,CBC-specific,tautological,concurrent tier: tautological,False,False
+356,Hereditary and idiopathic peripheral neuropathy,neurological,9237,184,0.482,0.574,0.541,0.575,0.092,0.06,0.093,0.033,0.033,eye-specific,clean,,True,True
+250.24,Type 2 diabetes with neurological manifestations,endocrine/metabolic,8384,799,0.642,0.734,0.657,0.733,0.092,0.015,0.091,0.077,0.076,eye-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
+368,Visual disturbances,sense organs,8896,188,0.584,0.649,0.628,0.673,0.066,0.045,0.09,0.021,0.045,synergy,,ineligible: sense-organ phenotype,False,False
+571.8,Liver abscess and sequelae of chronic liver disease,digestive,9351,247,0.671,0.694,0.75,0.76,0.022,0.078,0.089,-0.056,0.011,CBC-specific,clean,,True,True
+575.8,Other disorders of biliary tract,digestive,9454,100,0.529,0.57,0.592,0.616,0.041,0.063,0.088,-0.022,0.025,synergy,clean,,True,True
+1010,,,9356,168,0.64,0.701,0.685,0.727,0.061,0.045,0.087,0.016,0.042,synergy,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+426.92,Cardiac defibrillator in situ,circulatory system,9455,52,0.624,0.707,0.657,0.709,0.083,0.033,0.085,0.05,0.052,eye-specific,clean,,True,True
+1002,,,9242,580,0.676,0.74,0.724,0.76,0.064,0.048,0.084,0.016,0.035,synergy,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+740.11,"Osteoarthrosis, localized, primary",musculoskeletal,9444,273,0.602,0.683,0.661,0.685,0.08,0.058,0.082,0.022,0.024,comparable,clean,,True,True
+327.4,Insomnia,neurological,9196,259,0.53,0.583,0.606,0.61,0.053,0.076,0.08,-0.023,0.004,comparable,clean,,True,True
+530.13,Barrett's esophagus,digestive,9472,51,0.546,0.585,0.676,0.626,0.038,0.13,0.08,-0.091,-0.05,CBC-specific,clean,,True,True
+287.31,Primary thrombocytopenia,hematopoietic,9507,51,0.561,0.481,0.669,0.64,-0.08,0.108,0.079,-0.188,-0.029,CBC-specific,tautological,concurrent tier: tautological,False,False
+433.31,Transient cerebral ischemia,circulatory system,8736,490,0.597,0.673,0.629,0.675,0.076,0.032,0.078,0.044,0.046,eye-specific,clean,,True,True
+427.21,Atrial fibrillation,circulatory system,8205,424,0.692,0.75,0.737,0.77,0.058,0.044,0.078,0.013,0.034,synergy,clean,,True,True
+440.22,Atherosclerosis of native arteries of the extremities with intermittent claudication,circulatory system,9445,45,0.589,0.684,0.627,0.667,0.095,0.038,0.078,0.057,0.04,eye-specific,clean,,True,True
+288,Diseases of white blood cells,hematopoietic,9148,731,0.667,0.724,0.72,0.744,0.057,0.053,0.077,0.004,0.024,synergy,clean,prospective vocabulary screen,False,False
+378.2,Nystagmus and other irregular eye movements,sense organs,9405,42,0.589,0.681,0.579,0.666,0.092,-0.01,0.077,0.102,0.088,eye-specific,,ineligible: sense-organ phenotype,True,False
+710.19,Unspecified osteomyelitis,musculoskeletal,9383,266,0.676,0.725,0.717,0.751,0.049,0.041,0.076,0.007,0.034,synergy,clean,,True,True
+772.3,Muscle weakness,symptoms,9480,68,0.568,0.633,0.611,0.644,0.064,0.043,0.076,0.021,0.032,comparable,clean,,True,True
+250.22,Type 2 diabetes with renal manifestations,endocrine/metabolic,8530,923,0.662,0.711,0.704,0.738,0.049,0.042,0.076,0.007,0.034,synergy,expected_manifestation,concurrent tier: expected_manifestation,False,False
+512.2,Painful respiration,respiratory,9499,45,0.554,0.637,0.547,0.629,0.083,-0.007,0.075,0.09,0.082,eye-specific,,,True,True
+710.12,Chronic osteomyelitis,musculoskeletal,9450,211,0.695,0.756,0.729,0.77,0.06,0.034,0.075,0.027,0.041,comparable,clean,,True,True
+711.1,Pyogenic arthritis,musculoskeletal,9510,57,0.561,0.538,0.638,0.635,-0.023,0.076,0.074,-0.099,-0.003,CBC-specific,clean,,True,True
+459.9,Circulatory disease NEC,circulatory system,8716,1826,0.649,0.71,0.688,0.723,0.061,0.039,0.074,0.022,0.035,comparable,clean,,True,True
+198.4,Secondary malignant neoplasm of liver,neoplasms,9479,174,0.555,0.632,0.561,0.629,0.077,0.007,0.074,0.07,0.068,eye-specific,clean,,True,True
+368.9,Subjective visual disturbances,sense organs,9383,104,0.595,0.658,0.632,0.669,0.062,0.037,0.074,0.026,0.037,comparable,,ineligible: sense-organ phenotype,False,False
+710.11,Acute osteomyelitis,musculoskeletal,9431,211,0.727,0.79,0.752,0.801,0.064,0.025,0.074,0.039,0.049,eye-specific,clean,,True,True
+277.4,Disorders of bilirubin excretion,endocrine/metabolic,9509,87,0.69,0.75,0.727,0.763,0.06,0.037,0.073,0.023,0.036,comparable,clean,,True,True
+738.4,Acquired spondylolisthesis,musculoskeletal,9517,45,0.523,0.521,0.584,0.596,-0.002,0.06,0.073,-0.062,0.012,CBC-specific,,,True,True
+225.1,"Benign neoplasm of brain, cranial nerves, meninges",neoplasms,9462,49,0.524,0.62,0.496,0.596,0.096,-0.028,0.072,0.124,0.1,eye-specific,clean,,True,True
+250.2,Type 2 diabetes,endocrine/metabolic,6839,990,0.601,0.65,0.618,0.673,0.05,0.018,0.072,0.032,0.055,synergy,expected_manifestation,concurrent tier: expected_manifestation,False,False
+495.1,Chronic obstructive asthma,respiratory,9339,89,0.621,0.691,0.665,0.691,0.071,0.044,0.071,0.027,0.027,comparable,clean,,True,True
+444,Arterial embolism and thrombosis,circulatory system,9513,68,0.554,0.603,0.602,0.625,0.05,0.048,0.071,0.001,0.023,synergy,clean,,True,True
+443.7,Peripheral angiopathy in diseases classified elsewhere,circulatory system,9350,490,0.687,0.751,0.701,0.758,0.064,0.014,0.07,0.05,0.056,eye-specific,clean,,True,True
+443.9,"Peripheral vascular disease, unspecified",circulatory system,8964,582,0.638,0.701,0.654,0.708,0.063,0.016,0.07,0.047,0.054,eye-specific,clean,,True,True
+401.22,Hypertensive chronic kidney disease,circulatory system,7232,987,0.629,0.674,0.666,0.699,0.044,0.037,0.07,0.007,0.033,synergy,clean,,True,True
+990,Effects radiation NOS,injuries & poisonings,9175,378,0.539,0.58,0.579,0.608,0.041,0.04,0.07,0.001,0.03,synergy,clean,,True,True
+747.11,Cardiac shunt/ heart septal defect,congenital anomalies,9409,99,0.504,0.52,0.539,0.573,0.016,0.035,0.069,-0.019,0.034,synergy,clean,,True,True
+1015,,,9390,421,0.677,0.71,0.739,0.745,0.033,0.062,0.068,-0.03,0.006,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+275.51,Hypocalcemia,endocrine/metabolic,9457,93,0.622,0.636,0.72,0.69,0.013,0.098,0.068,-0.085,-0.03,CBC-specific,clean,,True,True
+339,Other headache syndromes,neurological,9277,422,0.685,0.745,0.708,0.754,0.06,0.023,0.068,0.037,0.046,eye-specific,clean,,True,True
+963.1,Antineoplastic and immunosuppressive drugs causing adverse effects,injuries & poisonings,8945,409,0.612,0.644,0.652,0.68,0.032,0.04,0.067,-0.008,0.027,synergy,clean,,True,True
+008.5,Bacterial enteritis,infectious diseases,9548,40,0.481,0.533,0.505,0.547,0.052,0.024,0.066,0.028,0.042,comparable,,,True,True
+260.3,Adult failure to thrive,endocrine/metabolic,9423,159,0.636,0.686,0.693,0.7,0.05,0.056,0.064,-0.006,0.008,comparable,clean,,True,True
+155.1,"Malignant neoplasm of liver, primary",neoplasms,9495,41,0.639,0.613,0.733,0.703,-0.026,0.095,0.064,-0.12,-0.03,CBC-specific,clean,,True,True
+348.9,"Other conditions of brain, NOS",neurological,9429,123,0.569,0.646,0.535,0.632,0.077,-0.034,0.063,0.11,0.097,eye-specific,clean,,True,True
+427.22,Atrial flutter,circulatory system,9349,122,0.665,0.702,0.716,0.728,0.037,0.051,0.063,-0.014,0.012,comparable,clean,,True,True
+402,,,9518,120,0.639,0.673,0.713,0.701,0.034,0.074,0.062,-0.04,-0.012,CBC-specific,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+433.8,Late effects of cerebrovascular disease,circulatory system,8973,557,0.574,0.634,0.598,0.636,0.06,0.024,0.062,0.036,0.037,eye-specific,clean,,True,True
+262,Mineral deficiency NEC,endocrine/metabolic,9536,60,0.711,0.705,0.788,0.773,-0.006,0.077,0.062,-0.083,-0.015,CBC-specific,,,True,True
+278.11,Morbid obesity,endocrine/metabolic,9014,191,0.657,0.708,0.691,0.718,0.051,0.035,0.061,0.017,0.027,comparable,clean,,True,True
+286.4,Acquired coagulation factor deficiency,hematopoietic,9399,253,0.701,0.709,0.761,0.762,0.008,0.06,0.061,-0.051,0.001,CBC-specific,clean,prospective vocabulary screen,False,False
+276.13,Hyperpotassemia,endocrine/metabolic,8619,1053,0.647,0.676,0.686,0.707,0.028,0.038,0.06,-0.01,0.022,synergy,clean,,True,True
+962,Poisoning by hormones and synthetic substitutes,injuries & poisonings,9333,438,0.66,0.711,0.687,0.721,0.051,0.027,0.06,0.024,0.033,comparable,clean,,True,True
+962.1,Adrenal cortical steroids causing adverse effects in therapeutic use,injuries & poisonings,9354,97,0.556,0.605,0.634,0.616,0.049,0.078,0.06,-0.029,-0.017,comparable,clean,,True,True
+579.2,Splenomegaly,digestive,9503,50,0.733,0.71,0.823,0.792,-0.023,0.09,0.059,-0.113,-0.032,CBC-specific,clean,,True,True
+348.2,Cerebral edema and compression of brain,neurological,9186,214,0.492,0.561,0.519,0.55,0.069,0.027,0.058,0.042,0.031,eye-specific,clean,,True,True
+509.8,Dependence on respirator [Ventilator] or supplemental oxygen,respiratory,9428,158,0.64,0.696,0.678,0.698,0.056,0.038,0.058,0.019,0.02,comparable,clean,,True,True
+456,Chronic venous insufficiency [CVI],circulatory system,9217,298,0.611,0.612,0.659,0.668,0.001,0.048,0.057,-0.047,0.009,CBC-specific,clean,,True,True
+598.9,,,9474,294,0.702,0.747,0.734,0.76,0.045,0.032,0.057,0.013,0.025,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+427.42,Cardiac arrest,circulatory system,9497,226,0.641,0.659,0.673,0.698,0.018,0.032,0.057,-0.014,0.025,synergy,clean,,True,True
+781,Symptoms involving nervous and musculoskeletal systems,symptoms,9257,651,0.672,0.714,0.711,0.728,0.042,0.039,0.056,0.003,0.017,comparable,clean,,True,True
+681.1,Cellulitis and abscess of fingers/toes,dermatologic,9421,194,0.679,0.737,0.669,0.735,0.058,-0.01,0.056,0.068,0.066,eye-specific,clean,,True,True
+280.1,"Iron deficiency anemias, unspecified or not due to blood loss",hematopoietic,8775,884,0.625,0.612,0.687,0.68,-0.014,0.062,0.055,-0.075,-0.007,CBC-specific,clean,prospective vocabulary screen,False,False
+594,Urinary calculus,genitourinary,9464,86,0.557,0.604,0.572,0.612,0.047,0.016,0.055,0.031,0.039,eye-specific,clean,,True,True
+394.1,Mitral valve stenosis and aortic valve stenosis,circulatory system,9468,77,0.726,0.744,0.772,0.781,0.018,0.046,0.055,-0.028,0.008,comparable,clean,,True,True
+506,Empyema and pneumothorax,respiratory,9466,108,0.56,0.519,0.653,0.615,-0.041,0.093,0.055,-0.135,-0.038,CBC-specific,clean,,True,True
+277.5,Other disorders of lipoid metabolism,endocrine/metabolic,9228,297,0.635,0.686,0.664,0.689,0.051,0.029,0.054,0.022,0.026,comparable,,,True,True
+477,Epistaxis or throat hemorrhage,respiratory,9435,186,0.661,0.647,0.733,0.715,-0.013,0.072,0.054,-0.086,-0.018,CBC-specific,clean,,True,True
+790.6,Other abnormal blood chemistry,symptoms,9291,592,0.69,0.715,0.728,0.745,0.025,0.038,0.054,-0.013,0.017,synergy,clean,,True,True
+743.11,Osteoporosis NOS,musculoskeletal,8869,221,0.687,0.733,0.707,0.74,0.046,0.02,0.053,0.025,0.033,comparable,clean,,True,True
+276.6,Fluid overload,endocrine/metabolic,9111,470,0.654,0.654,0.711,0.707,-0.001,0.057,0.053,-0.057,-0.004,CBC-specific,clean,,True,True
+278,"Overweight, obesity and other hyperalimentation",endocrine/metabolic,9471,92,0.539,0.604,0.543,0.591,0.065,0.004,0.052,0.061,0.048,eye-specific,clean,,True,True
+980,Encounter for long-term (current) use of antibiotics,infectious diseases,9527,49,0.591,0.59,0.647,0.643,-0.001,0.056,0.052,-0.057,-0.004,CBC-specific,,concurrent tier: care_process,False,False
+367.9,Blindness and low vision,sense organs,8517,416,0.556,0.599,0.565,0.609,0.042,0.009,0.052,0.033,0.043,eye-specific,,ineligible: sense-organ phenotype,False,False
+585.3,Chronic renal failure [CKD],genitourinary,7632,1638,0.653,0.679,0.686,0.704,0.027,0.034,0.052,-0.007,0.018,synergy,clean,,True,True
+960.1,Adverse effects of antibacterials (not penicillins),injuries & poisonings,9502,51,0.526,0.517,0.604,0.579,-0.01,0.078,0.052,-0.088,-0.026,CBC-specific,clean,,True,True
+292.11,Aphasia,mental disorders,9460,79,0.579,0.633,0.632,0.631,0.054,0.054,0.052,0.001,-0.001,comparable,clean,,True,True
+317.11,Alcoholic liver damage,mental disorders,9387,68,0.729,0.672,0.797,0.78,-0.057,0.068,0.051,-0.125,-0.017,CBC-specific,clean,,True,True
+573,Other disorders of liver,digestive,9435,129,0.624,0.608,0.698,0.675,-0.017,0.074,0.051,-0.091,-0.023,CBC-specific,clean,,True,True
+514.2,Solitary pulmonary nodule,respiratory,9447,107,0.583,0.642,0.613,0.633,0.059,0.03,0.05,0.029,0.02,comparable,clean,,True,True
+818,Intracranial hemorrhage (injury),injuries & poisonings,9467,151,0.638,0.669,0.667,0.688,0.031,0.029,0.05,0.003,0.022,synergy,clean,,True,True
+597.2,Urinary complications NEC,genitourinary,9506,65,0.602,0.582,0.684,0.651,-0.02,0.082,0.049,-0.102,-0.032,CBC-specific,clean,,True,True
+327.41,Organic or persistent insomnia,neurological,9174,741,0.676,0.716,0.698,0.724,0.041,0.022,0.049,0.019,0.027,comparable,clean,,True,True
+411.3,Angina pectoris,circulatory system,9276,141,0.598,0.633,0.644,0.646,0.035,0.046,0.048,-0.011,0.002,comparable,clean,,True,True
+374.3,Ptosis of eyelid,sense organs,9367,76,0.504,0.545,0.544,0.552,0.041,0.04,0.048,0.001,0.008,comparable,,ineligible: sense-organ phenotype,False,False
+559,Ileostomy status,digestive,9501,62,0.592,0.561,0.633,0.64,-0.031,0.041,0.048,-0.072,0.007,CBC-specific,care_process,concurrent tier: care_process,False,False
+260.1,Cachexia,endocrine/metabolic,9453,268,0.66,0.67,0.701,0.707,0.009,0.041,0.047,-0.032,0.006,CBC-specific,clean,,True,True
+773,,,9416,385,0.703,0.737,0.732,0.749,0.033,0.029,0.046,0.005,0.017,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+960.2,Allergy/adverse effect of penicillin,injuries & poisonings,9416,165,0.563,0.558,0.632,0.609,-0.005,0.069,0.046,-0.074,-0.023,CBC-specific,clean,,True,True
+790,Nonspecific findings on examination of blood,symptoms,9524,139,0.709,0.735,0.741,0.756,0.026,0.031,0.046,-0.005,0.015,comparable,clean,,True,True
+721.2,Spondylosis with myelopathy,musculoskeletal,9486,59,0.479,0.54,0.503,0.524,0.062,0.024,0.045,0.038,0.021,eye-specific,clean,,True,True
+578.2,Blood in stool,digestive,9321,386,0.653,0.64,0.707,0.699,-0.013,0.054,0.045,-0.067,-0.009,CBC-specific,clean,,True,True
+480.2,Viral pneumonia,respiratory,9502,285,0.746,0.781,0.763,0.792,0.035,0.017,0.045,0.019,0.029,comparable,clean,,True,True
+563,,,8995,1174,0.676,0.709,0.703,0.721,0.033,0.027,0.045,0.006,0.018,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+054,Herpes simplex,infectious diseases,9440,104,0.682,0.681,0.734,0.726,-0.001,0.052,0.044,-0.053,-0.008,CBC-specific,clean,,True,True
+588,Disorders resulting from impaired renal function,genitourinary,9499,205,0.698,0.705,0.731,0.742,0.007,0.033,0.044,-0.026,0.011,comparable,clean,,True,True
+,,,8070,2513,0.662,0.694,0.69,0.706,0.032,0.028,0.044,0.004,0.016,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+567,Peritonitis and retroperitoneal infections,digestive,9377,172,0.595,0.597,0.641,0.638,0.002,0.046,0.043,-0.044,-0.003,CBC-specific,clean,,True,True
+535,Gastritis and duodenitis,digestive,9476,229,0.724,0.749,0.758,0.767,0.026,0.034,0.043,-0.009,0.009,comparable,clean,,True,True
+599.6,Oliguria and anuria,genitourinary,9485,123,0.62,0.609,0.665,0.663,-0.011,0.046,0.043,-0.056,-0.003,CBC-specific,clean,,True,True
+365,Glaucoma,sense organs,6980,354,0.645,0.675,0.66,0.688,0.03,0.015,0.043,0.015,0.028,comparable,,ineligible: sense-organ phenotype,False,False
+851,Complications of transplants and reattached limbs,injuries & poisonings,8864,1046,0.674,0.695,0.706,0.717,0.022,0.033,0.043,-0.011,0.01,comparable,clean,,True,True
+292.1,Aphasia/speech disturbance,mental disorders,9097,456,0.605,0.642,0.633,0.648,0.038,0.028,0.043,0.009,0.015,comparable,clean,,True,True
+285.2,Anemia of chronic disease,hematopoietic,9100,636,0.643,0.638,0.687,0.686,-0.006,0.044,0.043,-0.049,-0.001,CBC-specific,tautological,concurrent tier: tautological,False,False
+578.8,Hemorrhage of rectum and anus,digestive,9471,136,0.612,0.614,0.648,0.653,0.003,0.036,0.042,-0.034,0.005,CBC-specific,clean,,True,True
+531.4,"Peptic ulcer, site unspecified",digestive,9377,135,0.515,0.508,0.601,0.557,-0.007,0.086,0.042,-0.093,-0.044,CBC-specific,clean,,True,True
+722.1,Displacement of intervertebral disc,musculoskeletal,9458,55,0.466,0.508,0.523,0.509,0.041,0.057,0.042,-0.015,-0.014,comparable,clean,,True,True
+401.21,Hypertensive heart disease,circulatory system,9182,873,0.701,0.726,0.734,0.743,0.025,0.033,0.042,-0.008,0.009,comparable,clean,,True,True
+401.2,Hypertensive heart and/or renal disease,circulatory system,9194,1052,0.746,0.765,0.773,0.787,0.019,0.027,0.042,-0.008,0.015,comparable,clean,,True,True
+510,Other diseases of lung,respiratory,9283,157,0.528,0.512,0.602,0.569,-0.016,0.075,0.042,-0.09,-0.033,CBC-specific,clean,,True,True
+272.1,Hyperlipidemia,endocrine/metabolic,4957,1613,0.6,0.641,0.605,0.642,0.041,0.004,0.042,0.036,0.037,eye-specific,clean,,True,True
+1011,,,9433,260,0.706,0.728,0.737,0.747,0.022,0.031,0.041,-0.01,0.01,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+285,Other anemias,hematopoietic,7208,1870,0.627,0.628,0.666,0.667,0.002,0.039,0.041,-0.038,0.001,CBC-specific,clean,prospective vocabulary screen,False,False
+513.3,Hypoventilation,respiratory,9509,93,0.685,0.673,0.733,0.726,-0.012,0.049,0.041,-0.06,-0.007,CBC-specific,clean,,True,True
+818.1,Subdural hemorrhage (injury),injuries & poisonings,9518,40,0.622,0.632,0.68,0.663,0.009,0.058,0.04,-0.049,-0.018,CBC-specific,clean,,True,True
+279.1,Immunity deficiency,endocrine/metabolic,9534,167,0.794,0.817,0.82,0.834,0.023,0.027,0.04,-0.003,0.014,comparable,clean,,True,True
+578.1,Hematemesis,digestive,9484,139,0.659,0.646,0.705,0.699,-0.013,0.046,0.04,-0.06,-0.007,CBC-specific,clean,,True,True
+740.1,Osteoarthritis; localized,musculoskeletal,9285,159,0.587,0.613,0.633,0.626,0.026,0.047,0.039,-0.02,-0.007,comparable,clean,,True,True
+854,"Complications of cardiac/vascular device, implant, and graft",injuries & poisonings,9105,642,0.648,0.658,0.679,0.687,0.01,0.031,0.039,-0.021,0.008,comparable,care_process,concurrent tier: care_process,True,False
+331,Other cerebral degenerations,neurological,9490,230,0.684,0.721,0.716,0.724,0.036,0.032,0.039,0.005,0.008,comparable,expected_manifestation,concurrent tier: expected_manifestation,False,False
+425.2,Secondary/extrinsic cardiomyopathies,circulatory system,9509,73,0.574,0.445,0.659,0.612,-0.128,0.086,0.039,-0.214,-0.047,CBC-specific,clean,,True,True
+598,Abnormal findings on examination of urine,genitourinary,9447,149,0.647,0.675,0.676,0.686,0.028,0.029,0.039,-0.001,0.011,comparable,clean,,True,True
+395.2,Nonrheumatic aortic valve disorders,circulatory system,9223,142,0.707,0.741,0.717,0.745,0.034,0.01,0.038,0.024,0.028,comparable,clean,,True,True
+375,Disorders of lacrimal system,sense organs,9415,80,0.703,0.747,0.659,0.741,0.044,-0.045,0.038,0.089,0.083,eye-specific,,ineligible: sense-organ phenotype,False,False
+720.1,Spinal stenosis of lumbar region,musculoskeletal,9399,67,0.624,0.645,0.69,0.662,0.021,0.066,0.038,-0.045,-0.028,CBC-specific,clean,,True,True
+858,Complication of internal orthopedic device,injuries & poisonings,9471,121,0.568,0.525,0.629,0.606,-0.043,0.061,0.038,-0.103,-0.022,CBC-specific,care_process,concurrent tier: care_process,True,False
+038.2,Gram positive septicemia,infectious diseases,9422,238,0.653,0.675,0.676,0.691,0.022,0.023,0.038,-0.001,0.015,comparable,clean,,True,True
+291.8,Alteration of consciousness,mental disorders,9346,228,0.589,0.607,0.636,0.627,0.018,0.047,0.038,-0.029,-0.009,comparable,clean,,True,True
+198.1,Secondary malignancy of lymph nodes,neoplasms,9357,150,0.539,0.569,0.553,0.577,0.03,0.014,0.038,0.017,0.024,comparable,clean,,True,True
+599.9,Other abnormality of urination,genitourinary,9487,105,0.626,0.65,0.659,0.664,0.024,0.032,0.037,-0.008,0.005,comparable,clean,,True,True
+797,Shock,symptoms,9412,323,0.701,0.708,0.728,0.739,0.007,0.027,0.037,-0.02,0.01,comparable,clean,,True,True
+561.1,,,9536,110,0.685,0.723,0.694,0.722,0.038,0.009,0.037,0.029,0.028,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+507,Pleurisy; pleural effusion,respiratory,9029,631,0.629,0.616,0.671,0.666,-0.012,0.043,0.037,-0.055,-0.006,CBC-specific,clean,,True,True
+295.3,Psychosis,mental disorders,9427,115,0.578,0.614,0.597,0.614,0.036,0.019,0.036,0.017,0.017,comparable,expected_manifestation,concurrent tier: expected_manifestation,False,False
+411.4,Coronary atherosclerosis,circulatory system,6760,1077,0.647,0.678,0.656,0.683,0.031,0.009,0.036,0.022,0.027,comparable,clean,,True,True
+286.5,Hemorrhagic disorder due to intrinsic circulating anticoagulants,hematopoietic,9509,174,0.754,0.777,0.776,0.79,0.022,0.021,0.036,0.001,0.015,comparable,clean,,True,True
+290,Delirium dementia and amnestic and other cognitive disorders,mental disorders,9542,100,0.678,0.68,0.741,0.714,0.002,0.063,0.036,-0.061,-0.027,CBC-specific,clean,,True,True
+272.11,Hypercholesterolemia,endocrine/metabolic,7864,943,0.569,0.604,0.572,0.605,0.035,0.003,0.036,0.032,0.033,eye-specific,clean,,True,True
+286.7,Other and unspecified coagulation defects,hematopoietic,9343,346,0.685,0.674,0.726,0.721,-0.011,0.041,0.036,-0.052,-0.005,CBC-specific,clean,prospective vocabulary screen,False,False
+574.12,Cholelithiasis with other cholecystitis,digestive,9495,76,0.445,0.448,0.524,0.48,0.003,0.079,0.035,-0.076,-0.043,CBC-specific,clean,,True,True
+317,Alcohol-related disorders,mental disorders,9056,268,0.696,0.708,0.732,0.732,0.012,0.036,0.035,-0.024,-0.0,comparable,clean,,True,True
+411.2,Myocardial infarction,circulatory system,8205,1064,0.648,0.677,0.658,0.684,0.028,0.01,0.035,0.019,0.026,comparable,clean,,True,True
+070.9,Hepatitis NOS,infectious diseases,9444,181,0.691,0.702,0.73,0.726,0.011,0.039,0.035,-0.028,-0.004,comparable,clean,,True,True
+253.7,Other disorders of neurohypophysis,endocrine/metabolic,9342,236,0.608,0.625,0.625,0.642,0.017,0.017,0.034,0.0,0.017,synergy,clean,,True,True
+008,Intestinal infection,infectious diseases,9513,84,0.573,0.581,0.613,0.608,0.007,0.04,0.034,-0.033,-0.006,CBC-specific,clean,,True,True
+1004,,,9489,195,0.769,0.8,0.778,0.803,0.031,0.009,0.034,0.022,0.024,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+344,Other paralytic syndromes,neurological,9450,152,0.554,0.611,0.496,0.587,0.057,-0.057,0.034,0.114,0.091,eye-specific,clean,,True,True
+252.1,Hyperparathyroidism,endocrine/metabolic,9405,176,0.625,0.635,0.655,0.659,0.011,0.03,0.034,-0.019,0.004,comparable,clean,,True,True
+574.3,Cholecystitis without cholelithiasis,digestive,9503,73,0.57,0.618,0.513,0.604,0.048,-0.057,0.034,0.105,0.092,eye-specific,clean,,True,True
+159,Malignant neoplasm of other and ill-defined sites within the digestive organs and peritoneum,neoplasms,9441,213,0.688,0.693,0.72,0.722,0.005,0.032,0.034,-0.026,0.002,comparable,clean,,True,True
+292.4,Altered mental status,mental disorders,9279,446,0.607,0.628,0.618,0.639,0.022,0.012,0.033,0.01,0.021,comparable,care_process,concurrent tier: care_process,False,False
+531.3,Duodenal ulcer,digestive,9522,85,0.646,0.642,0.685,0.679,-0.003,0.039,0.033,-0.042,-0.006,CBC-specific,clean,,True,True
+459,Other disorders of circulatory system,circulatory system,9518,77,0.739,0.69,0.803,0.772,-0.049,0.064,0.033,-0.114,-0.032,CBC-specific,clean,,True,True
+053,Herpes zoster,infectious diseases,9477,90,0.571,0.532,0.62,0.604,-0.039,0.049,0.033,-0.088,-0.016,CBC-specific,clean,,True,True
+080,Postoperative infection,infectious diseases,9210,321,0.607,0.594,0.656,0.64,-0.013,0.05,0.033,-0.063,-0.016,CBC-specific,clean,,True,True
+495.2,Asthma with exacerbation,respiratory,9456,40,0.592,0.606,0.644,0.624,0.014,0.052,0.032,-0.038,-0.02,CBC-specific,clean,,True,True
+480,Pneumonia,respiratory,8402,1298,0.613,0.607,0.649,0.644,-0.006,0.036,0.032,-0.042,-0.005,CBC-specific,clean,,True,True
+516.1,Hemoptysis,respiratory,9458,151,0.61,0.609,0.642,0.642,-0.002,0.032,0.032,-0.034,0.0,CBC-specific,clean,,True,True
+915,,,9474,228,0.726,0.747,0.743,0.757,0.021,0.017,0.031,0.004,0.014,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+573.9,Abnormal serum enzyme levels,digestive,9111,719,0.668,0.681,0.694,0.699,0.013,0.026,0.031,-0.013,0.004,comparable,clean,,True,True
+198,Secondary malignant neoplasm,neoplasms,9438,164,0.583,0.585,0.618,0.614,0.002,0.035,0.031,-0.033,-0.004,CBC-specific,clean,,True,True
+707,Chronic ulcer of skin,dermatologic,9422,505,0.73,0.747,0.75,0.761,0.016,0.02,0.03,-0.003,0.011,comparable,clean,,True,True
+783,Fever of unknown origin,symptoms,8783,629,0.613,0.601,0.655,0.644,-0.012,0.042,0.03,-0.054,-0.011,CBC-specific,clean,,True,True
+496.1,Emphysema,respiratory,9388,152,0.656,0.646,0.693,0.686,-0.01,0.037,0.03,-0.047,-0.007,CBC-specific,clean,,True,True
+285.1,Acute posthemorrhagic anemia,hematopoietic,8502,1304,0.632,0.636,0.661,0.661,0.003,0.029,0.029,-0.026,-0.0,comparable,tautological,concurrent tier: tautological,False,False
+572,Ascites (non malignant),digestive,9328,234,0.624,0.604,0.667,0.653,-0.02,0.043,0.029,-0.063,-0.014,CBC-specific,clean,,True,True
+277,Other disorders of metabolism,endocrine/metabolic,9379,222,0.596,0.585,0.634,0.625,-0.011,0.038,0.029,-0.049,-0.009,CBC-specific,clean,,True,True
+480.3,Pneumonia due to fungus (mycoses),respiratory,9522,47,0.778,0.758,0.827,0.807,-0.02,0.049,0.029,-0.069,-0.019,CBC-specific,,,True,True
+537,Other disorders of stomach and duodenum,digestive,9318,458,0.671,0.665,0.699,0.699,-0.006,0.028,0.028,-0.034,-0.0,CBC-specific,clean,,True,True
+260,Protein-calorie malnutrition,endocrine/metabolic,8865,833,0.638,0.63,0.672,0.666,-0.008,0.034,0.028,-0.042,-0.006,CBC-specific,clean,,True,True
+1013,,,9280,678,0.708,0.724,0.729,0.736,0.015,0.021,0.028,-0.005,0.007,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+969,Poisoning by psychotropic agents,injuries & poisonings,9217,523,0.667,0.693,0.681,0.694,0.026,0.013,0.027,0.013,0.014,comparable,clean,,True,True
+1008,,,9543,58,0.685,0.664,0.753,0.712,-0.021,0.067,0.027,-0.089,-0.04,CBC-specific,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+195.1,"Malignant neoplasm, other",neoplasms,8961,892,0.647,0.661,0.664,0.674,0.014,0.017,0.027,-0.003,0.009,comparable,clean,,True,True
+578.9,Hemorrhage of gastrointestinal tract,digestive,9367,267,0.622,0.595,0.672,0.649,-0.027,0.05,0.027,-0.077,-0.023,CBC-specific,clean,,True,True
+293,Symptoms involving head and neck,mental disorders,9027,225,0.632,0.661,0.657,0.658,0.03,0.026,0.027,0.004,0.001,comparable,clean,,True,True
+306,Other mental disorder,mental disorders,9494,52,0.754,0.776,0.76,0.78,0.022,0.006,0.026,0.016,0.02,comparable,clean,,True,True
+357,Inflammatory and toxic neuropathy,neurological,9307,412,0.714,0.716,0.74,0.739,0.002,0.026,0.026,-0.024,-0.001,comparable,clean,,True,True
+568,Other disorders of peritoneum,digestive,9514,54,0.524,0.485,0.604,0.55,-0.039,0.079,0.025,-0.118,-0.054,CBC-specific,clean,,True,True
+585.1,Acute renal failure,genitourinary,6632,2104,0.641,0.647,0.661,0.666,0.005,0.019,0.025,-0.014,0.006,comparable,clean,,True,True
+289.5,Diseases of spleen,hematopoietic,9516,62,0.629,0.593,0.664,0.653,-0.036,0.035,0.025,-0.072,-0.011,CBC-specific,clean,,True,True
+117,Mycoses,infectious diseases,9485,62,0.73,0.703,0.785,0.755,-0.027,0.055,0.025,-0.082,-0.03,CBC-specific,clean,,True,True
+427.2,Atrial fibrillation and flutter,circulatory system,8815,1379,0.715,0.725,0.737,0.74,0.009,0.021,0.025,-0.012,0.004,comparable,clean,,True,True
+348,Other conditions of brain,neurological,9541,59,0.608,0.632,0.62,0.632,0.024,0.012,0.025,0.012,0.012,comparable,,,True,True
+735,Acquired foot deformities,musculoskeletal,9488,51,0.58,0.573,0.611,0.604,-0.007,0.032,0.025,-0.039,-0.007,CBC-specific,clean,,True,True
+428.2,Heart failure NOS,circulatory system,8755,1698,0.721,0.729,0.741,0.745,0.008,0.02,0.025,-0.013,0.004,comparable,clean,,True,True
+480.1,Bacterial pneumonia,respiratory,9183,629,0.689,0.699,0.71,0.714,0.01,0.02,0.025,-0.01,0.005,comparable,clean,,True,True
+458.9,Hypotension NOS,circulatory system,8774,1184,0.658,0.658,0.682,0.683,0.001,0.024,0.025,-0.023,0.001,comparable,clean,,True,True
+241.2,Nontoxic multinodular goiter,endocrine/metabolic,9469,69,0.684,0.71,0.701,0.709,0.026,0.017,0.025,0.009,0.008,comparable,clean,,True,True
+041.2,Streptococcus infection,infectious diseases,9097,618,0.644,0.645,0.669,0.668,0.001,0.025,0.024,-0.023,-0.001,comparable,clean,,True,True
+348.7,Coma,neurological,9497,117,0.622,0.647,0.651,0.646,0.025,0.029,0.024,-0.004,-0.006,comparable,clean,,True,True
+509.1,Respiratory failure,respiratory,8823,1404,0.69,0.699,0.709,0.714,0.009,0.019,0.024,-0.01,0.005,comparable,clean,,True,True
+508,Pulmonary collapse; interstitial and compensatory emphysema,respiratory,9119,527,0.617,0.615,0.644,0.641,-0.001,0.028,0.024,-0.029,-0.003,comparable,clean,,True,True
+411.8,"Other chronic ischemic heart disease, unspecified",circulatory system,9283,489,0.676,0.696,0.678,0.701,0.019,0.002,0.024,0.018,0.023,comparable,clean,,True,True
+275.5,Disorders of calcium/phosphorus metabolism,endocrine/metabolic,9399,333,0.696,0.709,0.711,0.72,0.013,0.015,0.024,-0.002,0.009,comparable,clean,,True,True
+275.3,Disorders of magnesium metabolism,endocrine/metabolic,9209,444,0.66,0.659,0.681,0.684,-0.002,0.021,0.024,-0.023,0.003,comparable,clean,,True,True
+871,Open wounds of extremities,injuries & poisonings,9509,72,0.65,0.666,0.659,0.673,0.016,0.009,0.023,0.007,0.015,comparable,clean,,True,True
+342,Hemiplegia,neurological,9241,262,0.572,0.603,0.569,0.595,0.031,-0.002,0.023,0.033,0.026,eye-specific,clean,,True,True
+394.2,Mitral valve disease,circulatory system,9469,202,0.709,0.727,0.723,0.731,0.019,0.014,0.023,0.005,0.009,comparable,clean,,True,True
+286.6,Defibrination syndrome,hematopoietic,9479,150,0.657,0.628,0.688,0.679,-0.028,0.032,0.023,-0.06,-0.009,CBC-specific,clean,,True,True
+300.11,Generalized anxiety disorder,mental disorders,9501,78,0.721,0.758,0.705,0.743,0.037,-0.016,0.022,0.053,0.038,eye-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
+275.53,Disorders of phosphorus metabolism,endocrine/metabolic,9068,757,0.674,0.683,0.689,0.696,0.009,0.015,0.022,-0.006,0.007,comparable,clean,,True,True
+246,Other disorders of thyroid,endocrine/metabolic,9521,56,0.658,0.66,0.644,0.68,0.003,-0.013,0.022,0.016,0.036,synergy,clean,,True,True
+317.1,Alcoholism,mental disorders,9147,126,0.676,0.661,0.721,0.698,-0.015,0.045,0.022,-0.06,-0.023,CBC-specific,clean,,True,True
+276.11,Hyperosmolality and/or hypernatremia,endocrine/metabolic,9092,743,0.668,0.676,0.687,0.69,0.007,0.019,0.022,-0.011,0.003,comparable,clean,,True,True
+593.1,Gross hematuria,genitourinary,9466,85,0.649,0.671,0.652,0.671,0.022,0.003,0.022,0.019,0.019,comparable,clean,,True,True
+008.52,Intestinal infection due to C. difficile,infectious diseases,9200,436,0.652,0.646,0.676,0.675,-0.007,0.024,0.022,-0.031,-0.002,comparable,clean,,True,True
+565,Anal and rectal conditions,digestive,9425,149,0.632,0.628,0.663,0.654,-0.004,0.031,0.022,-0.035,-0.01,CBC-specific,clean,,True,True
+714.1,Rheumatoid arthritis,musculoskeletal,9349,102,0.657,0.688,0.65,0.68,0.03,-0.008,0.022,0.038,0.03,eye-specific,clean,,True,True
+276.41,Acidosis,endocrine/metabolic,8550,1512,0.65,0.654,0.667,0.671,0.004,0.018,0.021,-0.014,0.003,comparable,clean,,True,True
+440.1,Atherosclerosis of renal artery,circulatory system,9518,43,0.586,0.636,0.543,0.607,0.05,-0.043,0.021,0.093,0.064,eye-specific,,,True,True
+689,Disorder of skin and subcutaneous tissue NOS,dermatologic,9476,130,0.66,0.637,0.711,0.681,-0.023,0.051,0.021,-0.074,-0.029,CBC-specific,clean,,True,True
+504,Other alveolar and parietoalveolar pneumonopathy,respiratory,9510,92,0.698,0.677,0.747,0.718,-0.021,0.049,0.021,-0.071,-0.029,CBC-specific,clean,,True,True
+535.6,Duodenitis,digestive,9482,111,0.646,0.62,0.681,0.668,-0.027,0.035,0.021,-0.061,-0.014,CBC-specific,clean,,True,True
+427.7,Tachycardia NOS,circulatory system,9131,425,0.623,0.629,0.644,0.644,0.006,0.021,0.021,-0.015,-0.0,comparable,clean,,True,True
+575.7,Other disorders of gallbladder,digestive,9518,41,0.504,0.487,0.525,0.525,-0.017,0.021,0.021,-0.038,0.0,CBC-specific,,,True,True
+274.21,Chondrocalcinosis,endocrine/metabolic,9515,62,0.741,0.706,0.79,0.761,-0.035,0.049,0.02,-0.084,-0.029,CBC-specific,clean,,True,True
+550.4,Umbilical hernia,digestive,9482,103,0.597,0.564,0.655,0.616,-0.032,0.058,0.02,-0.09,-0.038,CBC-specific,clean,,True,True
+586,Other disorders of the kidney and ureters,genitourinary,9345,220,0.608,0.628,0.612,0.628,0.02,0.004,0.019,0.016,0.015,comparable,clean,,True,True
+569.1,Toxic gastroenteritis and colitis,digestive,9483,195,0.681,0.7,0.703,0.7,0.019,0.022,0.019,-0.003,-0.003,comparable,clean,,True,True
+447,Other disorders of arteries and arterioles,circulatory system,9452,181,0.622,0.612,0.656,0.641,-0.01,0.034,0.019,-0.044,-0.015,CBC-specific,clean,,True,True
+316,Substance addiction and disorders,mental disorders,8989,358,0.661,0.667,0.679,0.68,0.006,0.017,0.019,-0.012,0.001,comparable,clean,,True,True
+532,Dysphagia,digestive,8984,780,0.646,0.657,0.66,0.665,0.01,0.013,0.019,-0.003,0.005,comparable,clean,,True,True
+038,Septicemia,infectious diseases,9048,1120,0.694,0.697,0.711,0.713,0.003,0.017,0.019,-0.014,0.002,comparable,clean,,True,True
+090,Sexually transmitted infections (not HIV or hepatitis),infectious diseases,9534,42,0.642,0.64,0.641,0.66,-0.002,-0.001,0.018,-0.001,0.019,synergy,,,True,True
+481,Influenza,respiratory,9422,229,0.63,0.627,0.647,0.648,-0.003,0.017,0.018,-0.02,0.001,comparable,clean,,True,True
+743.21,Pathologic fracture of vertebrae,musculoskeletal,9425,162,0.686,0.664,0.722,0.703,-0.022,0.036,0.018,-0.058,-0.019,CBC-specific,clean,,True,True
+292,Neurological disorders,mental disorders,9405,328,0.672,0.681,0.688,0.69,0.01,0.017,0.018,-0.007,0.002,comparable,clean,,True,True
+503,Pulmonary congestion and hypostasis,respiratory,9413,272,0.653,0.624,0.684,0.67,-0.029,0.031,0.017,-0.06,-0.014,CBC-specific,clean,,True,True
+707.1,Decubitus ulcer,dermatologic,9243,563,0.674,0.671,0.697,0.691,-0.003,0.024,0.017,-0.027,-0.007,comparable,clean,,True,True
+803.3,Fracture of clavicle or scapula,injuries & poisonings,9478,148,0.692,0.726,0.678,0.709,0.034,-0.014,0.017,0.048,0.031,eye-specific,clean,,True,True
+745,Pain in joint,musculoskeletal,8930,806,0.63,0.623,0.652,0.647,-0.006,0.022,0.017,-0.029,-0.005,comparable,clean,,True,True
+198.6,Secondary malignancy of bone,neoplasms,9452,167,0.589,0.609,0.585,0.606,0.021,-0.003,0.017,0.024,0.021,comparable,clean,,True,True
+041.4,E. coli,infectious diseases,8981,784,0.675,0.679,0.688,0.693,0.004,0.013,0.017,-0.009,0.005,comparable,clean,,True,True
+348.8,"Encephalopathy, not elsewhere classified",neurological,9072,1015,0.656,0.662,0.669,0.673,0.005,0.012,0.017,-0.007,0.004,comparable,clean,,True,True
+426.3,Bundle branch block,circulatory system,9544,71,0.715,0.74,0.726,0.732,0.026,0.012,0.017,0.014,0.006,comparable,clean,,True,True
+349,Other and unspecified disorders of the nervous system,neurological,9031,1119,0.689,0.699,0.701,0.707,0.01,0.012,0.017,-0.002,0.006,comparable,clean,,True,True
+411.9,Other acute and subacute forms of ischemic heart disease,circulatory system,9394,373,0.7,0.696,0.716,0.717,-0.004,0.016,0.017,-0.02,0.001,comparable,clean,,True,True
+362.29,Macular degeneration (senile) of retina NOS,sense organs,8877,151,0.774,0.785,0.781,0.791,0.011,0.007,0.017,0.004,0.009,comparable,,ineligible: sense-organ phenotype,False,False
+070.2,Viral hepatitis B,infectious diseases,9467,72,0.674,0.684,0.652,0.69,0.009,-0.023,0.016,0.032,0.038,eye-specific,clean,,True,True
+272.13,Mixed hyperlipidemia,endocrine/metabolic,9551,69,0.664,0.667,0.679,0.68,0.003,0.015,0.016,-0.012,0.001,comparable,,,True,True
+415,Pulmonary heart disease,circulatory system,9291,329,0.588,0.581,0.599,0.604,-0.007,0.011,0.016,-0.018,0.005,comparable,clean,,True,True
+041,Bacterial infection NOS,infectious diseases,8867,863,0.645,0.651,0.656,0.661,0.006,0.011,0.016,-0.004,0.006,comparable,clean,,True,True
+250.21,Type 2 diabetes with ketoacidosis,endocrine/metabolic,9509,95,0.634,0.659,0.615,0.65,0.025,-0.019,0.016,0.044,0.035,eye-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
+070,Viral hepatitis,infectious diseases,9439,173,0.774,0.756,0.801,0.789,-0.018,0.028,0.015,-0.045,-0.012,CBC-specific,clean,,True,True
+297.1,Suicidal ideation,mental disorders,9358,94,0.711,0.709,0.724,0.726,-0.002,0.013,0.015,-0.015,0.002,comparable,clean,,True,True
+747.13,Congenital anomalies of great vessels,congenital anomalies,9409,289,0.73,0.73,0.749,0.745,0.0,0.02,0.015,-0.02,-0.004,comparable,clean,,True,True
+577.3,Cyst and pseudocyst of pancreas,digestive,9492,84,0.536,0.528,0.584,0.551,-0.008,0.048,0.015,-0.056,-0.034,CBC-specific,clean,,True,True
+596.5,Functional disorders of bladder,genitourinary,9423,121,0.571,0.572,0.577,0.586,0.001,0.007,0.015,-0.005,0.008,comparable,clean,,True,True
+427.11,Paroxysmal supraventricular tachycardia,circulatory system,9412,319,0.682,0.687,0.702,0.697,0.005,0.02,0.015,-0.015,-0.005,comparable,clean,,True,True
+770,Myalgia and myositis unspecified,symptoms,9323,161,0.668,0.671,0.686,0.681,0.003,0.019,0.014,-0.015,-0.005,comparable,clean,,True,True
+964.1,Anticoagulants causing adverse effects,injuries & poisonings,9222,449,0.676,0.664,0.7,0.69,-0.012,0.024,0.014,-0.036,-0.01,CBC-specific,clean,,True,True
+189,Cancer of urinary organs (incl. kidney and bladder),neoplasms,9483,128,0.72,0.733,0.734,0.735,0.012,0.013,0.014,-0.001,0.001,comparable,clean,,True,True
+686.1,Carbuncle and furuncle,dermatologic,9505,116,0.719,0.752,0.708,0.733,0.034,-0.01,0.014,0.044,0.025,eye-specific,clean,,True,True
+112,Candidiasis,infectious diseases,9088,530,0.641,0.627,0.663,0.656,-0.015,0.022,0.014,-0.037,-0.007,CBC-specific,clean,,True,True
+590,Pyelonephritis,genitourinary,9400,263,0.648,0.651,0.664,0.662,0.003,0.016,0.014,-0.012,-0.002,comparable,clean,,True,True
+288.3,Eosinophilia,hematopoietic,9434,128,0.627,0.598,0.672,0.64,-0.029,0.045,0.014,-0.074,-0.032,CBC-specific,tautological,concurrent tier: tautological,False,False
+251.1,Hypoglycemia,endocrine/metabolic,9502,144,0.653,0.666,0.637,0.667,0.013,-0.016,0.014,0.029,0.03,comparable,clean,,True,True
+303.4,Somatoform disorder,mental disorders,9515,53,0.764,0.768,0.78,0.778,0.004,0.016,0.014,-0.011,-0.001,comparable,,,True,True
+289.4,Lymphadenitis,hematopoietic,9385,148,0.587,0.555,0.62,0.601,-0.032,0.033,0.014,-0.065,-0.019,CBC-specific,clean,,True,True
+332,Parkinson's disease,neurological,9408,134,0.664,0.667,0.682,0.678,0.002,0.018,0.014,-0.015,-0.003,comparable,clean,,True,True
+340,Migraine,neurological,9079,238,0.753,0.768,0.751,0.767,0.016,-0.001,0.014,0.017,0.016,comparable,clean,,True,True
+395.6,Heart valve replaced,circulatory system,9311,258,0.698,0.688,0.722,0.711,-0.01,0.024,0.013,-0.033,-0.011,CBC-specific,clean,,True,True
+782.3,Edema,symptoms,9164,440,0.642,0.642,0.66,0.656,0.0,0.018,0.013,-0.017,-0.004,comparable,clean,,True,True
+041.1,Staphylococcus infections,infectious diseases,9307,471,0.698,0.697,0.711,0.711,-0.001,0.014,0.013,-0.014,-0.0,comparable,clean,,True,True
+274.1,Gout,endocrine/metabolic,8797,389,0.679,0.679,0.697,0.692,0.0,0.018,0.013,-0.018,-0.005,comparable,clean,,True,True
+519.2,Respiratory complications,respiratory,9413,219,0.654,0.621,0.699,0.667,-0.033,0.044,0.013,-0.078,-0.031,CBC-specific,clean,,True,True
+593,Hematuria,genitourinary,9304,447,0.66,0.673,0.663,0.672,0.013,0.003,0.013,0.01,0.009,comparable,clean,,True,True
+501,Pneumonitis due to inhalation of food or vomitus,respiratory,9190,652,0.686,0.683,0.703,0.698,-0.002,0.018,0.013,-0.02,-0.005,comparable,clean,,True,True
+458.2,Iatrogenic hypotension,circulatory system,9135,405,0.616,0.61,0.627,0.629,-0.006,0.012,0.013,-0.017,0.001,comparable,clean,,True,True
+394,Rheumatic disease of the heart valves,circulatory system,9480,208,0.727,0.712,0.758,0.74,-0.015,0.031,0.013,-0.046,-0.018,CBC-specific,clean,,True,True
+345.1,Epilepsy,neurological,9412,195,0.663,0.678,0.659,0.676,0.015,-0.005,0.013,0.02,0.017,comparable,clean,,True,True
+394.7,Disease of tricuspid valve,circulatory system,9398,226,0.674,0.644,0.701,0.686,-0.03,0.027,0.012,-0.057,-0.015,CBC-specific,clean,,True,True
+372,Disorders of conjunctiva,sense organs,9406,44,0.608,0.606,0.683,0.619,-0.001,0.076,0.012,-0.077,-0.064,CBC-specific,,ineligible: sense-organ phenotype,False,False
+531.1,Hemorrhage from gastrointestinal ulcer,digestive,9477,143,0.626,0.608,0.654,0.638,-0.018,0.028,0.012,-0.046,-0.016,CBC-specific,clean,,True,True
+716.9,Arthropathy NOS,musculoskeletal,8950,679,0.669,0.677,0.679,0.681,0.008,0.01,0.012,-0.003,0.002,comparable,clean,,True,True
+117.4,Aspergillosis,infectious diseases,9543,40,0.745,0.705,0.786,0.758,-0.04,0.041,0.012,-0.081,-0.029,CBC-specific,,,True,True
+1100,,,9505,217,0.698,0.71,0.706,0.71,0.011,0.008,0.012,0.004,0.004,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+327.3,Sleep apnea,neurological,8962,901,0.66,0.653,0.677,0.671,-0.007,0.016,0.011,-0.024,-0.006,comparable,clean,,True,True
+788,Syncope and collapse,symptoms,8959,583,0.58,0.576,0.597,0.591,-0.004,0.017,0.011,-0.021,-0.006,comparable,clean,,True,True
+1001,,,9524,132,0.712,0.716,0.718,0.723,0.004,0.006,0.011,-0.002,0.005,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+345,"Epilepsy, recurrent seizures, convulsions",neurological,9141,370,0.616,0.633,0.607,0.628,0.017,-0.009,0.011,0.026,0.021,comparable,clean,,True,True
+561.2,,,9550,52,0.741,0.715,0.765,0.753,-0.026,0.023,0.011,-0.05,-0.012,CBC-specific,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+292.3,Memory loss,mental disorders,9474,109,0.583,0.576,0.614,0.593,-0.007,0.032,0.011,-0.039,-0.021,CBC-specific,clean,,True,True
+1009,,,9476,250,0.72,0.717,0.735,0.731,-0.004,0.015,0.011,-0.019,-0.005,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+426.24,"Atrioventricular block, complete",circulatory system,9450,160,0.693,0.707,0.698,0.704,0.014,0.005,0.011,0.009,0.006,comparable,clean,,True,True
+276.12,Hyposmolality and/or hyponatremia,endocrine/metabolic,8232,1264,0.623,0.621,0.629,0.635,-0.002,0.005,0.011,-0.007,0.006,comparable,clean,,True,True
+440,Atherosclerosis,circulatory system,9503,106,0.653,0.661,0.64,0.664,0.008,-0.013,0.011,0.021,0.024,comparable,clean,,True,True
+340.1,Migrain with aura,neurological,9521,45,0.773,0.79,0.756,0.783,0.017,-0.017,0.01,0.034,0.027,eye-specific,,,True,True
+558,Noninfectious gastroenteritis,digestive,9318,343,0.602,0.616,0.607,0.612,0.014,0.005,0.01,0.009,0.005,comparable,clean,,True,True
+733,Other disorders of bone and cartilage,musculoskeletal,9391,294,0.678,0.66,0.713,0.688,-0.018,0.035,0.01,-0.053,-0.025,CBC-specific,clean,,True,True
+276.5,Hypovolemia,endocrine/metabolic,7788,1670,0.602,0.601,0.613,0.613,-0.001,0.011,0.01,-0.012,-0.001,comparable,clean,,True,True
+591,Urinary tract infection,genitourinary,7786,1632,0.663,0.664,0.672,0.673,0.001,0.009,0.01,-0.007,0.001,comparable,clean,,True,True
+386.9,Dizziness and giddiness (Light-headedness and vertigo),sense organs,9028,499,0.591,0.596,0.608,0.601,0.004,0.017,0.01,-0.013,-0.007,comparable,,ineligible: sense-organ phenotype,True,False
+780,Hypothermia/Chills,symptoms,9496,119,0.613,0.599,0.639,0.624,-0.014,0.025,0.01,-0.04,-0.015,CBC-specific,clean,,True,True
+297.2,Suicide or self-inflicted injury,mental disorders,9474,108,0.837,0.842,0.843,0.847,0.005,0.006,0.01,-0.001,0.004,comparable,clean,,True,True
+366,Cataract,sense organs,8700,376,0.666,0.677,0.662,0.675,0.011,-0.004,0.009,0.016,0.014,comparable,,ineligible: sense-organ phenotype,False,False
+599.4,Urinary incontinence,genitourinary,9122,562,0.655,0.664,0.655,0.664,0.009,0.0,0.009,0.009,0.008,comparable,clean,,True,True
+427.3,Other specified cardiac dysrhythmias,circulatory system,8676,743,0.607,0.6,0.622,0.616,-0.007,0.015,0.009,-0.022,-0.006,comparable,expected_manifestation,concurrent tier: expected_manifestation,False,False
+395.1,Nonrheumatic mitral valve disorders,circulatory system,9050,462,0.627,0.616,0.646,0.636,-0.011,0.019,0.009,-0.031,-0.01,comparable,clean,,True,True
+276.42,Alkalosis,endocrine/metabolic,9343,325,0.644,0.625,0.651,0.653,-0.019,0.008,0.009,-0.026,0.001,comparable,clean,,True,True
+290.11,Alzheimer's disease,mental disorders,9439,193,0.802,0.814,0.799,0.811,0.012,-0.003,0.009,0.014,0.012,comparable,clean,,True,True
+008.6,Viral Enteritis,infectious diseases,9288,353,0.626,0.634,0.623,0.634,0.008,-0.003,0.008,0.011,0.011,comparable,clean,,True,True
+280.2,Iron deficiency anemia secondary to blood loss (chronic),hematopoietic,9332,272,0.671,0.634,0.701,0.679,-0.038,0.029,0.008,-0.067,-0.022,CBC-specific,tautological,concurrent tier: tautological,False,False
+420.3,Endocarditis,circulatory system,9491,102,0.644,0.556,0.692,0.652,-0.087,0.048,0.008,-0.136,-0.04,CBC-specific,clean,,True,True
+514,Abnormal findings examination of lungs,respiratory,9273,455,0.681,0.69,0.688,0.689,0.009,0.007,0.008,0.002,0.001,comparable,clean,,True,True
+974,"Poisoning by water, mineral, and uric acid metabolism drugs",injuries & poisonings,9362,319,0.688,0.694,0.686,0.695,0.006,-0.002,0.008,0.008,0.009,comparable,clean,,True,True
+315,Develomental delays and disorders,mental disorders,9410,240,0.612,0.613,0.637,0.62,0.001,0.025,0.008,-0.024,-0.018,comparable,clean,,True,True
+401.1,Essential hypertension,circulatory system,4063,1066,0.532,0.537,0.533,0.54,0.005,0.002,0.008,0.004,0.007,comparable,clean,,True,True
+427.8,Sinoatrial node dysfunction (Bradycardia),circulatory system,9397,190,0.748,0.758,0.749,0.756,0.01,0.0,0.008,0.01,0.008,comparable,clean,,True,True
+038.1,Gram negative septicemia,infectious diseases,9313,444,0.667,0.646,0.688,0.674,-0.02,0.021,0.008,-0.042,-0.013,CBC-specific,clean,,True,True
+740.9,Osteoarthrosis NOS,musculoskeletal,8768,396,0.665,0.669,0.673,0.673,0.003,0.008,0.008,-0.004,-0.0,comparable,clean,,True,True
+696.4,Psoriasis,dermatologic,9531,74,0.616,0.632,0.578,0.623,0.016,-0.038,0.007,0.054,0.045,eye-specific,clean,,True,True
+276.14,Hypopotassemia,endocrine/metabolic,8776,867,0.613,0.594,0.631,0.62,-0.019,0.018,0.007,-0.037,-0.011,CBC-specific,clean,,True,True
+295.1,Schizophrenia,mental disorders,9405,53,0.678,0.682,0.693,0.685,0.004,0.016,0.007,-0.011,-0.008,comparable,clean,,True,True
+857,"Mechanical complication of unspecified genitourinary device, implant, and graft",injuries & poisonings,9471,168,0.735,0.746,0.731,0.741,0.011,-0.004,0.007,0.015,0.01,comparable,care_process,concurrent tier: care_process,True,False
+172.2,Other non-epithelial cancer of skin,neoplasms,9263,165,0.682,0.684,0.687,0.689,0.003,0.005,0.007,-0.002,0.002,comparable,clean,,True,True
+300.1,Anxiety disorder,mental disorders,7930,1166,0.61,0.618,0.613,0.617,0.008,0.003,0.007,0.005,0.004,comparable,clean,,True,True
+805,Fracture of vertebral column without mention of spinal cord injury,injuries & poisonings,9386,264,0.708,0.709,0.716,0.715,0.001,0.008,0.007,-0.007,-0.001,comparable,clean,,True,True
+389,Hearing loss,sense organs,9234,320,0.716,0.719,0.719,0.722,0.003,0.003,0.006,0.001,0.004,comparable,,ineligible: sense-organ phenotype,True,False
+261.4,Vitamin D deficiency,endocrine/metabolic,9128,471,0.638,0.635,0.643,0.643,-0.003,0.005,0.006,-0.008,0.001,comparable,clean,,True,True
+564.9,Personal history of diseases of digestive system,digestive,9468,202,0.681,0.686,0.667,0.686,0.005,-0.014,0.006,0.019,0.02,comparable,clean,prospective vocabulary screen,False,False
+426.31,Right bundle branch block,circulatory system,9399,189,0.664,0.657,0.672,0.67,-0.007,0.007,0.006,-0.015,-0.002,comparable,clean,,True,True
+433.2,Occlusion of cerebral arteries,circulatory system,9451,143,0.634,0.624,0.675,0.64,-0.01,0.04,0.006,-0.05,-0.034,CBC-specific,clean,,True,True
+870.3,Other open wound of head and face,injuries & poisonings,9416,217,0.663,0.669,0.663,0.669,0.006,-0.0,0.006,0.006,0.006,comparable,clean,,True,True
+433.1,Occlusion and stenosis of precerebral arteries,circulatory system,9108,293,0.65,0.656,0.649,0.655,0.006,-0.001,0.005,0.007,0.006,comparable,clean,,True,True
+278.1,Obesity,endocrine/metabolic,8164,897,0.62,0.608,0.636,0.626,-0.012,0.016,0.005,-0.028,-0.01,comparable,clean,,True,True
+290.16,Vascular dementia,mental disorders,9471,197,0.723,0.733,0.724,0.727,0.01,0.001,0.005,0.009,0.004,comparable,clean,,True,True
+596,Other disorders of bladder,genitourinary,9458,184,0.655,0.675,0.637,0.66,0.02,-0.018,0.005,0.039,0.024,eye-specific,clean,,True,True
+803.1,Fracture of humerus,injuries & poisonings,9496,107,0.705,0.692,0.716,0.71,-0.013,0.011,0.005,-0.025,-0.006,comparable,clean,,True,True
+430.2,Intracerebral hemorrhage,circulatory system,9347,159,0.604,0.618,0.582,0.609,0.014,-0.023,0.005,0.037,0.027,eye-specific,clean,,True,True
+426.8,Other cardiac conduction disorders,circulatory system,9485,170,0.738,0.726,0.752,0.743,-0.012,0.014,0.005,-0.026,-0.009,comparable,clean,,True,True
+255.21,Glucocorticoid deficiency,endocrine/metabolic,9445,146,0.718,0.716,0.711,0.723,-0.002,-0.007,0.005,0.005,0.012,comparable,clean,,True,True
+296,Mood disorders,mental disorders,9406,183,0.69,0.683,0.705,0.694,-0.006,0.015,0.004,-0.022,-0.011,comparable,clean,,True,True
+575.2,Obstruction of bile duct,digestive,9424,118,0.531,0.562,0.491,0.534,0.031,-0.04,0.004,0.071,0.044,eye-specific,clean,,True,True
+580.32,Nephritis and nephropathy with pathological lesion,genitourinary,9470,166,0.7,0.651,0.72,0.704,-0.049,0.021,0.004,-0.069,-0.017,CBC-specific,clean,,True,True
+290.1,Dementias,mental disorders,9110,813,0.78,0.783,0.78,0.784,0.004,0.001,0.004,0.003,0.003,comparable,clean,,True,True
+720,Spinal stenosis,musculoskeletal,9169,443,0.641,0.643,0.648,0.644,0.002,0.007,0.003,-0.005,-0.005,comparable,clean,,True,True
+433.3,Cerebral ischemia,circulatory system,9518,52,0.595,0.62,0.53,0.597,0.025,-0.064,0.003,0.09,0.067,eye-specific,clean,,True,True
+531.2,Gastric ulcer,digestive,9471,114,0.652,0.617,0.68,0.654,-0.034,0.028,0.003,-0.063,-0.025,CBC-specific,clean,,True,True
+452,Other venous embolism and thrombosis,circulatory system,8773,619,0.588,0.558,0.605,0.591,-0.03,0.018,0.003,-0.047,-0.015,CBC-specific,clean,,True,True
+568.1,Peritoneal adhesions (postoperative) (postinfection),digestive,9463,123,0.574,0.573,0.587,0.577,-0.001,0.012,0.003,-0.014,-0.009,comparable,clean,,True,True
+509.2,Respiratory insufficiency,respiratory,9447,296,0.691,0.685,0.699,0.695,-0.007,0.007,0.003,-0.014,-0.004,comparable,clean,,True,True
+495.11,Chronic obstructive asthma with exacerbation,respiratory,9469,46,0.616,0.566,0.671,0.62,-0.05,0.055,0.003,-0.105,-0.052,CBC-specific,clean,,True,True
+798,Malaise and fatigue,symptoms,8966,905,0.649,0.651,0.648,0.651,0.002,-0.001,0.002,0.003,0.003,comparable,clean,,True,True
+185,Cancer of prostate,neoplasms,9249,89,0.879,0.874,0.885,0.881,-0.005,0.006,0.002,-0.011,-0.004,comparable,clean,,True,True
+802,Fracture of pelvis,injuries & poisonings,9508,88,0.742,0.744,0.742,0.743,0.002,-0.0,0.002,0.002,0.002,comparable,clean,,True,True
+496.21,Obstructive chronic bronchitis,respiratory,9289,321,0.676,0.664,0.691,0.679,-0.013,0.014,0.002,-0.027,-0.012,comparable,clean,,True,True
+577.1,Acute pancreatitis,digestive,9362,147,0.586,0.555,0.615,0.588,-0.03,0.029,0.002,-0.06,-0.027,CBC-specific,clean,,True,True
+973,Poisoning by agents primarily affecting the gastrointestinal system,injuries & poisonings,9538,64,0.679,0.664,0.692,0.681,-0.015,0.013,0.002,-0.029,-0.011,comparable,,,True,True
+512.7,Shortness of breath,respiratory,9249,456,0.667,0.667,0.672,0.669,-0.001,0.004,0.002,-0.005,-0.003,comparable,clean,,True,True
+600,Hyperplasia of prostate,genitourinary,8534,555,0.874,0.874,0.874,0.875,0.001,0.001,0.001,-0.0,0.0,comparable,clean,,True,True
+599.2,Retention of urine,genitourinary,8698,965,0.648,0.648,0.649,0.648,0.0,0.001,0.001,-0.001,-0.001,comparable,clean,,True,True
+586.4,Stricture/obstruction of ureter,genitourinary,9496,127,0.687,0.675,0.7,0.689,-0.012,0.013,0.001,-0.025,-0.012,comparable,clean,,True,True
+738,Other acquired musculoskeletal deformity,musculoskeletal,9546,46,0.715,0.746,0.697,0.716,0.031,-0.017,0.001,0.048,0.019,eye-specific,,,True,True
+530.11,GERD,digestive,6491,1618,0.595,0.594,0.597,0.596,-0.0,0.002,0.001,-0.003,-0.002,comparable,clean,,True,True
+198.2,Secondary malignancy of respiratory organs,neoplasms,9447,152,0.578,0.573,0.592,0.579,-0.006,0.013,0.001,-0.019,-0.013,comparable,clean,,True,True
+496,Chronic airway obstruction,respiratory,8658,680,0.636,0.619,0.651,0.637,-0.017,0.015,0.001,-0.032,-0.014,CBC-specific,clean,,True,True
+562.1,Diverticulosis,digestive,9014,497,0.657,0.65,0.663,0.657,-0.007,0.006,0.0,-0.013,-0.006,comparable,clean,,True,True
+789,Nausea and vomiting,symptoms,8452,958,0.614,0.604,0.625,0.614,-0.01,0.011,0.0,-0.021,-0.011,comparable,clean,,True,True
+916,Contusion,injuries & poisonings,9284,417,0.665,0.66,0.673,0.665,-0.006,0.007,-0.0,-0.013,-0.007,comparable,clean,,True,True
+772,Symptoms of the muscles,symptoms,9409,221,0.667,0.668,0.659,0.667,0.001,-0.008,-0.0,0.009,0.008,comparable,clean,,True,True
+270.32,Paraproteinemia,endocrine/metabolic,9455,95,0.652,0.628,0.667,0.651,-0.024,0.015,-0.001,-0.04,-0.017,CBC-specific,clean,,True,True
+965,"Poisoning by analgesics, antipyretics, and antirheumatics",injuries & poisonings,9441,131,0.611,0.593,0.637,0.61,-0.018,0.026,-0.001,-0.045,-0.027,CBC-specific,clean,,True,True
+797.1,Cardiogenic shock,symptoms,9476,221,0.713,0.709,0.715,0.712,-0.004,0.002,-0.001,-0.006,-0.003,comparable,clean,,True,True
+783.1,Postprocedural fever,symptoms,9485,43,0.566,0.554,0.59,0.565,-0.012,0.024,-0.001,-0.036,-0.025,CBC-specific,clean,,True,True
+646,Other complications of pregnancy NEC,pregnancy complications,9532,43,0.978,0.977,0.978,0.977,-0.001,-0.0,-0.001,-0.001,-0.001,comparable,,,True,True
+800.2,Fracture of unspecified part of femur,injuries & poisonings,9495,158,0.746,0.743,0.75,0.746,-0.004,0.003,-0.001,-0.007,-0.004,comparable,clean,,True,True
+318,Tobacco use disorder,mental disorders,8417,334,0.669,0.668,0.672,0.668,-0.001,0.003,-0.001,-0.004,-0.004,comparable,clean,,True,True
+698,Pruritus and related conditions,dermatologic,9375,213,0.675,0.672,0.679,0.673,-0.003,0.004,-0.001,-0.007,-0.005,comparable,clean,,True,True
+153.2,Colon cancer,neoplasms,9357,82,0.67,0.671,0.665,0.668,0.001,-0.004,-0.002,0.005,0.002,comparable,clean,,True,True
+244.4,Hypothyroidism NOS,endocrine/metabolic,8092,504,0.598,0.578,0.609,0.596,-0.019,0.011,-0.002,-0.031,-0.013,CBC-specific,clean,,True,True
+801,Fracture of ankle and foot,injuries & poisonings,9520,67,0.542,0.526,0.556,0.54,-0.016,0.014,-0.002,-0.03,-0.016,comparable,clean,,True,True
+426.91,Cardiac pacemaker in situ,circulatory system,9174,319,0.724,0.723,0.721,0.722,-0.0,-0.002,-0.002,0.002,0.001,comparable,clean,,True,True
+550.1,Inguinal hernia,digestive,9492,78,0.717,0.719,0.706,0.715,0.002,-0.011,-0.002,0.013,0.009,comparable,clean,,True,True
+785,Abdominal pain,symptoms,8809,653,0.603,0.594,0.609,0.601,-0.01,0.006,-0.002,-0.016,-0.008,comparable,clean,,True,True
+350.2,Abnormality of gait,neurological,9084,484,0.62,0.619,0.621,0.618,-0.002,0.001,-0.002,-0.003,-0.003,comparable,clean,,True,True
+296.1,Bipolar,mental disorders,9253,119,0.721,0.709,0.733,0.718,-0.012,0.012,-0.003,-0.024,-0.014,comparable,clean,,True,True
+562.2,Diverticulitis,digestive,9477,43,0.683,0.684,0.666,0.68,0.001,-0.018,-0.003,0.018,0.014,comparable,clean,,True,True
+960,Poisoning by antibiotics,injuries & poisonings,9245,412,0.666,0.648,0.669,0.663,-0.018,0.002,-0.003,-0.021,-0.006,comparable,clean,,True,True
+289,Other diseases of blood and blood-forming organs,hematopoietic,9497,97,0.681,0.66,0.704,0.678,-0.021,0.022,-0.003,-0.043,-0.026,CBC-specific,clean,,True,True
+550.2,Diaphragmatic hernia,digestive,9265,308,0.617,0.605,0.625,0.614,-0.012,0.007,-0.003,-0.019,-0.01,comparable,clean,,True,True
+512.9,Other dyspnea,respiratory,9287,201,0.618,0.594,0.632,0.615,-0.024,0.014,-0.003,-0.038,-0.017,CBC-specific,clean,,True,True
+276.4,Acid-base balance disorder,endocrine/metabolic,9456,232,0.677,0.684,0.661,0.675,0.007,-0.016,-0.003,0.023,0.013,comparable,clean,,True,True
+175,Acquired absence of breast,neoplasms,9454,93,0.746,0.748,0.736,0.743,0.002,-0.011,-0.003,0.012,0.007,comparable,clean,,True,True
+379.4,Anomalies of pupillary function,sense organs,9429,47,0.663,0.65,0.639,0.659,-0.013,-0.024,-0.004,0.011,0.02,comparable,,ineligible: sense-organ phenotype,True,False
+979,Adverse drug events and drug allergies,injuries & poisonings,9265,346,0.655,0.622,0.665,0.651,-0.033,0.01,-0.004,-0.043,-0.014,CBC-specific,clean,,True,True
+300.9,Posttraumatic stress disorder,mental disorders,9336,147,0.783,0.776,0.788,0.779,-0.007,0.005,-0.004,-0.012,-0.009,comparable,clean,,True,True
+208,Benign neoplasm of colon,neoplasms,9138,338,0.622,0.577,0.651,0.619,-0.045,0.028,-0.004,-0.073,-0.032,CBC-specific,clean,,True,True
+345.3,Convulsions,neurological,9270,363,0.585,0.588,0.583,0.581,0.003,-0.002,-0.004,0.004,-0.002,comparable,clean,,True,True
+681.7,Cellulitis and abscess of trunk,dermatologic,9398,160,0.615,0.596,0.629,0.611,-0.019,0.015,-0.004,-0.034,-0.018,CBC-specific,clean,,True,True
+296.22,Major depressive disorder,mental disorders,9341,98,0.703,0.688,0.709,0.698,-0.014,0.006,-0.005,-0.02,-0.011,comparable,clean,,True,True
+289.9,Abnormality of red blood cells,hematopoietic,9491,64,0.573,0.496,0.648,0.569,-0.078,0.074,-0.005,-0.152,-0.079,CBC-specific,clean,prospective vocabulary screen,False,False
+681.3,Cellulitis and abscess of arm/hand,dermatologic,9319,477,0.677,0.667,0.68,0.673,-0.01,0.003,-0.005,-0.013,-0.007,comparable,clean,,True,True
+368.2,Diplopia and disorders of binocular vision,sense organs,9162,90,0.6,0.633,0.557,0.595,0.033,-0.043,-0.005,0.076,0.038,eye-specific,,ineligible: sense-organ phenotype,True,False
+592.11,Acute cystitis,genitourinary,9530,81,0.734,0.736,0.743,0.729,0.002,0.008,-0.005,-0.007,-0.013,comparable,clean,,True,True
+574.1,Cholelithiasis,digestive,9389,206,0.602,0.57,0.618,0.597,-0.032,0.016,-0.005,-0.048,-0.021,CBC-specific,clean,,True,True
+804,Fracture of hand or wrist,injuries & poisonings,9529,43,0.679,0.673,0.628,0.673,-0.006,-0.051,-0.006,0.045,0.045,eye-specific,,,True,True
+458.1,Orthostatic hypotension,circulatory system,9029,676,0.615,0.607,0.612,0.608,-0.008,-0.002,-0.006,-0.005,-0.004,comparable,clean,,True,True
+441.2,Chronic vascular insufficiency of intestine,circulatory system,9533,42,0.717,0.66,0.754,0.711,-0.056,0.037,-0.006,-0.094,-0.043,CBC-specific,,,True,True
+496.3,Bronchiectasis,respiratory,9465,75,0.626,0.603,0.613,0.62,-0.024,-0.014,-0.007,-0.01,0.007,comparable,clean,,True,True
+800.1,Fracture of neck of femur,injuries & poisonings,9424,186,0.715,0.71,0.714,0.708,-0.006,-0.001,-0.007,-0.004,-0.006,comparable,clean,,True,True
+760,Back pain,symptoms,8610,828,0.614,0.602,0.617,0.606,-0.012,0.003,-0.007,-0.015,-0.01,comparable,clean,,True,True
+292.2,Mild cognitive impairment,mental disorders,9517,42,0.633,0.627,0.646,0.626,-0.006,0.013,-0.007,-0.019,-0.02,comparable,,,True,True
+394.3,Aortic valve disease,circulatory system,9519,102,0.656,0.651,0.68,0.649,-0.004,0.024,-0.007,-0.028,-0.031,comparable,clean,,True,True
+962.3,Hormones and synthetic substitutes causing adverse effects in therapeutic use,injuries & poisonings,9524,48,0.554,0.493,0.598,0.547,-0.06,0.045,-0.007,-0.105,-0.051,CBC-specific,,,True,True
+497,Bronchitis,respiratory,9511,69,0.624,0.564,0.649,0.617,-0.06,0.025,-0.007,-0.085,-0.031,CBC-specific,clean,,True,True
+743.9,Osteopenia or other disorder of bone and cartilage,musculoskeletal,9252,162,0.581,0.588,0.584,0.573,0.007,0.003,-0.008,0.004,-0.011,comparable,clean,,True,True
+608,Other disorders of male genital organs,genitourinary,9519,64,0.843,0.841,0.84,0.835,-0.001,-0.003,-0.008,0.002,-0.005,comparable,clean,,True,True
+594.1,Calculus of kidney,genitourinary,9443,116,0.614,0.627,0.558,0.606,0.013,-0.056,-0.008,0.069,0.048,eye-specific,clean,,True,True
+495,Asthma,respiratory,8423,420,0.606,0.596,0.61,0.598,-0.011,0.004,-0.008,-0.015,-0.012,comparable,clean,,True,True
+530.1,"Esophagitis, GERD and related diseases",digestive,9378,219,0.614,0.573,0.638,0.606,-0.041,0.024,-0.008,-0.065,-0.032,CBC-specific,clean,,True,True
+427.12,Paroxysmal ventricular tachycardia,circulatory system,9340,328,0.67,0.646,0.681,0.663,-0.025,0.011,-0.008,-0.036,-0.019,CBC-specific,clean,,True,True
+575.1,Cholangitis,digestive,9448,116,0.598,0.579,0.592,0.591,-0.02,-0.006,-0.008,-0.013,-0.001,comparable,clean,,True,True
+577.2,Chronic pancreatitis,digestive,9458,67,0.667,0.669,0.654,0.657,0.002,-0.013,-0.009,0.015,0.003,comparable,clean,,True,True
+530.14,Reflux esophagitis,digestive,9529,62,0.631,0.638,0.61,0.622,0.007,-0.021,-0.009,0.028,0.012,comparable,,,True,True
+530.3,Stricture and stenosis of esophagus,digestive,9499,87,0.672,0.682,0.64,0.662,0.011,-0.032,-0.009,0.042,0.022,eye-specific,clean,,True,True
+441.1,Acute vascular insufficiency of intestine,circulatory system,9525,76,0.614,0.6,0.612,0.605,-0.014,-0.002,-0.009,-0.011,-0.007,comparable,clean,,True,True
+819,Skull and face fracture and other intercranial injury,injuries & poisonings,9360,167,0.566,0.546,0.581,0.557,-0.02,0.015,-0.009,-0.035,-0.024,CBC-specific,clean,,True,True
+569,Other disorders of intestine,digestive,9447,177,0.642,0.624,0.655,0.632,-0.018,0.012,-0.01,-0.031,-0.023,CBC-specific,clean,,True,True
+695.9,Unspecified erythematous condition,dermatologic,9521,52,0.663,0.613,0.684,0.653,-0.05,0.021,-0.01,-0.07,-0.031,CBC-specific,,,True,True
+430.3,Subdural hemorrhage,circulatory system,9501,76,0.612,0.556,0.662,0.602,-0.056,0.05,-0.01,-0.106,-0.06,CBC-specific,clean,,True,True
+352.2,Facial nerve disorders [CN7],neurological,9472,57,0.462,0.488,0.405,0.452,0.025,-0.057,-0.01,0.082,0.047,eye-specific,clean,,True,True
+550.5,Ventral hernia,digestive,9480,112,0.623,0.577,0.656,0.612,-0.046,0.033,-0.011,-0.079,-0.043,CBC-specific,clean,,True,True
+571.5,Other chronic nonalcoholic liver disease,digestive,9331,213,0.699,0.683,0.7,0.688,-0.016,0.001,-0.011,-0.017,-0.011,comparable,clean,,True,True
+338.1,Acute pain,neurological,9356,142,0.602,0.585,0.638,0.59,-0.017,0.037,-0.012,-0.054,-0.048,CBC-specific,clean,,True,True
+687.1,Rash and other nonspecific skin eruption,dermatologic,9331,248,0.656,0.638,0.66,0.644,-0.018,0.004,-0.012,-0.022,-0.016,comparable,clean,,True,True
+564.1,Irritable Bowel Syndrome,digestive,9340,155,0.668,0.669,0.649,0.656,0.0,-0.019,-0.012,0.02,0.007,comparable,clean,,True,True
+337,Disorders of the autonomic nervous system,neurological,9468,112,0.656,0.668,0.615,0.642,0.012,-0.041,-0.013,0.053,0.028,eye-specific,clean,,True,True
+465,Acute upper respiratory infections of multiple or unspecified sites,respiratory,9309,355,0.664,0.633,0.677,0.651,-0.031,0.012,-0.013,-0.043,-0.025,CBC-specific,clean,,True,True
+966,Poisoning by anticonvulsants and anti-Parkinsonism drugs,injuries & poisonings,9380,217,0.653,0.638,0.644,0.639,-0.015,-0.009,-0.014,-0.006,-0.005,comparable,clean,,True,True
+573.7,Abnormal results of function study of liver,digestive,9507,60,0.653,0.642,0.656,0.639,-0.011,0.002,-0.014,-0.014,-0.017,comparable,clean,,True,True
+350.1,Abnormal involuntary movements,neurological,9400,216,0.675,0.659,0.664,0.661,-0.016,-0.011,-0.014,-0.005,-0.004,comparable,clean,,True,True
+687.4,Disturbance of skin sensation,dermatologic,9197,284,0.622,0.611,0.62,0.609,-0.011,-0.002,-0.014,-0.009,-0.012,comparable,expected_manifestation,concurrent tier: expected_manifestation,False,False
+451,Phlebitis and thrombophlebitis,circulatory system,9470,115,0.604,0.608,0.569,0.591,0.004,-0.035,-0.014,0.039,0.021,eye-specific,clean,,True,True
+351,Other peripheral nerve disorders,neurological,9239,249,0.628,0.59,0.645,0.613,-0.038,0.017,-0.015,-0.055,-0.032,CBC-specific,clean,,True,True
+971,Poisoning by drugs primarily affecting the autonomic nervous system,injuries & poisonings,9476,175,0.651,0.634,0.642,0.636,-0.017,-0.009,-0.015,-0.008,-0.006,comparable,clean,,True,True
+595,Hydronephrosis,genitourinary,9398,221,0.589,0.541,0.613,0.574,-0.048,0.024,-0.015,-0.072,-0.039,CBC-specific,clean,,True,True
+426.21,First degree AV block,circulatory system,9473,119,0.669,0.651,0.669,0.654,-0.019,-0.0,-0.015,-0.018,-0.015,comparable,clean,,True,True
+174.11,Malignant neoplasm of female breast,neoplasms,9188,56,0.756,0.748,0.743,0.74,-0.007,-0.012,-0.015,0.005,-0.003,comparable,clean,,True,True
+333,Extrapyramidal disease and abnormal movement disorders,neurological,9506,161,0.678,0.647,0.695,0.662,-0.031,0.017,-0.016,-0.048,-0.034,CBC-specific,clean,,True,True
+530.7,Gastroesophageal laceration-hemorrhage syndrome,digestive,9525,56,0.611,0.604,0.577,0.595,-0.007,-0.034,-0.016,0.027,0.019,comparable,,,True,True
+189.11,"Malignant neoplasm of kidney, except pelvis",neoplasms,9490,59,0.557,0.537,0.57,0.542,-0.021,0.012,-0.016,-0.033,-0.028,CBC-specific,clean,,True,True
+425.1,Primary/intrinsic cardiomyopathies,circulatory system,9147,395,0.634,0.612,0.642,0.618,-0.022,0.007,-0.016,-0.03,-0.023,comparable,clean,,True,True
+592.1,Cystitis,genitourinary,9497,134,0.681,0.653,0.699,0.666,-0.028,0.017,-0.016,-0.046,-0.033,CBC-specific,clean,,True,True
+433.21,"Cerebral artery occlusion, with cerebral infarction",circulatory system,8989,313,0.611,0.579,0.619,0.595,-0.032,0.008,-0.016,-0.04,-0.024,CBC-specific,clean,,True,True
+483,Acute bronchitis and bronchiolitis,respiratory,9465,135,0.57,0.541,0.563,0.554,-0.03,-0.008,-0.016,-0.022,-0.008,comparable,clean,,True,True
+301,Personality disorders,mental disorders,9509,42,0.837,0.821,0.837,0.82,-0.016,-0.001,-0.017,-0.016,-0.016,comparable,,,True,True
+721.1,Spondylosis without myelopathy,musculoskeletal,9180,313,0.579,0.561,0.58,0.562,-0.018,0.001,-0.017,-0.019,-0.018,comparable,clean,,True,True
+465.2,Acute pharyngitis,respiratory,9489,83,0.677,0.676,0.672,0.659,-0.0,-0.005,-0.018,0.004,-0.013,comparable,clean,,True,True
+334,Degenerative disease of the spinal cord,neurological,9509,105,0.621,0.578,0.624,0.602,-0.042,0.004,-0.018,-0.046,-0.022,CBC-specific,clean,,True,True
+218.1,Uterine leiomyoma,neoplasms,9471,52,0.833,0.819,0.82,0.814,-0.014,-0.012,-0.019,-0.001,-0.006,comparable,clean,,True,True
+261.2,Vitamin B-complex deficiencies,endocrine/metabolic,9283,223,0.599,0.562,0.617,0.579,-0.037,0.019,-0.019,-0.056,-0.038,CBC-specific,clean,,True,True
+807,Fracture of ribs,injuries & poisonings,9453,116,0.673,0.657,0.665,0.654,-0.016,-0.008,-0.019,-0.008,-0.011,comparable,clean,,True,True
+447.1,Stricture of artery,circulatory system,9516,70,0.597,0.56,0.57,0.578,-0.036,-0.027,-0.019,-0.009,0.008,comparable,clean,,True,True
+070.3,Viral hepatitis C,infectious diseases,9267,54,0.613,0.553,0.669,0.593,-0.06,0.056,-0.02,-0.117,-0.076,CBC-specific,clean,,True,True
+859,Complication due to other implant and internal device,injuries & poisonings,9411,218,0.629,0.595,0.64,0.609,-0.035,0.011,-0.02,-0.045,-0.031,CBC-specific,care_process,concurrent tier: care_process,True,False
+560.2,Impaction of intestine,digestive,9539,58,0.689,0.708,0.628,0.669,0.019,-0.06,-0.02,0.08,0.041,eye-specific,,,True,True
+420.2,Pericarditis,circulatory system,9416,174,0.649,0.613,0.638,0.629,-0.036,-0.011,-0.02,-0.025,-0.009,comparable,clean,,True,True
+442.11,Abdominal aortic aneurysm,circulatory system,9431,100,0.765,0.751,0.763,0.745,-0.014,-0.003,-0.02,-0.011,-0.017,comparable,clean,,True,True
+800,Fracture of lower limb,injuries & poisonings,9531,98,0.633,0.612,0.63,0.613,-0.021,-0.003,-0.02,-0.017,-0.017,comparable,clean,,True,True
+480.12,Pseudomonal pneumonia,respiratory,9537,60,0.645,0.595,0.655,0.625,-0.051,0.01,-0.021,-0.06,-0.03,CBC-specific,,,True,True
+379.2,Disorders of vitreous body,sense organs,9438,67,0.612,0.492,0.668,0.592,-0.12,0.055,-0.021,-0.175,-0.076,CBC-specific,,ineligible: sense-organ phenotype,False,False
+304,Adjustment reaction,mental disorders,9416,193,0.655,0.661,0.625,0.634,0.006,-0.03,-0.021,0.036,0.009,eye-specific,clean,,True,True
+560.1,Paralytic ileus,digestive,9316,248,0.624,0.611,0.611,0.602,-0.013,-0.013,-0.022,-0.001,-0.009,comparable,clean,,True,True
+800.3,Fracture of tibia and fibula,injuries & poisonings,9516,73,0.635,0.609,0.631,0.612,-0.026,-0.004,-0.023,-0.022,-0.019,comparable,clean,,True,True
+737.3,Kyphoscoliosis and scoliosis,musculoskeletal,9485,74,0.65,0.616,0.647,0.626,-0.034,-0.003,-0.024,-0.031,-0.021,CBC-specific,clean,,True,True
+972,Poisoning by agents primarily affecting the cardiovascular system,injuries & poisonings,9367,285,0.656,0.616,0.663,0.631,-0.04,0.008,-0.024,-0.047,-0.032,CBC-specific,clean,,True,True
+574.11,Cholelithiasis with acute cholecystitis,digestive,9512,55,0.535,0.516,0.489,0.509,-0.018,-0.046,-0.025,0.028,0.02,comparable,clean,,True,True
+579.8,Nonspecific abnormal findings in stool contents,digestive,9468,138,0.621,0.572,0.634,0.596,-0.049,0.013,-0.025,-0.062,-0.038,CBC-specific,clean,,True,True
+473.4,Voice disturbance,respiratory,9533,56,0.678,0.664,0.66,0.653,-0.014,-0.018,-0.025,0.004,-0.006,comparable,expected_manifestation,concurrent tier: expected_manifestation,False,False
+110.13,Dermatophytosis of the body,infectious diseases,9521,63,0.679,0.653,0.675,0.654,-0.025,-0.004,-0.025,-0.021,-0.021,comparable,,,True,True
+686,Other local infections of skin and subcutaneous tissue,dermatologic,9517,88,0.615,0.579,0.616,0.59,-0.036,0.001,-0.025,-0.036,-0.026,CBC-specific,clean,,True,True
+427.6,Premature beats,circulatory system,9509,109,0.681,0.669,0.666,0.655,-0.011,-0.014,-0.026,0.003,-0.011,comparable,clean,,True,True
+761,Cervicalgia,symptoms,9351,237,0.67,0.65,0.658,0.644,-0.02,-0.012,-0.026,-0.008,-0.014,comparable,clean,,True,True
+433.12,Cerebral atherosclerosis,circulatory system,9445,131,0.686,0.66,0.682,0.659,-0.026,-0.004,-0.027,-0.023,-0.023,comparable,clean,,True,True
+442.1,Aortic aneurysm,circulatory system,9468,89,0.681,0.673,0.652,0.654,-0.008,-0.029,-0.027,0.021,0.002,comparable,clean,,True,True
+771.1,Swelling of limb,symptoms,9406,289,0.633,0.606,0.626,0.605,-0.027,-0.008,-0.028,-0.019,-0.021,comparable,clean,,True,True
+628,Ovarian cyst,genitourinary,9505,49,0.849,0.838,0.834,0.821,-0.012,-0.015,-0.028,0.004,-0.013,comparable,clean,,True,True
+270.33,Amyloidosis,endocrine/metabolic,9491,77,0.722,0.715,0.7,0.694,-0.007,-0.022,-0.028,0.014,-0.007,comparable,clean,,True,True
+426.32,Left bundle branch block,circulatory system,9410,207,0.68,0.657,0.677,0.652,-0.024,-0.003,-0.028,-0.021,-0.025,comparable,clean,,True,True
+476,Allergic rhinitis,respiratory,9435,162,0.577,0.544,0.562,0.549,-0.033,-0.015,-0.028,-0.018,-0.013,comparable,clean,,True,True
+739,Contracture of joint,musculoskeletal,9542,43,0.506,0.524,0.428,0.477,0.018,-0.078,-0.029,0.096,0.048,eye-specific,,,True,True
+260.6,Anorexia,endocrine/metabolic,9452,173,0.611,0.568,0.601,0.582,-0.042,-0.009,-0.029,-0.033,-0.019,CBC-specific,clean,,True,True
+512.8,Cough,respiratory,9254,406,0.648,0.618,0.642,0.618,-0.03,-0.007,-0.03,-0.024,-0.023,comparable,clean,,True,True
+573.1,Chronic passive congestion of liver,digestive,9538,80,0.69,0.659,0.689,0.659,-0.031,-0.001,-0.03,-0.031,-0.03,comparable,clean,,True,True
+961,Poisoning by other anti-infectives,injuries & poisonings,9455,123,0.652,0.588,0.667,0.621,-0.065,0.015,-0.031,-0.08,-0.046,CBC-specific,clean,,True,True
+379.9,"Pain, swelling or discharge of eye",sense organs,9431,44,0.726,0.672,0.735,0.694,-0.054,0.009,-0.032,-0.064,-0.041,CBC-specific,,ineligible: sense-organ phenotype,True,False
+577,Diseases of pancreas,digestive,9465,139,0.634,0.579,0.636,0.602,-0.055,0.002,-0.032,-0.057,-0.034,CBC-specific,clean,,True,True
+1005,,,9538,66,0.754,0.738,0.753,0.722,-0.017,-0.001,-0.032,-0.015,-0.031,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
+521.1,Dental caries,digestive,9514,57,0.742,0.718,0.724,0.71,-0.024,-0.018,-0.032,-0.006,-0.014,comparable,clean,,True,True
+946,Anaphylactic shock NOS,injuries & poisonings,9498,60,0.682,0.672,0.667,0.648,-0.01,-0.015,-0.033,0.005,-0.019,comparable,clean,,True,True
+741.3,Difficulty in walking,musculoskeletal,9467,125,0.646,0.61,0.645,0.613,-0.036,-0.001,-0.033,-0.034,-0.031,CBC-specific,clean,,True,True
+535.8,Other specified gastritis,digestive,9476,96,0.618,0.562,0.619,0.585,-0.055,0.001,-0.033,-0.056,-0.033,CBC-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
+737.1,Kyphosis (acquired),musculoskeletal,9532,51,0.599,0.585,0.563,0.564,-0.014,-0.036,-0.034,0.022,0.001,comparable,,,True,True
+350.3,Lack of coordination,neurological,9380,159,0.62,0.573,0.617,0.586,-0.047,-0.003,-0.034,-0.044,-0.031,CBC-specific,clean,,True,True
+594.3,Calculus of ureter,genitourinary,9523,48,0.587,0.563,0.528,0.553,-0.024,-0.059,-0.034,0.035,0.025,eye-specific,,,True,True
+426.23,Second degree AV block,circulatory system,9485,121,0.673,0.651,0.658,0.639,-0.022,-0.015,-0.034,-0.006,-0.019,comparable,clean,,True,True
+766,"Neuralgia, neuritis, and radiculitis NOS",symptoms,9445,179,0.617,0.609,0.572,0.583,-0.008,-0.045,-0.034,0.037,0.011,eye-specific,clean,,True,True
+202.24,Large cell lymphoma,neoplasms,9479,52,0.608,0.56,0.577,0.573,-0.048,-0.031,-0.035,-0.017,-0.004,comparable,expected_cbc,concurrent tier: expected_cbc,False,False
+963,Poisoning by primarily systemic agents,injuries & poisonings,9495,98,0.647,0.605,0.646,0.611,-0.042,-0.001,-0.036,-0.041,-0.035,CBC-specific,clean,,True,True
+965.1,Opiates and related narcotics causing adverse effects in therapeutic use,injuries & poisonings,9402,154,0.607,0.552,0.643,0.57,-0.055,0.036,-0.037,-0.091,-0.073,CBC-specific,clean,,True,True
+705.8,Hyperhidrosis,dermatologic,9526,51,0.66,0.621,0.671,0.624,-0.039,0.011,-0.037,-0.05,-0.048,CBC-specific,clean,,True,True
+589,Abnormal results of function study of kidney,genitourinary,9536,44,0.634,0.608,0.563,0.597,-0.026,-0.071,-0.038,0.045,0.033,eye-specific,,,True,True
+244.5,Congenital hypothyroidism,endocrine/metabolic,9516,56,0.636,0.604,0.66,0.597,-0.032,0.024,-0.039,-0.056,-0.063,CBC-specific,,,True,True
+110.12,Althete's foot,infectious diseases,9524,41,0.574,0.548,0.57,0.534,-0.026,-0.004,-0.04,-0.022,-0.036,comparable,,,True,True
+450,Noninfectious disorders of lymphatic channels,circulatory system,9486,77,0.632,0.554,0.665,0.592,-0.078,0.033,-0.04,-0.111,-0.073,CBC-specific,clean,,True,True
+395.3,Nonrheumatic tricuspid valve disorders,circulatory system,9519,77,0.691,0.634,0.696,0.65,-0.057,0.005,-0.041,-0.061,-0.046,CBC-specific,clean,,True,True
+579,Other symptoms involving abdomen and pelvis,digestive,9521,53,0.544,0.517,0.518,0.5,-0.027,-0.026,-0.043,-0.001,-0.018,comparable,,,True,True
+479,Other upper respiratory disease,respiratory,9406,183,0.641,0.595,0.633,0.598,-0.046,-0.008,-0.043,-0.038,-0.035,CBC-specific,clean,,True,True
+269,Proteinuria,endocrine/metabolic,9503,71,0.665,0.651,0.604,0.621,-0.014,-0.062,-0.044,0.047,0.017,eye-specific,clean,,True,True
+803.2,Fracture of radius and ulna,injuries & poisonings,9500,80,0.63,0.596,0.618,0.587,-0.034,-0.012,-0.044,-0.022,-0.031,comparable,clean,,True,True
+975,Poisoning by agents primarily acting on the smooth and skeletal muscles and respiratory system,injuries & poisonings,9540,42,0.649,0.602,0.649,0.605,-0.047,0.0,-0.044,-0.047,-0.044,CBC-specific,,,True,True
+958.1,Postoperative shock,injuries & poisonings,9521,62,0.742,0.686,0.749,0.697,-0.056,0.007,-0.045,-0.063,-0.052,CBC-specific,clean,,True,True
+530.5,Disorders of esophageal motility,digestive,9482,102,0.673,0.619,0.663,0.627,-0.053,-0.009,-0.046,-0.044,-0.037,CBC-specific,clean,,True,True
+306.9,Tension headache,mental disorders,9524,46,0.642,0.627,0.617,0.596,-0.015,-0.025,-0.046,0.01,-0.021,comparable,,,True,True
+695.8,Other specified erythematous conditions,dermatologic,9503,68,0.667,0.566,0.687,0.619,-0.101,0.02,-0.047,-0.121,-0.068,CBC-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
+599.3,Dysuria,genitourinary,9466,159,0.648,0.602,0.635,0.601,-0.046,-0.012,-0.047,-0.033,-0.035,CBC-specific,clean,,True,True
+722.6,Degeneration of intervertebral disc,musculoskeletal,9434,115,0.575,0.52,0.585,0.529,-0.055,0.009,-0.047,-0.064,-0.056,CBC-specific,clean,,True,True
+949,"Allergies, other",injuries & poisonings,9502,58,0.667,0.596,0.673,0.62,-0.071,0.006,-0.047,-0.077,-0.054,CBC-specific,clean,,True,True
+271.3,Intestinal disaccharidase deficiencies and disaccharide malabsorption,endocrine/metabolic,9506,51,0.63,0.598,0.588,0.581,-0.032,-0.041,-0.048,0.01,-0.007,comparable,clean,,True,True
+244.1,Secondary hypothyroidism,endocrine/metabolic,9412,125,0.621,0.587,0.606,0.574,-0.034,-0.015,-0.048,-0.019,-0.032,comparable,clean,,True,True
+110.1,Dermatophytosis,infectious diseases,9549,40,0.711,0.686,0.679,0.663,-0.025,-0.033,-0.049,0.007,-0.016,comparable,,,True,True
+189.21,Malignant neoplasm of bladder,neoplasms,9462,57,0.775,0.72,0.777,0.726,-0.055,0.002,-0.049,-0.057,-0.051,CBC-specific,clean,,True,True
+110.11,Dermatophytosis of nail,infectious diseases,9518,49,0.685,0.626,0.716,0.637,-0.06,0.031,-0.049,-0.091,-0.079,CBC-specific,,,True,True
+454.11,"Varicose veins of lower extremity, symptomtic",circulatory system,9556,46,0.801,0.758,0.787,0.751,-0.043,-0.015,-0.05,-0.028,-0.035,comparable,,,True,True
+359.2,Myopathy,neurological,9486,76,0.576,0.545,0.526,0.525,-0.03,-0.05,-0.051,0.019,-0.001,comparable,clean,,True,True
+947,Urticaria,dermatologic,9511,49,0.548,0.501,0.489,0.497,-0.046,-0.058,-0.051,0.012,0.007,comparable,,,True,True
+530.12,Ulcer of esophagus,digestive,9520,61,0.598,0.562,0.582,0.545,-0.036,-0.016,-0.053,-0.02,-0.037,comparable,,,True,True
+599,Other symptoms/disorders or the urinary system,genitourinary,9501,106,0.717,0.682,0.699,0.664,-0.035,-0.018,-0.053,-0.017,-0.035,comparable,clean,,True,True
+430.1,Subarachnoid hemorrhage,circulatory system,9492,43,0.602,0.555,0.579,0.549,-0.047,-0.023,-0.053,-0.024,-0.03,comparable,clean,,True,True
+241.1,Nontoxic uninodular goiter,endocrine/metabolic,9395,132,0.656,0.593,0.658,0.602,-0.063,0.002,-0.054,-0.065,-0.056,CBC-specific,clean,,True,True
+433,Cerebrovascular disease,circulatory system,9479,92,0.626,0.587,0.615,0.572,-0.039,-0.011,-0.054,-0.028,-0.043,comparable,clean,,True,True
+733.4,Aseptic necrosis of bone,musculoskeletal,9513,63,0.65,0.631,0.591,0.595,-0.02,-0.059,-0.055,0.04,0.004,eye-specific,,,True,True
+389.1,Sensorineural hearing loss,sense organs,9501,67,0.588,0.507,0.54,0.532,-0.081,-0.047,-0.055,-0.034,-0.008,CBC-specific,,ineligible: sense-organ phenotype,True,False
+362.4,Retinal vascular changes and abnomalities,sense organs,9400,82,0.637,0.603,0.604,0.582,-0.034,-0.033,-0.056,-0.001,-0.022,comparable,,ineligible: sense-organ phenotype,False,False
+560.4,Other intestinal obstruction,digestive,9407,207,0.608,0.548,0.595,0.551,-0.06,-0.014,-0.057,-0.046,-0.044,CBC-specific,clean,,True,True
+379,Other disorders of eye,sense organs,9485,42,0.637,0.615,0.591,0.58,-0.022,-0.046,-0.057,0.024,-0.011,comparable,,ineligible: sense-organ phenotype,True,False
+599.1,Urinary obstruction,genitourinary,9536,48,0.681,0.652,0.656,0.622,-0.028,-0.025,-0.058,-0.003,-0.033,comparable,,,True,True
+519.8,"Other diseases of respiratory system, NEC",respiratory,9517,133,0.726,0.664,0.708,0.667,-0.062,-0.019,-0.059,-0.044,-0.041,CBC-specific,clean,,True,True
+743.2,Pathologic fracture,musculoskeletal,9475,153,0.635,0.577,0.615,0.575,-0.058,-0.02,-0.06,-0.038,-0.04,CBC-specific,clean,,True,True
+726,Peripheral enthesopathies and allied syndromes,musculoskeletal,9506,75,0.663,0.623,0.629,0.602,-0.039,-0.034,-0.06,-0.006,-0.027,comparable,clean,,True,True
+386.2,Peripheral or central vertigo,sense organs,9432,127,0.59,0.488,0.624,0.53,-0.102,0.034,-0.06,-0.135,-0.094,CBC-specific,,ineligible: sense-organ phenotype,True,False
+202.2,Non-Hodgkins lymphoma,neoplasms,9356,65,0.554,0.464,0.547,0.493,-0.089,-0.007,-0.061,-0.083,-0.054,CBC-specific,expected_cbc,concurrent tier: expected_cbc,False,False
+764,Sciatica,symptoms,9450,112,0.592,0.546,0.576,0.531,-0.046,-0.016,-0.061,-0.03,-0.045,comparable,clean,,True,True
+433.11,"Occlusion of cerebral arteries, with cerebral infarction",circulatory system,9470,58,0.549,0.517,0.514,0.488,-0.032,-0.035,-0.061,0.003,-0.026,comparable,clean,,True,True
+586.2,"Cyst of kidney, acquired",genitourinary,9486,77,0.686,0.662,0.636,0.623,-0.023,-0.05,-0.062,0.026,-0.013,comparable,clean,,True,True
+136,Other infectious and parasitic diseases,infectious diseases,9434,107,0.633,0.59,0.584,0.57,-0.043,-0.049,-0.063,0.006,-0.014,comparable,clean,,True,True
+513.8,Disorders of diaphragm,respiratory,9519,49,0.76,0.681,0.754,0.697,-0.079,-0.006,-0.063,-0.073,-0.057,CBC-specific,,,True,True
+717,Polymyalgia Rheumatica,musculoskeletal,9442,44,0.759,0.716,0.729,0.696,-0.044,-0.03,-0.064,-0.014,-0.034,comparable,clean,,True,True
+371.3,Inflammation of eyelids,sense organs,9449,45,0.718,0.697,0.603,0.653,-0.022,-0.115,-0.065,0.094,0.05,eye-specific,,ineligible: sense-organ phenotype,False,False
+473,Diseases of the larynx and vocal cords,respiratory,9523,58,0.603,0.546,0.564,0.538,-0.058,-0.039,-0.066,-0.019,-0.027,comparable,clean,,True,True
+574.2,Calculus of bile duct,digestive,9451,92,0.597,0.543,0.578,0.531,-0.054,-0.019,-0.067,-0.035,-0.048,CBC-specific,clean,,True,True
+442.8,Aneurysm of other specified artery,circulatory system,9525,44,0.716,0.62,0.722,0.65,-0.097,0.006,-0.067,-0.103,-0.073,CBC-specific,,,True,True
+293.1,"Swelling, mass, or lump in head and neck [Space-occupying lesion, intracranial NOS]",mental disorders,9509,50,0.476,0.444,0.445,0.408,-0.032,-0.03,-0.068,-0.001,-0.037,comparable,clean,,True,True
+525,Other diseases of the teeth and supporting structures,digestive,9519,43,0.711,0.671,0.662,0.643,-0.04,-0.049,-0.068,0.009,-0.019,comparable,,,True,True
+716,Other arthropathies,musculoskeletal,9544,43,0.654,0.608,0.61,0.585,-0.046,-0.044,-0.069,-0.001,-0.025,comparable,,,True,True
+681.2,Cellulitis and abscess of face/neck,dermatologic,9471,64,0.669,0.609,0.64,0.598,-0.06,-0.029,-0.071,-0.031,-0.042,CBC-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
+599.5,Frequency of urination and polyuria,genitourinary,9405,205,0.62,0.537,0.618,0.547,-0.083,-0.002,-0.073,-0.081,-0.071,CBC-specific,clean,,True,True
+369.5,"Conjunctivitis, infectious",sense organs,9226,109,0.603,0.557,0.532,0.528,-0.046,-0.071,-0.075,0.025,-0.004,comparable,,ineligible: sense-organ phenotype,False,False
+333.1,Essential tremor,neurological,9418,101,0.6,0.539,0.537,0.525,-0.061,-0.063,-0.075,0.001,-0.013,comparable,clean,,True,True
+414,Other forms of chronic heart disease,circulatory system,9453,118,0.555,0.493,0.539,0.479,-0.062,-0.016,-0.076,-0.046,-0.06,CBC-specific,clean,,True,True
+727.1,Synovitis and tenosynovitis,musculoskeletal,9511,51,0.619,0.558,0.562,0.542,-0.061,-0.056,-0.077,-0.005,-0.021,comparable,,,True,True
+440.9,Atherosclerosis of aorta,circulatory system,9490,65,0.632,0.584,0.598,0.555,-0.048,-0.034,-0.077,-0.014,-0.044,comparable,clean,,True,True
+272.12,Hyperglyceridemia,endocrine/metabolic,9499,51,0.654,0.605,0.595,0.577,-0.048,-0.058,-0.077,0.01,-0.018,comparable,clean,,True,True
+333.4,Torsion dystonia,neurological,9532,50,0.692,0.628,0.619,0.613,-0.064,-0.073,-0.079,0.008,-0.006,comparable,,,True,True
+427.61,Supraventricular premature beats,circulatory system,9535,45,0.666,0.607,0.622,0.585,-0.06,-0.044,-0.081,-0.016,-0.037,comparable,,,True,True
+550,Abdominal hernia,digestive,9524,87,0.667,0.559,0.617,0.585,-0.108,-0.05,-0.082,-0.058,-0.032,CBC-specific,clean,,True,True
+722.9,Other and unspecified disc disorder,musculoskeletal,9512,50,0.648,0.55,0.638,0.566,-0.098,-0.011,-0.083,-0.088,-0.072,CBC-specific,,,True,True
+726.1,Enthesopathy,musculoskeletal,9498,108,0.596,0.546,0.554,0.511,-0.05,-0.042,-0.085,-0.008,-0.043,comparable,clean,,True,True
+320,Meningitis,neurological,9493,44,0.722,0.667,0.669,0.638,-0.056,-0.053,-0.085,-0.002,-0.031,comparable,clean,,True,True
+255,Disorders of adrenal glands,endocrine/metabolic,9536,56,0.592,0.536,0.538,0.505,-0.056,-0.054,-0.087,-0.002,-0.033,comparable,clean,,True,True
+242,Thyrotoxicosis with or without goiter,endocrine/metabolic,9502,48,0.559,0.53,0.452,0.473,-0.029,-0.107,-0.087,0.078,0.021,eye-specific,clean,,True,True
+244.2,Acquired hypothyroidism,endocrine/metabolic,9503,91,0.669,0.574,0.662,0.581,-0.095,-0.007,-0.088,-0.088,-0.081,CBC-specific,clean,,True,True
+741.4,Joint effusions,musculoskeletal,9501,118,0.668,0.607,0.628,0.576,-0.061,-0.04,-0.092,-0.021,-0.053,comparable,clean,,True,True
+426.2,Atrioventricular [AV] block,circulatory system,9547,44,0.736,0.667,0.71,0.643,-0.069,-0.026,-0.093,-0.043,-0.067,CBC-specific,,,True,True
+281.12,Other vitamin B12 deficiency anemia,hematopoietic,9508,69,0.633,0.497,0.635,0.537,-0.135,0.002,-0.095,-0.137,-0.097,CBC-specific,tautological,concurrent tier: tautological,False,False
+502,Postinflammatory pulmonary fibrosis,respiratory,9453,88,0.597,0.511,0.546,0.501,-0.086,-0.051,-0.096,-0.035,-0.045,CBC-specific,clean,,True,True
+313.1,Attention deficit hyperactivity disorder,mental disorders,9465,45,0.745,0.692,0.697,0.645,-0.053,-0.049,-0.1,-0.005,-0.052,comparable,clean,,True,True
+333.2,Myoclonus,neurological,9526,67,0.688,0.6,0.615,0.586,-0.088,-0.073,-0.102,-0.015,-0.029,comparable,clean,,True,True
+441,Vascular insufficiency of intestine,circulatory system,9513,76,0.681,0.601,0.628,0.574,-0.08,-0.053,-0.107,-0.027,-0.054,comparable,clean,,True,True
+396,Abnormal heart sounds,circulatory system,9510,48,0.537,0.445,0.469,0.42,-0.092,-0.068,-0.117,-0.024,-0.049,comparable,clean,,True,True
+560.3,Peritoneal or intestinal adhesions,digestive,9508,57,0.647,0.583,0.554,0.524,-0.064,-0.093,-0.124,0.029,-0.031,comparable,clean,,True,True
+401.3,Other hypertensive complications,circulatory system,9480,49,0.546,0.509,0.45,0.412,-0.037,-0.096,-0.134,0.059,-0.038,eye-specific,clean,,True,True
