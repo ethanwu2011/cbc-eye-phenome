@@ -65,7 +65,11 @@ pr1=load("_B730")
 m1=xs[["phecode","adv_xs"]].merge(pr1[["phecode","adv_pr","events","description"]],on="phecode")
 
 # ---------------- A (significance-based, not arbitrary cutoffs) ----------------
-sig=pd.read_csv(f"{HERE}/prospective_2yr_final.csv",dtype={"phecode":str})
+# the canonical screened set, 476 of 533, matching the Results and the Figure 3 legend.
+# prospective_2yr_final.csv is a 474-row export missing PheCodes 270.38 and 747.11.
+sig=pd.read_csv(f"{HERE}/prospective_landscape_B730.csv",dtype={"phecode":str})
+sig=sig[sig.clean].copy()
+sig["klass"]=sig.klass.replace({"comparable":"indeterminate"})
 excl=pd.DataFrame(columns=sig.columns)   # already screened upstream
 # NOTE: synergy is deliberately NOT a class here. Detecting synergy (both > the BETTER
 # single) needs more power than detecting which modality leads, and this leg has too few
@@ -144,7 +148,7 @@ figD.update_layout(template="simple_white",font=dict(family="Helvetica",size=12)
     title=dict(text="<b>D   The partition attenuates with required lead, but persists</b>",x=0.02),
     xaxis=dict(title="required lead time before diagnosis (days)",tickvals=list(S.days),
                ticktext=[f"{d}<br><span style='font-size:9px'>n={n}</span>" for d,n in zip(S.days,S.n)],range=[0,820]),
-    yaxis=dict(title="ρ  (concurrent vs prospective)",range=[0,0.55]))
+    yaxis=dict(title="ρ  (concurrent vs index-anchored)",range=[0,0.55]))
 figD.write_image(f"{OUT}/F3_D.png",scale=3)
 
 from PIL import Image

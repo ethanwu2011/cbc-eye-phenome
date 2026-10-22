@@ -5,8 +5,10 @@ from config import CBCEYE_ROOT
 import pandas as pd, numpy as np, plotly.graph_objects as go
 from plotly.subplots import make_subplots
 HERE=CBCEYE_ROOT; OUT=f"{HERE}/final_manuscript/figures"
-COL={"synergy":"#2e7d52","eye-specific":"#2b6e6e","CBC-specific":"#9c5b5b","comparable":"#bdbdbd"}
+# the manuscript calls this class indeterminate; the result file stores it as comparable
+COL={"synergy":"#2e7d52","eye-specific":"#2b6e6e","CBC-specific":"#9c5b5b","indeterminate":"#bdbdbd"}
 r=pd.read_csv(f"{HERE}/nhanes_validation_results.csv")
+r["klass"]=r.klass.replace({"comparable":"indeterminate"})   # match the manuscript wording
 
 # ---------- Panel A: complementarity map ----------
 figA=go.Figure()

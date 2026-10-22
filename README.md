@@ -60,7 +60,7 @@ Build the intermediate tables, then run any stage independently.
 | AUROC inference | `stats_utils.py` (fast DeLong covariance, used throughout) |
 | Concurrent landscape | `landscape_phewide.py`, `mimic_landscape.py`, `make_figures.py` |
 | Complementarity tests | `mimic_orthogonality.py`, `eye_predicts_cbc.py`, `orthogonality_interaction_test.py`, `interaction_fair.py` |
-| Index-anchored landscape | `prospective_landscape.py`, `prospective_significance.py`, `leadtime_organ_partition.py`, `temporal_leadtime.py`, `leadtime_screen.py`, `leadtime_survival.py` |
+| Index-anchored landscape | `prospective_landscape.py`, `foldwise_sensitivity.py`, `prospective_significance.py`, `leadtime_organ_partition.py`, `temporal_leadtime.py`, `leadtime_screen.py`, `leadtime_survival.py` |
 | Confound controls | `mimic_diabetes_strat.py`, `diabetes_strat_delong.py`, `mimic_neuro_ablation.py` |
 | Neurological and microvascular axis | `neuro_axis.py`, `neuro_why_not.py`, `micro_vs_macro.py` |
 | NHANES replication | `nhanes_validation.py`, `nhanes_diabetes_utility.py`, `utility_rebuild.py` |
@@ -94,6 +94,7 @@ analysis = d[(d.circularity_tier == "clean") & (d.klass != "no signal")]   # 535
 | Figure 5 territories | `fig5_territory.csv`, `triangulation.csv`, `leadtime_organ_partition.csv` |
 | Supplementary Figure 1 | `mimic_diabetes_strat.csv`, `diabetes_strat_delong.csv`, `mimic_neuro_ablation.csv` |
 | Supplementary Figure 2 | `utility_rebuild.csv`, `utility_calib.csv`, `utility_dca.csv` |
+| Methods sensitivity analysis | `foldwise_sensitivity_B730.csv` (index-anchored landscape refit with vocabulary selection and imputation inside each fold) |
 
 ## Notes on the methods
 
@@ -104,7 +105,14 @@ training fold for the concurrent landscape. Three scripts deliberately build the
 vocabulary and imputation once on the full eligible set rather than fold-wise, which is
 label blind but a weaker control; they are the cross-predictability test, the
 index-anchored landscape and the diabetes stratification, and the manuscript Methods say
-so. Random operations are seeded.
+so. `foldwise_sensitivity.py` refits the index-anchored landscape with both steps moved
+inside each training fold; base and CBC C-indices are unchanged and the eye C-index moves by a
+median of 0.002. Random operations are seeded.
+
+The neurological and microvascular-renal territories in `build_fig5_territory.py` are keyword
+sets on the phenotype description, with an `EXCLUDE` pattern that removes lexical matches that
+are not mechanistic members (poisonings, neoplasms, gastrointestinal ulcers, myeloproliferative
+disease, paralytic ileus, spondylosis without myelopathy).
 
 ## Citation
 
