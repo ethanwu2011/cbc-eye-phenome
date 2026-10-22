@@ -66,7 +66,7 @@ pr1=load("_B730")
 m1=xs[["phecode","adv_xs"]].merge(pr1[["phecode","adv_pr","events","description"]],on="phecode")
 
 # ---------------- A (significance-based, not arbitrary cutoffs) ----------------
-# the canonical screened set, 476 of 533, matching the Results and the Figure 3 legend.
+# the canonical screened set, 449 of 533, matching the Results and the Figure 3 legend.
 # prospective_2yr_final.csv is a 474-row export missing PheCodes 270.38 and 747.11.
 sig=pd.read_csv(f"{HERE}/prospective_landscape_B730_canonical.csv",dtype={"phecode":str})
 sig=sig[sig.canonical].copy()

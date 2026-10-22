@@ -28,7 +28,7 @@ phecode,description,group,n,events,c_base,c_eye,c_cbc,c_both,eye_gain,cbc_gain,b
 337.1,Peripheral autonomic neuropathy,neurological,9484,70,0.557,0.675,0.687,0.73,0.119,0.13,0.173,-0.011,0.043,synergy,clean,,True,True
 571.51,Cirrhosis of liver without mention of alcohol,digestive,9393,70,0.53,0.587,0.695,0.703,0.057,0.166,0.173,-0.109,0.008,CBC-specific,clean,,True,True
 362.3,Other nondiabetic retinopathy,sense organs,9502,44,0.627,0.781,0.673,0.796,0.153,0.046,0.169,0.107,0.122,eye-specific,,ineligible: sense-organ phenotype,False,False
-288.1,Decreased white blood cell count,hematopoietic,9429,108,0.554,0.613,0.728,0.722,0.06,0.174,0.169,-0.114,-0.006,CBC-specific,clean,prospective vocabulary screen,False,False
+288.1,Decreased white blood cell count,hematopoietic,9429,108,0.554,0.613,0.728,0.722,0.06,0.174,0.169,-0.114,-0.006,CBC-specific,clean,concurrent tier: tautological,False,False
 860,Bone marrow or stem cell transplant,neoplasms,9485,50,0.678,0.725,0.857,0.845,0.047,0.18,0.167,-0.133,-0.012,CBC-specific,clean,,True,True
 250.15,Diabetes type 1 with peripheral circulatory disorders,endocrine/metabolic,9528,61,0.74,0.901,0.779,0.905,0.161,0.039,0.165,0.122,0.126,eye-specific,,prospective vocabulary screen,False,False
 452.2,Deep vein thrombosis [DVT],circulatory system,9333,158,0.514,0.661,0.638,0.679,0.147,0.124,0.164,0.023,0.04,synergy,clean,,True,True
@@ -57,7 +57,7 @@ phecode,description,group,n,events,c_base,c_eye,c_cbc,c_both,eye_gain,cbc_gain,b
 550.6,Incisional hernia,digestive,9496,44,0.523,0.606,0.635,0.658,0.083,0.112,0.136,-0.029,0.024,synergy,clean,,True,True
 378.5,Paralytic strabismus,sense organs,9365,44,0.424,0.593,0.511,0.559,0.17,0.087,0.136,0.083,0.049,eye-specific,,ineligible: sense-organ phenotype,False,False
 250.14,Type 1 diabetes with neurological manifestations,endocrine/metabolic,9228,87,0.761,0.895,0.806,0.897,0.134,0.045,0.136,0.089,0.091,eye-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
-288.2,Elevated white blood cell count,hematopoietic,9108,333,0.563,0.645,0.676,0.697,0.082,0.113,0.135,-0.031,0.022,synergy,clean,prospective vocabulary screen,False,False
+288.2,Elevated white blood cell count,hematopoietic,9108,333,0.563,0.645,0.676,0.697,0.082,0.113,0.135,-0.031,0.022,synergy,clean,concurrent tier: tautological,False,False
 041.12,Methicillin resistant Staphylococcus aureus,infectious diseases,9341,211,0.601,0.7,0.714,0.736,0.098,0.112,0.135,-0.014,0.022,synergy,clean,,True,True
 368.4,Visual field defects,sense organs,9179,85,0.484,0.612,0.534,0.619,0.128,0.05,0.135,0.077,0.085,eye-specific,,ineligible: sense-organ phenotype,False,False
 729,Other disorders of soft tissues,musculoskeletal,9248,271,0.53,0.648,0.632,0.665,0.118,0.102,0.135,0.016,0.033,synergy,clean,,True,True
@@ -105,7 +105,7 @@ phecode,description,group,n,events,c_base,c_eye,c_cbc,c_both,eye_gain,cbc_gain,b
 505,Other pulmonary inflamation or edema,respiratory,9491,68,0.564,0.635,0.664,0.669,0.071,0.1,0.105,-0.029,0.005,comparable,clean,,True,True
 573.4,Acute and subacute necrosis of liver,digestive,9510,65,0.575,0.616,0.673,0.68,0.041,0.098,0.105,-0.057,0.007,CBC-specific,clean,,True,True
 457,"Encounter for long-term (current) use of anticoagulants, antithrombotics, aspirin",circulatory system,8939,488,0.55,0.639,0.623,0.653,0.089,0.073,0.104,0.016,0.031,comparable,care_process,concurrent tier: care_process,False,False
-281.9,Deficiency anemias,hematopoietic,9403,297,0.68,0.68,0.782,0.782,-0.0,0.102,0.102,-0.103,-0.001,CBC-specific,clean,prospective vocabulary screen,False,False
+281.9,Deficiency anemias,hematopoietic,9403,297,0.68,0.68,0.782,0.782,-0.0,0.102,0.102,-0.103,-0.001,CBC-specific,clean,concurrent tier: tautological,False,False
 250.23,Type 2 diabetes with ophthalmic manifestations,endocrine/metabolic,8355,344,0.616,0.697,0.666,0.719,0.081,0.05,0.102,0.031,0.053,synergy,expected_manifestation,concurrent tier: expected_manifestation,False,False
 561,Symptoms involving digestive system,digestive,8842,563,0.537,0.586,0.63,0.637,0.049,0.093,0.1,-0.044,0.007,CBC-specific,clean,,True,True
 290.2,Delirium due to conditions classified elsewhere,mental disorders,9283,262,0.623,0.703,0.681,0.724,0.08,0.058,0.1,0.021,0.042,synergy,clean,,True,True
@@ -130,7 +130,7 @@ phecode,description,group,n,events,c_base,c_eye,c_cbc,c_both,eye_gain,cbc_gain,b
 433.31,Transient cerebral ischemia,circulatory system,8736,490,0.597,0.673,0.629,0.675,0.076,0.032,0.078,0.044,0.046,eye-specific,clean,,True,True
 427.21,Atrial fibrillation,circulatory system,8205,424,0.692,0.75,0.737,0.77,0.058,0.044,0.078,0.013,0.034,synergy,clean,,True,True
 440.22,Atherosclerosis of native arteries of the extremities with intermittent claudication,circulatory system,9445,45,0.589,0.684,0.627,0.667,0.095,0.038,0.078,0.057,0.04,eye-specific,clean,,True,True
-288,Diseases of white blood cells,hematopoietic,9148,731,0.667,0.724,0.72,0.744,0.057,0.053,0.077,0.004,0.024,synergy,clean,prospective vocabulary screen,False,False
+288,Diseases of white blood cells,hematopoietic,9148,731,0.667,0.724,0.72,0.744,0.057,0.053,0.077,0.004,0.024,synergy,clean,concurrent tier: tautological,False,False
 378.2,Nystagmus and other irregular eye movements,sense organs,9405,42,0.589,0.681,0.579,0.666,0.092,-0.01,0.077,0.102,0.088,eye-specific,,ineligible: sense-organ phenotype,True,False
 710.19,Unspecified osteomyelitis,musculoskeletal,9383,266,0.676,0.725,0.717,0.751,0.049,0.041,0.076,0.007,0.034,synergy,clean,,True,True
 772.3,Muscle weakness,symptoms,9480,68,0.568,0.633,0.611,0.644,0.064,0.043,0.076,0.021,0.032,comparable,clean,,True,True
@@ -178,7 +178,7 @@ phecode,description,group,n,events,c_base,c_eye,c_cbc,c_both,eye_gain,cbc_gain,b
 427.42,Cardiac arrest,circulatory system,9497,226,0.641,0.659,0.673,0.698,0.018,0.032,0.057,-0.014,0.025,synergy,clean,,True,True
 781,Symptoms involving nervous and musculoskeletal systems,symptoms,9257,651,0.672,0.714,0.711,0.728,0.042,0.039,0.056,0.003,0.017,comparable,clean,,True,True
 681.1,Cellulitis and abscess of fingers/toes,dermatologic,9421,194,0.679,0.737,0.669,0.735,0.058,-0.01,0.056,0.068,0.066,eye-specific,clean,,True,True
-280.1,"Iron deficiency anemias, unspecified or not due to blood loss",hematopoietic,8775,884,0.625,0.612,0.687,0.68,-0.014,0.062,0.055,-0.075,-0.007,CBC-specific,clean,prospective vocabulary screen,False,False
+280.1,"Iron deficiency anemias, unspecified or not due to blood loss",hematopoietic,8775,884,0.625,0.612,0.687,0.68,-0.014,0.062,0.055,-0.075,-0.007,CBC-specific,clean,concurrent tier: tautological,False,False
 594,Urinary calculus,genitourinary,9464,86,0.557,0.604,0.572,0.612,0.047,0.016,0.055,0.031,0.039,eye-specific,clean,,True,True
 394.1,Mitral valve stenosis and aortic valve stenosis,circulatory system,9468,77,0.726,0.744,0.772,0.781,0.018,0.046,0.055,-0.028,0.008,comparable,clean,,True,True
 506,Empyema and pneumothorax,respiratory,9466,108,0.56,0.519,0.653,0.615,-0.041,0.093,0.055,-0.135,-0.038,CBC-specific,clean,,True,True
@@ -228,7 +228,7 @@ phecode,description,group,n,events,c_base,c_eye,c_cbc,c_both,eye_gain,cbc_gain,b
 510,Other diseases of lung,respiratory,9283,157,0.528,0.512,0.602,0.569,-0.016,0.075,0.042,-0.09,-0.033,CBC-specific,clean,,True,True
 272.1,Hyperlipidemia,endocrine/metabolic,4957,1613,0.6,0.641,0.605,0.642,0.041,0.004,0.042,0.036,0.037,eye-specific,clean,,True,True
 1011,,,9433,260,0.706,0.728,0.737,0.747,0.022,0.031,0.041,-0.01,0.01,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
-285,Other anemias,hematopoietic,7208,1870,0.627,0.628,0.666,0.667,0.002,0.039,0.041,-0.038,0.001,CBC-specific,clean,prospective vocabulary screen,False,False
+285,Other anemias,hematopoietic,7208,1870,0.627,0.628,0.666,0.667,0.002,0.039,0.041,-0.038,0.001,CBC-specific,clean,concurrent tier: tautological,False,False
 513.3,Hypoventilation,respiratory,9509,93,0.685,0.673,0.733,0.726,-0.012,0.049,0.041,-0.06,-0.007,CBC-specific,clean,,True,True
 818.1,Subdural hemorrhage (injury),injuries & poisonings,9518,40,0.622,0.632,0.68,0.663,0.009,0.058,0.04,-0.049,-0.018,CBC-specific,clean,,True,True
 279.1,Immunity deficiency,endocrine/metabolic,9534,167,0.794,0.817,0.82,0.834,0.023,0.027,0.04,-0.003,0.014,comparable,clean,,True,True
@@ -508,7 +508,7 @@ phecode,description,group,n,events,c_base,c_eye,c_cbc,c_both,eye_gain,cbc_gain,b
 345.3,Convulsions,neurological,9270,363,0.585,0.588,0.583,0.581,0.003,-0.002,-0.004,0.004,-0.002,comparable,clean,,True,True
 681.7,Cellulitis and abscess of trunk,dermatologic,9398,160,0.615,0.596,0.629,0.611,-0.019,0.015,-0.004,-0.034,-0.018,CBC-specific,clean,,True,True
 296.22,Major depressive disorder,mental disorders,9341,98,0.703,0.688,0.709,0.698,-0.014,0.006,-0.005,-0.02,-0.011,comparable,clean,,True,True
-289.9,Abnormality of red blood cells,hematopoietic,9491,64,0.573,0.496,0.648,0.569,-0.078,0.074,-0.005,-0.152,-0.079,CBC-specific,clean,prospective vocabulary screen,False,False
+289.9,Abnormality of red blood cells,hematopoietic,9491,64,0.573,0.496,0.648,0.569,-0.078,0.074,-0.005,-0.152,-0.079,CBC-specific,clean,concurrent tier: tautological,False,False
 681.3,Cellulitis and abscess of arm/hand,dermatologic,9319,477,0.677,0.667,0.68,0.673,-0.01,0.003,-0.005,-0.013,-0.007,comparable,clean,,True,True
 368.2,Diplopia and disorders of binocular vision,sense organs,9162,90,0.6,0.633,0.557,0.595,0.033,-0.043,-0.005,0.076,0.038,eye-specific,,ineligible: sense-organ phenotype,True,False
 592.11,Acute cystitis,genitourinary,9530,81,0.734,0.736,0.743,0.729,0.002,0.008,-0.005,-0.007,-0.013,comparable,clean,,True,True

@@ -111,7 +111,8 @@ def run_one(phecode, desc, group, cases, seed=0):
         frac_f = np.mean([g == "F" for g in gvals]); sexsp = frac_f > 0.95 or frac_f < 0.05
         sex_restrict = "F" if frac_f > 0.95 else ("M" if frac_f < 0.05 else None)
 
-        rng = np.random.default_rng(abs(hash((phecode, seed))) % (2**32))
+        # hash() is salted per process, so draws seeded from it cannot be replayed
+        rng = np.random.default_rng(int(hashlib.sha256(f"{phecode}|{seed}".encode()).hexdigest()[:8], 16))
         pool = defaultdict(list)
         for s in members:
             if s in caseset: continue

@@ -45,7 +45,7 @@ def topsign(s):
     if not isinstance(s,str) or not s.strip(): return ""
     first=s.split(";")[0].split("(")[0].strip()
     for k,v in CLEAN.items():
-        if first.startswith(k): return v
+        if first.lower().startswith(k.lower()): return v
     return first.lower()
 g["sign"]=g.top_eye_drivers.map(topsign)
 g=g.sort_values("gain").reset_index(drop=True)   # smallest at bottom, biggest at top

@@ -46,12 +46,20 @@ export MIMIC_HOSP=/path/to/mimiciv-3.1/hosp     # required to rebuild from raw d
 export NHANES_DIR=/path/to/nhanes               # required for the NHANES replication
 ```
 
-`src/config.py` resolves the repository root automatically. Set `CBCEYE_ROOT` only if you
-move `results/` elsewhere. Scripts are run from the repository root, for example
-`python src/landscape_phewide.py`.
+`src/config.py` resolves the repository root automatically. Scripts are run from the
+repository root, for example `python src/landscape_phewide.py`.
 
-Reproducing only the figures and tables needs neither environment variable, because the
-aggregate results they read are already in `results/`.
+The figure panels and the territory permutation test can be regenerated from the aggregate
+results alone, without MIMIC-IV. Stage the results into a working root first:
+
+```bash
+python src/stage_results.py work
+export CBCEYE_ROOT="$PWD/work"
+python src/build_fig5_territory.py
+```
+
+`figures/README.md` lists the script behind each panel. Table 1 and Figure 2e are computed
+from the patient-level intermediate tables.
 
 ## Pipeline
 
@@ -66,19 +74,21 @@ Build the intermediate tables, then run any stage independently.
 | Complementarity tests | `mimic_orthogonality.py`, `eye_predicts_cbc.py`, `orthogonality_interaction_test.py`, `interaction_fair.py` |
 | Index-anchored landscape | `prospective_landscape.py`, `canonical_index_screen.py`, `foldwise_sensitivity.py`, `prospective_significance.py`, `leadtime_organ_partition.py`, `temporal_leadtime.py`, `leadtime_screen.py`, `leadtime_survival.py` |
 | Confound controls | `mimic_diabetes_strat.py`, `diabetes_strat_delong.py`, `mimic_neuro_ablation.py` |
-| Neurological and microvascular axis | `neuro_axis.py`, `neuro_why_not.py`, `micro_vs_macro.py` |
+| Neurological and microvascular axis | `neuro_axis.py`, `neuro_why_not.py`, `micro_vs_macro.py`, `territory_permutation.py` |
 | NHANES replication | `nhanes_validation.py`, `nhanes_diabetes_utility.py`, `utility_rebuild.py` |
-| Figures and tables | `compose_figures.py`, `build_fig3_final.py`, `build_fig5_territory.py`, `build_fig_triangulation.py`, `build_fig_eye_gain.py`, `build_nhanes_figure.py`, `build_landscape_plotly.py`, `build_fig1b_organ.py`, `build_tables.py` |
+| Figures and tables | `stage_results.py`, `build_plotly_figs.py`, `build_fig2d_flowmap.py`, `compose_figures.py`, `build_fig3_final.py`, `build_fig5_territory.py`, `build_fig_triangulation.py`, `build_fig_eye_gain.py`, `build_nhanes_figure.py`, `build_landscape_plotly.py`, `build_fig1b_organ.py`, `build_tables.py` |
 
 `cohort_build.py` assembles the matched case-control design and is imported by the
 orthogonality and interaction tests.
 
 ## The analysis set
 
-`results/landscape_full.csv` holds all 635 screened phenotypes. **The 535-phenotype
+`results/landscape_full.csv` holds all 635 screened phenotypes. **The 528-phenotype
 analysis set reported in the paper is the subset with `circularity_tier == "clean"` and
-`klass != "no signal"`.** Filtering on `circularity_tier` alone gives 581 rows and
-different numbers. The 449-phenotype index-anchored set is `results/prospective_landscape_B730_canonical.csv`
+`klass != "no signal"`.** Filtering on `circularity_tier` alone gives 574 rows and
+different numbers. The CBC-definitional lexicon in `circularity.py` covers plural and
+plain-language forms (deficiency anemias, decreased white blood cell count); an earlier
+version without them admitted seven blood-count phenotypes as clean. The 449-phenotype index-anchored set is `results/prospective_landscape_B730_canonical.csv`
 filtered to `canonical == True`. `canonical_index_screen.py` produces it by applying the
 concurrent eligibility rule (a PheCode v1.2 description and organ group, sense-organ phenotypes
 excluded) and the concurrent circularity screen to every index-anchored phenotype, with the
@@ -91,18 +101,18 @@ Class labels in the file are `eye-specific`, `CBC-specific`,
 ```python
 import pandas as pd
 d = pd.read_csv("results/landscape_full.csv")
-analysis = d[(d.circularity_tier == "clean") & (d.klass != "no signal")]   # 535 rows
+analysis = d[(d.circularity_tier == "clean") & (d.klass != "no signal")]   # 528 rows
 ```
 
 ## Result files behind each display item
 
 | Display item | File |
 |---|---|
-| Figure 1, Table 1, Table 2 | `landscape_full.csv`, `panel.csv` |
-| Figure 2 complementarity | `orthogonality_results.csv`, `eye_predicts_cbc.csv`, `orthogonality_interaction_test.csv`, `interaction_fair.csv`, `interaction_fair_tuned.csv`, `modality_drivers.csv` |
+| Figure 1, Table 2 | `landscape_full.csv`, `modality_drivers.csv` |
+| Figure 2 complementarity | `orthogonality_results.csv`, `eye_predicts_cbc.csv`, `orthogonality_interaction_test.csv`, `interaction_fair.csv`, `interaction_fair_tuned.csv`, `modality_drivers.csv`, `flowmap_edge_data.csv` |
 | Figure 3 index-anchored | `prospective_landscape_B730_canonical.csv` and the `_B90` and 365-day canonical files, `prospective_significance_B730.csv`, `fig3_stats.csv` |
 | Figure 4 NHANES | `nhanes_validation_results.csv`, `nhanes_diabetes_adjusted.csv` |
-| Figure 5 territories | `fig5_territory.csv`, `triangulation.csv`, `leadtime_organ_partition.csv` |
+| Figure 5 territories | `fig5_territory.csv`, `territory_permutation.csv`, `prospective_landscape_B730_canonical.csv`, `nhanes_validation_results.csv` |
 | Supplementary Figure 1 | `mimic_diabetes_strat.csv`, `diabetes_strat_delong.csv`, `mimic_neuro_ablation.csv` |
 | Supplementary Figure 2 | `utility_rebuild.csv`, `utility_calib.csv`, `utility_dca.csv` |
 | Methods sensitivity analysis | `foldwise_sensitivity_B730.csv` (index-anchored landscape refit with vocabulary selection and imputation inside each fold) |
@@ -118,7 +128,10 @@ label blind but a weaker control; they are the cross-predictability test, the
 index-anchored landscape and the diabetes stratification, and the manuscript Methods say
 so. `foldwise_sensitivity.py` refits the index-anchored landscape with both steps moved
 inside each training fold; base and CBC C-indices are unchanged and the eye C-index moves by a
-median of 0.002. Random operations are seeded.
+median of 0.002. Random operations are seeded. The published concurrent run seeded each
+phenotype's matched-control draw from Python's `hash()`, which is salted per process, so that
+draw cannot be replayed exactly; `landscape_phewide.py` now derives the seed from SHA-256, and a
+rerun reproduces the landscape up to matched-control sampling.
 
 The neurological and microvascular-renal territories in `build_fig5_territory.py` are keyword
 sets on the phenotype description, with an `EXCLUDE` pattern that removes lexical matches that

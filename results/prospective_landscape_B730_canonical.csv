@@ -2,7 +2,7 @@ phecode,description,group,n,events,c_base,c_eye,c_cbc,c_both,eye_gain,cbc_gain,b
 250.41,Impaired fasting glucose,endocrine/metabolic,5591,77,0.468,0.732,0.591,0.758,0.264,0.123,0.29,0.14,0.166,synergy,clean,,True,True
 038.3,Bacteremia,infectious diseases,5394,63,0.467,0.683,0.652,0.733,0.216,0.185,0.266,0.03,0.081,synergy,clean,,True,True
 250.25,Diabetes type 2 with peripheral circulatory disorders,endocrine/metabolic,5526,55,0.586,0.801,0.788,0.846,0.215,0.202,0.26,0.013,0.058,synergy,expected_manifestation,concurrent tier: expected_manifestation,False,False
-288.1,Decreased white blood cell count,hematopoietic,5519,45,0.448,0.516,0.677,0.672,0.068,0.229,0.224,-0.161,-0.006,CBC-specific,clean,prospective vocabulary screen,False,False
+288.1,Decreased white blood cell count,hematopoietic,5519,45,0.448,0.516,0.677,0.672,0.068,0.229,0.224,-0.161,-0.006,CBC-specific,clean,concurrent tier: tautological,False,False
 250.6,Polyneuropathy in diabetes,endocrine/metabolic,4818,112,0.553,0.721,0.674,0.771,0.168,0.121,0.218,0.048,0.097,synergy,expected_manifestation,concurrent tier: expected_manifestation,False,False
 250.7,Diabetic retinopathy,endocrine/metabolic,4572,47,0.515,0.672,0.713,0.726,0.158,0.199,0.211,-0.041,0.013,CBC-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
 270.38,Other specified disorders of plasma protein metabolism,endocrine/metabolic,5547,41,0.438,0.61,0.579,0.647,0.172,0.141,0.209,0.031,0.068,synergy,,,True,True
@@ -38,7 +38,7 @@ phecode,description,group,n,events,c_base,c_eye,c_cbc,c_both,eye_gain,cbc_gain,b
 564,Functional digestive disorders,digestive,4893,277,0.558,0.642,0.659,0.677,0.084,0.101,0.118,-0.017,0.017,synergy,clean,,True,True
 585.31,Renal dialysis,genitourinary,5341,252,0.683,0.754,0.767,0.801,0.072,0.084,0.118,-0.013,0.034,synergy,care_process,concurrent tier: care_process,True,False
 250.1,Type 1 diabetes,endocrine/metabolic,5361,183,0.728,0.841,0.749,0.844,0.114,0.022,0.117,0.092,0.095,eye-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
-288.2,Elevated white blood cell count,hematopoietic,5293,166,0.551,0.603,0.657,0.666,0.052,0.106,0.115,-0.054,0.009,CBC-specific,clean,prospective vocabulary screen,False,False
+288.2,Elevated white blood cell count,hematopoietic,5293,166,0.551,0.603,0.657,0.666,0.052,0.106,0.115,-0.054,0.009,CBC-specific,clean,concurrent tier: tautological,False,False
 577.3,Cyst and pseudocyst of pancreas,digestive,5596,56,0.546,0.66,0.589,0.661,0.114,0.043,0.115,0.071,0.071,eye-specific,clean,,True,True
 250.12,Type 1 diabetes with renal manifestations,endocrine/metabolic,5403,124,0.743,0.85,0.77,0.857,0.106,0.026,0.114,0.08,0.088,eye-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
 681.5,"Cellulitis and abscess of leg, except foot",dermatologic,5352,104,0.558,0.62,0.647,0.671,0.063,0.09,0.113,-0.027,0.024,synergy,clean,,True,True
@@ -84,7 +84,7 @@ phecode,description,group,n,events,c_base,c_eye,c_cbc,c_both,eye_gain,cbc_gain,b
 345.12,Partial epilepsy,neurological,5557,41,0.464,0.526,0.502,0.54,0.062,0.038,0.076,0.024,0.038,comparable,clean,,True,True
 292.11,Aphasia,mental disorders,5571,42,0.657,0.709,0.7,0.733,0.051,0.043,0.076,0.008,0.033,synergy,clean,,True,True
 290.2,Delirium due to conditions classified elsewhere,mental disorders,5434,104,0.656,0.729,0.686,0.731,0.074,0.03,0.076,0.044,0.046,eye-specific,clean,,True,True
-281.9,Deficiency anemias,hematopoietic,5539,181,0.663,0.67,0.742,0.739,0.007,0.078,0.076,-0.072,-0.003,CBC-specific,clean,prospective vocabulary screen,False,False
+281.9,Deficiency anemias,hematopoietic,5539,181,0.663,0.67,0.742,0.739,0.007,0.078,0.076,-0.072,-0.003,CBC-specific,clean,concurrent tier: tautological,False,False
 278.11,Morbid obesity,endocrine/metabolic,5224,94,0.605,0.648,0.653,0.68,0.044,0.049,0.075,-0.005,0.027,synergy,clean,,True,True
 447.1,Stricture of artery,circulatory system,5610,43,0.419,0.429,0.581,0.493,0.01,0.162,0.074,-0.153,-0.088,CBC-specific,clean,,True,True
 295.3,Psychosis,mental disorders,5537,60,0.502,0.588,0.534,0.573,0.087,0.032,0.071,0.054,0.039,eye-specific,expected_manifestation,concurrent tier: expected_manifestation,False,False
@@ -123,7 +123,7 @@ phecode,description,group,n,events,c_base,c_eye,c_cbc,c_both,eye_gain,cbc_gain,b
 961.1,Poisoning/allergy of sulfonamides,injuries & poisonings,5554,61,0.507,0.55,0.531,0.559,0.043,0.024,0.052,0.019,0.028,comparable,clean,,True,True
 285.22,Anemia in neoplastic disease,hematopoietic,5533,113,0.591,0.629,0.61,0.643,0.038,0.019,0.052,0.019,0.033,comparable,tautological,concurrent tier: tautological,False,False
 394.7,Disease of tricuspid valve,circulatory system,5536,136,0.657,0.64,0.723,0.707,-0.016,0.067,0.051,-0.083,-0.016,CBC-specific,clean,,True,True
-280.1,"Iron deficiency anemias, unspecified or not due to blood loss",hematopoietic,5053,542,0.619,0.634,0.667,0.67,0.015,0.048,0.051,-0.033,0.003,CBC-specific,clean,prospective vocabulary screen,False,False
+280.1,"Iron deficiency anemias, unspecified or not due to blood loss",hematopoietic,5053,542,0.619,0.634,0.667,0.67,0.015,0.048,0.051,-0.033,0.003,CBC-specific,clean,concurrent tier: tautological,False,False
 707,Chronic ulcer of skin,dermatologic,5545,386,0.673,0.713,0.694,0.724,0.04,0.022,0.051,0.018,0.029,comparable,clean,,True,True
 574.2,Calculus of bile duct,digestive,5564,56,0.551,0.579,0.587,0.601,0.028,0.036,0.05,-0.008,0.013,comparable,clean,,True,True
 290.3,Other persistent mental disorders due to conditions classified elsewhere,mental disorders,5489,86,0.61,0.672,0.611,0.659,0.062,0.001,0.05,0.061,0.049,eye-specific,clean,,True,True
@@ -149,7 +149,7 @@ phecode,description,group,n,events,c_base,c_eye,c_cbc,c_both,eye_gain,cbc_gain,b
 854,"Complications of cardiac/vascular device, implant, and graft",injuries & poisonings,5305,394,0.658,0.686,0.677,0.694,0.028,0.02,0.037,0.009,0.017,comparable,care_process,concurrent tier: care_process,True,False
 279.1,Immunity deficiency,endocrine/metabolic,5632,111,0.836,0.839,0.878,0.873,0.003,0.042,0.037,-0.039,-0.005,CBC-specific,clean,,True,True
 790,Nonspecific findings on examination of blood,symptoms,5615,100,0.741,0.772,0.748,0.777,0.031,0.008,0.036,0.023,0.028,comparable,clean,,True,True
-288,Diseases of white blood cells,hematopoietic,5403,481,0.66,0.679,0.681,0.695,0.02,0.022,0.036,-0.002,0.014,comparable,clean,prospective vocabulary screen,False,False
+288,Diseases of white blood cells,hematopoietic,5403,481,0.66,0.679,0.681,0.695,0.02,0.022,0.036,-0.002,0.014,comparable,clean,concurrent tier: tautological,False,False
 550,Abdominal hernia,digestive,5615,57,0.548,0.529,0.596,0.584,-0.02,0.048,0.036,-0.068,-0.012,CBC-specific,clean,,True,True
 401.2,Hypertensive heart and/or renal disease,circulatory system,5377,786,0.723,0.746,0.736,0.759,0.023,0.014,0.036,0.01,0.023,comparable,clean,,True,True
 563,,,5303,802,0.66,0.684,0.677,0.695,0.024,0.017,0.035,0.007,0.018,comparable,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
@@ -165,7 +165,7 @@ phecode,description,group,n,events,c_base,c_eye,c_cbc,c_both,eye_gain,cbc_gain,b
 277.5,Other disorders of lipoid metabolism,endocrine/metabolic,5341,129,0.661,0.678,0.687,0.692,0.017,0.026,0.031,-0.009,0.005,comparable,,,True,True
 411.4,Coronary atherosclerosis,circulatory system,3807,647,0.645,0.672,0.65,0.675,0.027,0.005,0.03,0.022,0.025,comparable,clean,,True,True
 386.2,Peripheral or central vertigo,sense organs,5539,84,0.624,0.595,0.693,0.654,-0.029,0.069,0.03,-0.099,-0.04,CBC-specific,,ineligible: sense-organ phenotype,True,False
-285,Other anemias,hematopoietic,3954,953,0.621,0.628,0.649,0.651,0.007,0.029,0.03,-0.022,0.002,comparable,clean,prospective vocabulary screen,False,False
+285,Other anemias,hematopoietic,3954,953,0.621,0.628,0.649,0.651,0.007,0.029,0.03,-0.022,0.002,comparable,clean,concurrent tier: tautological,False,False
 1005,,,5633,44,0.666,0.656,0.709,0.695,-0.01,0.043,0.029,-0.053,-0.014,CBC-specific,,ineligible: not a PheCode v1.2 entry with a description and group,True,False
 537,Other disorders of stomach and duodenum,digestive,5480,301,0.674,0.678,0.702,0.703,0.004,0.028,0.029,-0.024,0.001,comparable,clean,,True,True
 578.9,Hemorrhage of gastrointestinal tract,digestive,5479,134,0.616,0.611,0.658,0.646,-0.005,0.042,0.029,-0.047,-0.012,CBC-specific,clean,,True,True

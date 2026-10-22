@@ -16,11 +16,14 @@ diseases are reported as positive controls.
 """
 import re
 
+# Plurals ("deficiency anemias") and plain-language counts ("decreased white blood cell count")
+# carry the same definition. Without them seven blood-count phenotypes passed as clean.
 CBC_DEFINITIONAL = re.compile(
     r"\b(anemia|anaemia|thrombocytopenia|thrombocytosis|thrombocythemia|"
     r"neutropenia|neutrophilia|leukopenia|leukocytosis|lymphocytosis|lymphopenia|"
     r"lymphocytopenia|monocytosis|eosinophilia|basophilia|pancytopenia|"
-    r"polycythemia|agranulocytosis|granulocytopenia|erythrocytosis)\b", re.I)
+    r"polycythemia|agranulocytosis|granulocytopenia|erythrocytosis)s?\b"
+    r"|\b(red|white) blood cells?\b|\bblood cell count\b", re.I)
 
 HEME_NEOPLASM = re.compile(
     r"\b(leukemia|leukaemia|lymphoma|myeloma|myelodysplas|"
