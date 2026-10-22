@@ -29,9 +29,9 @@ def aucm(cols,y,mask):
 # clinically meaningful, non-circular, diabetes-confound-relevant or neuro
 KEEP=["CKD (eGFR<60)","Albuminuria (ACR>=30)","Congestive heart failure","Heart attack (MI)",
  "Coronary heart disease","Angina (self-report)","Stroke","Hypertension","High CRP (inflammation)",
- "Obesity (BMI>=30)","Low HDL","High triglycerides","Hyperuricaemia","Elevated ALT (liver)","Elevated GGT",
- "Memory/confusion problem","Weak/failing kidneys","Depression (PHQ-9>=10)","Hyponatraemia (Na<135)",
- "High BUN (azotaemia)","Any cardiovascular","Hearing impairment","Fair/poor self-rated health"]
+ "Obesity (BMI>=30)","Low HDL","High triglycerides","Hyperuricemia","Elevated ALT (liver)","Elevated GGT",
+ "Memory/confusion problem","Weak/failing kidneys","Depression (PHQ-9>=10)","Hyponatremia (Na<135)",
+ "High BUN (azotemia)","Any cardiovascular","Hearing impairment","Fair/poor self-rated health"]
 allm=np.ones(len(df),bool); nd=~dm
 rows=[]
 for name in KEEP:

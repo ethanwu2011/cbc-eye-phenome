@@ -1,12 +1,12 @@
 condition,n,demo,eye,cbc,both,eye_adds,cbc_adds,klass,demo_wt,both_wt
 Anemia [CBC-circular],478,0.711,0.711,1.0,1.0,0.0,0.289,CBC-specific,0.719,1.0
 Iron deficiency (ferritin<15),139,0.533,0.501,0.846,0.864,0.018,0.362,synergy,0.495,0.838
-High BUN (azotaemia),275,0.775,0.79,0.816,0.812,-0.004,0.022,CBC-specific,0.81,0.815
+High BUN (azotemia),275,0.775,0.79,0.816,0.812,-0.004,0.022,CBC-specific,0.81,0.815
 Urinary incontinence,1543,0.795,0.796,0.798,0.795,-0.003,-0.001,comparable,0.786,0.789
 CKD (eGFR<60),863,0.789,0.785,0.798,0.795,-0.003,0.01,CBC-specific,0.773,0.77
 Low albumin,85,0.579,0.64,0.756,0.78,0.024,0.141,synergy,0.551,0.825
 Osteoporosis,466,0.78,0.777,0.777,0.776,-0.001,-0.001,comparable,0.797,0.789
-Treated anaemia (hx),246,0.607,0.63,0.745,0.757,0.013,0.128,synergy,0.63,0.775
+Treated anemia (hx),246,0.607,0.63,0.745,0.757,0.013,0.128,synergy,0.63,0.775
 Congestive heart failure,272,0.647,0.676,0.729,0.74,0.01,0.063,synergy,0.697,0.779
 "Diabetes [eye=DR, expected]",1188,0.659,0.723,0.695,0.739,0.044,0.015,synergy,0.652,0.743
 Any cardiovascular,907,0.703,0.724,0.721,0.731,0.01,0.007,comparable,0.726,0.752
@@ -17,14 +17,14 @@ High globulin,680,0.684,0.683,0.707,0.713,0.006,0.03,CBC-specific,0.664,0.721
 Emphysema,201,0.669,0.696,0.715,0.712,-0.003,0.015,CBC-specific,0.646,0.708
 Thyroid problem,724,0.713,0.702,0.715,0.711,-0.003,0.009,CBC-specific,0.711,0.713
 Low transferrin saturation,282,0.58,0.552,0.714,0.709,-0.005,0.157,CBC-specific,0.567,0.682
-Hyperkalaemia (K>5.0),57,0.614,0.595,0.669,0.709,0.04,0.114,synergy,0.618,0.682
+Hyperkalemia (K>5.0),57,0.614,0.595,0.669,0.709,0.04,0.114,synergy,0.618,0.682
 Hypertension,3097,0.7,0.705,0.698,0.707,0.01,0.003,comparable,0.689,0.694
 Albuminuria (ACR>=30),877,0.643,0.685,0.682,0.701,0.02,0.017,synergy,0.664,0.706
 Abdominal obesity (waist),3467,0.651,0.651,0.692,0.701,0.009,0.05,CBC-specific,0.604,0.695
 Vitamin D deficiency,958,0.693,0.698,0.7,0.701,0.0,0.003,comparable,0.643,0.669
 Elevated bilirubin,441,0.66,0.645,0.698,0.698,0.0,0.053,CBC-specific,0.653,0.689
 Elevated ALT (liver),518,0.671,0.668,0.694,0.694,0.001,0.026,CBC-specific,0.667,0.68
-Hyperuricaemia,898,0.67,0.669,0.7,0.689,-0.012,0.019,CBC-specific,0.681,0.693
+Hyperuricemia,898,0.67,0.669,0.7,0.689,-0.012,0.019,CBC-specific,0.681,0.693
 High CRP (inflammation),2265,0.573,0.572,0.69,0.687,-0.003,0.115,CBC-specific,0.56,0.704
 Fair/poor self-rated health,1466,0.622,0.646,0.67,0.682,0.013,0.036,synergy,0.59,0.689
 Stroke,305,0.649,0.699,0.675,0.678,0.003,-0.021,eye-specific,0.684,0.692
@@ -45,7 +45,7 @@ Depression (PHQ-9>=10),471,0.598,0.589,0.604,0.623,0.019,0.034,synergy,0.57,0.63
 Weak/failing kidneys,185,0.573,0.592,0.608,0.622,0.014,0.03,synergy,0.594,0.631
 Liver condition,253,0.594,0.578,0.577,0.621,0.043,0.043,synergy,0.566,0.597
 High triglycerides,484,0.554,0.546,0.622,0.621,-0.001,0.076,CBC-specific,0.531,0.616
-Hyponatraemia (Na<135),182,0.514,0.536,0.644,0.62,-0.024,0.084,CBC-specific,0.511,0.63
+Hyponatremia (Na<135),182,0.514,0.536,0.644,0.62,-0.024,0.084,CBC-specific,0.511,0.63
 Chronic bronchitis,443,0.603,0.597,0.625,0.619,-0.006,0.022,CBC-specific,0.572,0.599
 Elevated alk phosphatase,205,0.603,0.572,0.629,0.601,-0.028,0.029,CBC-specific,0.593,0.585
 High total cholesterol,954,0.579,0.58,0.593,0.594,0.0,0.013,CBC-specific,0.572,0.587
@@ -64,4 +64,4 @@ Prediabetes (told),272,0.546,0.552,0.556,0.544,-0.012,-0.009,comparable,0.561,0.
 Hypothyroid (TSH>4.5),190,0.595,0.573,0.526,0.544,0.019,-0.029,eye-specific,0.581,0.509
 Functional limitation,156,0.533,0.567,0.598,0.539,-0.059,-0.028,CBC-specific,0.501,0.534
 Spine fracture,179,0.524,0.53,0.539,0.536,-0.003,0.005,comparable,0.523,0.518
-Hypercalcaemia (Ca>10.5),58,0.471,0.518,0.555,0.527,-0.028,0.009,CBC-specific,0.452,0.519
+Hypercalcemia (Ca>10.5),58,0.471,0.518,0.555,0.527,-0.028,0.009,CBC-specific,0.452,0.519

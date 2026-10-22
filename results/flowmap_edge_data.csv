@@ -4,7 +4,7 @@ source,modality,target,logOR
 "Optic-nerve (neuritis, atrophy)",eye,Peripheral / autonomic NEUROPATHY,-0.306
 "Optic-nerve (neuritis, atrophy)",eye,"Neurodegenerative (Parkinson, dementia)",-0.221
 "Optic-nerve (neuritis, atrophy)",eye,"Cardiometabolic-renal (CKD, HF, diabetes)",-0.352
-"Optic-nerve (neuritis, atrophy)",eye,"Haematologic / oncologic (anemia, leukemia)",-0.278
+"Optic-nerve (neuritis, atrophy)",eye,"Hematologic / oncologic (anemia, leukemia)",-0.278
 "Optic-nerve (neuritis, atrophy)",eye,"Infection / inflammatory (sepsis, autoimmune)",-0.228
 "Optic-nerve (neuritis, atrophy)",eye,Hepatic / visceral (cirrhosis),-0.505
 "Oculomotor / pupil (ptosis, diplopia)",eye,Demyelinating / CNS (MS),0.51
@@ -12,7 +12,7 @@ source,modality,target,logOR
 "Oculomotor / pupil (ptosis, diplopia)",eye,Peripheral / autonomic NEUROPATHY,-0.215
 "Oculomotor / pupil (ptosis, diplopia)",eye,"Neurodegenerative (Parkinson, dementia)",0.193
 "Oculomotor / pupil (ptosis, diplopia)",eye,"Cardiometabolic-renal (CKD, HF, diabetes)",-0.227
-"Oculomotor / pupil (ptosis, diplopia)",eye,"Haematologic / oncologic (anemia, leukemia)",-0.113
+"Oculomotor / pupil (ptosis, diplopia)",eye,"Hematologic / oncologic (anemia, leukemia)",-0.113
 "Oculomotor / pupil (ptosis, diplopia)",eye,"Infection / inflammatory (sepsis, autoimmune)",0.012
 "Oculomotor / pupil (ptosis, diplopia)",eye,Hepatic / visceral (cirrhosis),-0.243
 "Neuro-visual (field defect, nystagmus)",eye,Demyelinating / CNS (MS),-0.026
@@ -20,7 +20,7 @@ source,modality,target,logOR
 "Neuro-visual (field defect, nystagmus)",eye,Peripheral / autonomic NEUROPATHY,-0.524
 "Neuro-visual (field defect, nystagmus)",eye,"Neurodegenerative (Parkinson, dementia)",0.145
 "Neuro-visual (field defect, nystagmus)",eye,"Cardiometabolic-renal (CKD, HF, diabetes)",-0.034
-"Neuro-visual (field defect, nystagmus)",eye,"Haematologic / oncologic (anemia, leukemia)",-0.387
+"Neuro-visual (field defect, nystagmus)",eye,"Hematologic / oncologic (anemia, leukemia)",-0.387
 "Neuro-visual (field defect, nystagmus)",eye,"Infection / inflammatory (sepsis, autoimmune)",-0.505
 "Neuro-visual (field defect, nystagmus)",eye,Hepatic / visceral (cirrhosis),-0.664
 Retinal vascular occl. (artery/vein),eye,Demyelinating / CNS (MS),-0.935
@@ -28,7 +28,7 @@ Retinal vascular occl. (artery/vein),eye,"Cerebrovascular (stroke, TIA)",0.427
 Retinal vascular occl. (artery/vein),eye,Peripheral / autonomic NEUROPATHY,-0.313
 Retinal vascular occl. (artery/vein),eye,"Neurodegenerative (Parkinson, dementia)",-0.272
 Retinal vascular occl. (artery/vein),eye,"Cardiometabolic-renal (CKD, HF, diabetes)",0.282
-Retinal vascular occl. (artery/vein),eye,"Haematologic / oncologic (anemia, leukemia)",-0.352
+Retinal vascular occl. (artery/vein),eye,"Hematologic / oncologic (anemia, leukemia)",-0.352
 Retinal vascular occl. (artery/vein),eye,"Infection / inflammatory (sepsis, autoimmune)",-0.096
 Retinal vascular occl. (artery/vein),eye,Hepatic / visceral (cirrhosis),0.055
 Retinal microvascular (diabetic/HTN retinopathy),eye,Demyelinating / CNS (MS),-1.089
@@ -36,7 +36,7 @@ Retinal microvascular (diabetic/HTN retinopathy),eye,"Cerebrovascular (stroke, T
 Retinal microvascular (diabetic/HTN retinopathy),eye,Peripheral / autonomic NEUROPATHY,2.819
 Retinal microvascular (diabetic/HTN retinopathy),eye,"Neurodegenerative (Parkinson, dementia)",0.148
 Retinal microvascular (diabetic/HTN retinopathy),eye,"Cardiometabolic-renal (CKD, HF, diabetes)",1.956
-Retinal microvascular (diabetic/HTN retinopathy),eye,"Haematologic / oncologic (anemia, leukemia)",0.82
+Retinal microvascular (diabetic/HTN retinopathy),eye,"Hematologic / oncologic (anemia, leukemia)",0.82
 Retinal microvascular (diabetic/HTN retinopathy),eye,"Infection / inflammatory (sepsis, autoimmune)",0.574
 Retinal microvascular (diabetic/HTN retinopathy),eye,Hepatic / visceral (cirrhosis),0.766
 "Ocular surface / autonomic (dry eye, tear film)",eye,Demyelinating / CNS (MS),-0.137
@@ -44,7 +44,7 @@ Retinal microvascular (diabetic/HTN retinopathy),eye,Hepatic / visceral (cirrhos
 "Ocular surface / autonomic (dry eye, tear film)",eye,Peripheral / autonomic NEUROPATHY,-0.064
 "Ocular surface / autonomic (dry eye, tear film)",eye,"Neurodegenerative (Parkinson, dementia)",0.372
 "Ocular surface / autonomic (dry eye, tear film)",eye,"Cardiometabolic-renal (CKD, HF, diabetes)",0.046
-"Ocular surface / autonomic (dry eye, tear film)",eye,"Haematologic / oncologic (anemia, leukemia)",0.598
+"Ocular surface / autonomic (dry eye, tear film)",eye,"Hematologic / oncologic (anemia, leukemia)",0.598
 "Ocular surface / autonomic (dry eye, tear film)",eye,"Infection / inflammatory (sepsis, autoimmune)",0.737
 "Ocular surface / autonomic (dry eye, tear film)",eye,Hepatic / visceral (cirrhosis),0.506
 "Structural / aging (cataract, glaucoma, AMD)",eye,Demyelinating / CNS (MS),-0.598
@@ -52,7 +52,7 @@ Retinal microvascular (diabetic/HTN retinopathy),eye,Hepatic / visceral (cirrhos
 "Structural / aging (cataract, glaucoma, AMD)",eye,Peripheral / autonomic NEUROPATHY,-0.3
 "Structural / aging (cataract, glaucoma, AMD)",eye,"Neurodegenerative (Parkinson, dementia)",0.022
 "Structural / aging (cataract, glaucoma, AMD)",eye,"Cardiometabolic-renal (CKD, HF, diabetes)",0.093
-"Structural / aging (cataract, glaucoma, AMD)",eye,"Haematologic / oncologic (anemia, leukemia)",0.049
+"Structural / aging (cataract, glaucoma, AMD)",eye,"Hematologic / oncologic (anemia, leukemia)",0.049
 "Structural / aging (cataract, glaucoma, AMD)",eye,"Infection / inflammatory (sepsis, autoimmune)",0.053
 "Structural / aging (cataract, glaucoma, AMD)",eye,Hepatic / visceral (cirrhosis),-0.198
 "Anemia indices (Hgb, RDW, MCV)",CBC,Demyelinating / CNS (MS),0.234
@@ -60,7 +60,7 @@ Retinal microvascular (diabetic/HTN retinopathy),eye,Hepatic / visceral (cirrhos
 "Anemia indices (Hgb, RDW, MCV)",CBC,Peripheral / autonomic NEUROPATHY,-0.28
 "Anemia indices (Hgb, RDW, MCV)",CBC,"Neurodegenerative (Parkinson, dementia)",0.046
 "Anemia indices (Hgb, RDW, MCV)",CBC,"Cardiometabolic-renal (CKD, HF, diabetes)",0.271
-"Anemia indices (Hgb, RDW, MCV)",CBC,"Haematologic / oncologic (anemia, leukemia)",-0.685
+"Anemia indices (Hgb, RDW, MCV)",CBC,"Hematologic / oncologic (anemia, leukemia)",-0.685
 "Anemia indices (Hgb, RDW, MCV)",CBC,"Infection / inflammatory (sepsis, autoimmune)",-0.495
 "Anemia indices (Hgb, RDW, MCV)",CBC,Hepatic / visceral (cirrhosis),-0.534
 "Inflammatory (WBC, neutrophils)",CBC,Demyelinating / CNS (MS),-0.051
@@ -68,7 +68,7 @@ Retinal microvascular (diabetic/HTN retinopathy),eye,Hepatic / visceral (cirrhos
 "Inflammatory (WBC, neutrophils)",CBC,Peripheral / autonomic NEUROPATHY,-0.217
 "Inflammatory (WBC, neutrophils)",CBC,"Neurodegenerative (Parkinson, dementia)",-0.27
 "Inflammatory (WBC, neutrophils)",CBC,"Cardiometabolic-renal (CKD, HF, diabetes)",-0.067
-"Inflammatory (WBC, neutrophils)",CBC,"Haematologic / oncologic (anemia, leukemia)",-0.075
+"Inflammatory (WBC, neutrophils)",CBC,"Hematologic / oncologic (anemia, leukemia)",-0.075
 "Inflammatory (WBC, neutrophils)",CBC,"Infection / inflammatory (sepsis, autoimmune)",0.232
 "Inflammatory (WBC, neutrophils)",CBC,Hepatic / visceral (cirrhosis),-1.183
 "Platelet / coag (platelets, RDW-SD)",CBC,Demyelinating / CNS (MS),0.078
@@ -76,6 +76,6 @@ Retinal microvascular (diabetic/HTN retinopathy),eye,Hepatic / visceral (cirrhos
 "Platelet / coag (platelets, RDW-SD)",CBC,Peripheral / autonomic NEUROPATHY,0.161
 "Platelet / coag (platelets, RDW-SD)",CBC,"Neurodegenerative (Parkinson, dementia)",0.069
 "Platelet / coag (platelets, RDW-SD)",CBC,"Cardiometabolic-renal (CKD, HF, diabetes)",0.122
-"Platelet / coag (platelets, RDW-SD)",CBC,"Haematologic / oncologic (anemia, leukemia)",0.419
+"Platelet / coag (platelets, RDW-SD)",CBC,"Hematologic / oncologic (anemia, leukemia)",0.419
 "Platelet / coag (platelets, RDW-SD)",CBC,"Infection / inflammatory (sepsis, autoimmune)",0.399
 "Platelet / coag (platelets, RDW-SD)",CBC,Hepatic / visceral (cirrhosis),-1.191

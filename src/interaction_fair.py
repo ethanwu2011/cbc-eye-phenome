@@ -2,7 +2,7 @@
 
 The shipped test (orthogonality_interaction_test.py) handicaps the interaction model twice.
 It carries ~300 extra product terms AND is fitted at C=0.5 against the additive model's C=1.0,
-so in sklearn's parameterisation it is regularised twice as hard. The Methods already concede
+so in sklearn's parameterization it is regularized twice as hard. The Methods already concede
 the test is "biased against detecting interaction" and name the fix. This runs it.
 
   PASS 1 (all eligible diseases)  equal penalty, both models at C=1.0, DeLong p, BH-FDR.

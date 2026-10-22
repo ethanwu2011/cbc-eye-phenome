@@ -1,5 +1,5 @@
 """NHANES convergent-validation figure (2 panels):
-A) Complementarity map — eye's marginal value vs CBC's marginal value per condition, quadrant-coloured.
+A) Complementarity map — eye's marginal value vs CBC's marginal value per condition, quadrant-colored.
 B) Combining beats demographics — demo -> eye+CBC lollipop for the top-gain conditions."""
 from config import CBCEYE_ROOT
 import pandas as pd, numpy as np, plotly.graph_objects as go

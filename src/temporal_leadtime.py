@@ -9,7 +9,7 @@ For each (blank B, horizon H):
    eligible = follow_days >= H  AND  no onset of the phenotype at or before B
    case     = first onset in (B, H]
    control  = no onset at or before H
-Features at T0 only: base = age/sex/utilisation ; +eye ; +CBC ; +both.
+Features at T0 only: base = age/sex/utilization ; +eye ; +CBC ; +both.
 Pooled 5-fold OOF AUROC, in-fold eye vocabulary (leakage control), DeLong both-vs-base,
 BH-FDR within each cell.
 

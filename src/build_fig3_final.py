@@ -26,7 +26,7 @@ rng=np.random.default_rng(42)
 
 xs=pd.read_parquet(f"{HERE}/landscape_full.parquet"); xs["phecode"]=xs.phecode.astype(str)
 # Apply the SAME concurrent screen used for every other concurrent result. Without this the
-# figure merges unscreened concurrent phenotypes (including tautological ones such as anaemia)
+# figure merges unscreened concurrent phenotypes (including tautological ones such as anemia)
 # against screened prospective ones, which inflates n and mixes two different analysis sets.
 xs=xs[(xs.circularity_tier=="clean")&(xs.klass!="no signal")]
 xs["adv_xs"]=xs.auc_eye-xs.auc_cbc; xs=xs.drop_duplicates("phecode")

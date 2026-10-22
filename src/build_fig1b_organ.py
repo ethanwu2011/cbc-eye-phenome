@@ -36,7 +36,7 @@ fig.add_trace(go.Scatter(
     marker=dict(size=9+g.n*0.40,color="#33485a",opacity=0.82,line=dict(width=1,color="#fff")),
     customdata=np.stack([g.n,g.both],axis=-1),
     hovertemplate="<b>%{text}</b><br>eye %{x:.3f} · CBC %{y:.3f}<br>both %{customdata[1]:.3f} · %{customdata[0]} diseases<extra></extra>"))
-fig.add_annotation(x=0.5425,y=0.7085,text="<b>CBC-led</b><br>haematologic · visceral",showarrow=False,
+fig.add_annotation(x=0.5425,y=0.7085,text="<b>CBC-led</b><br>hematologic · visceral",showarrow=False,
     font=dict(color=CBCC,size=13),align="left",xanchor="left",yanchor="top")
 fig.add_annotation(x=0.712,y=0.552,text="<b>eye-led</b><br>neurological",showarrow=False,
     font=dict(color=EYEC,size=13),align="right",xanchor="right",yanchor="bottom")

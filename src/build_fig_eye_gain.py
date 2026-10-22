@@ -1,7 +1,7 @@
 """Creative figure: 'What the eye adds, on top of the blood count.'
 Gain-arrow (dumbbell) plot. For exemplar diseases, a maroon dot = AUROC with the CBC alone,
-a coloured arrow extends to AUROC with eye+CBC; arrow length = the eye's marginal contribution.
-Arrow colour: teal = eye-specific (eye carries it), green = synergy (eye complements the CBC).
+a colored arrow extends to AUROC with eye+CBC; arrow length = the eye's marginal contribution.
+Arrow color: teal = eye-specific (eye carries it), green = synergy (eye complements the CBC).
 Each arrow annotated with the dominant ophthalmic sign that drives it."""
 from config import CBCEYE_ROOT
 import pandas as pd, numpy as np, plotly.graph_objects as go
@@ -22,10 +22,10 @@ PICK=["Arthropathy associated with neurological","Nephritis and nephropathy in d
 SHORT={"Arthropathy associated with neurological":"Charcot arthropathy (neuro)",
  "Nephritis and nephropathy in diseases":"Diabetic nephropathy","Peripheral autonomic neuropathy":"Peripheral autonomic neuropathy",
  "Insulin pump user":"Insulin-pump–treated diabetes","Erectile dysfunction":"Erectile dysfunction",
- "Gastroparesis":"Gastroparesis","Cerebral artery occlusion, with cerebral infarction":"Ischaemic stroke",
+ "Gastroparesis":"Gastroparesis","Cerebral artery occlusion, with cerebral infarction":"Ischemic stroke",
  "Late effects of cerebrovascular":"Late effects of stroke","intermittent claudication":"Peripheral artery disease",
- "Chronic ulcer of leg or foot":"Chronic leg / foot ulcer","ulceration or gangrene":"Limb ischaemia (gangrene)",
- "Facial weakness":"Facial weakness","Unstable angina":"Unstable angina","Intracerebral hemorrhage":"Intracerebral haemorrhage",
+ "Chronic ulcer of leg or foot":"Chronic leg / foot ulcer","ulceration or gangrene":"Limb ischemia (gangrene)",
+ "Facial weakness":"Facial weakness","Unstable angina":"Unstable angina","Intracerebral hemorrhage":"Intracerebral hemorrhage",
  "Lack of coordination":"Ataxia / incoordination","Hemiplegia":"Hemiplegia","Acute osteomyelitis":"Acute osteomyelitis"}
 rows=[]
 for key in PICK:

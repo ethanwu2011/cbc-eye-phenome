@@ -75,7 +75,7 @@ for i,(lab,_,_) in enumerate(LEGS,start=1):
         figA.add_annotation(x=r.rel,y=j-0.32,text=lbl,showarrow=False,font=dict(size=9.5,color=c),row=1,col=i)
     figA.add_annotation(x=0,y=1.62,text="all-phenotype baseline",showarrow=False,font=dict(size=9,color="#8a8a8a"),row=1,col=i)
 figA.update_layout(template="simple_white",font=dict(family="Helvetica",size=12),width=1250,height=420,
-    title=dict(text="<b>A   Both territories favour the eye in every design</b>"
+    title=dict(text="<b>A   Both territories favor the eye in every design</b>"
                     "  <sub>territory median minus that design's all-phenotype median, bootstrap 95% CI. All six estimates positive, sign test p = 0.031</sub>",x=0.015),
     margin=dict(l=175,t=95))
 figA.update_xaxes(title_text="eye advantage over CBC, relative to baseline",zeroline=False,range=[-0.06,0.13])

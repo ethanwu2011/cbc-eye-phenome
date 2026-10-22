@@ -76,9 +76,9 @@ PICKS={
  "synergy":["Nephritis and nephropathy in diseases","Chronic Kidney Disease, Stage III","Insulin pump user","Congestive heart failure (CHF) NOS"],
  "comparable":["Epilepsy, recurrent seizures","Malaise and fatigue"],
  "CBC-specific":["Atrial fibrillation and flutter","Gram negative septicemia","Cirrhosis of liver without","Respiratory failure"]}
-SHORT={"Cerebral artery occlusion, with cerebral infarction":"Cerebral artery occlusion (ischaemic stroke)",
+SHORT={"Cerebral artery occlusion, with cerebral infarction":"Cerebral artery occlusion (ischemic stroke)",
  "Nephritis and nephropathy in diseases classified elsewhere":"Nephropathy in systemic disease",
- "Congestive heart failure (CHF) NOS":"Congestive heart failure","Hyposmolality and/or hyponatremia":"Hyponatraemia",
+ "Congestive heart failure (CHF) NOS":"Congestive heart failure","Hyposmolality and/or hyponatremia":"Hyponatremia",
  "Cirrhosis of liver without mention of alcohol":"Cirrhosis of liver","Epilepsy, recurrent seizures, convulsions":"Epilepsy",
  "Atrial fibrillation and flutter":"Atrial fibrillation / flutter","Chronic Kidney Disease, Stage III":"Chronic kidney disease, stage III"}
 DSIG=0.58   # show a modality's driver only if that modality actually discriminates (AUROC>=DSIG)
