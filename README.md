@@ -1,4 +1,4 @@
-# Ophthalmic and hematologic data carry organ-partitioned, non-redundant information about systemic disease
+# Ophthalmic and hematologic data carry organ-partitioned non-redundant information about systemic disease
 
 Analysis code and aggregate results for a phenome-wide comparison of routine ophthalmic
 diagnosis codes against the complete blood count (CBC) as competing predictors of systemic
@@ -152,7 +152,7 @@ disease, paralytic ileus, spondylosis without myelopathy).
 ## Citation
 
 Wu E, Navidzadeh JO, Sahel J-A, Xing EP, Chhablani J. Ophthalmic and hematologic data
-carry organ-partitioned, non-redundant information about systemic disease.
+carry organ-partitioned non-redundant information about systemic disease.
 
 ## License
 

@@ -17,7 +17,7 @@ fig.add_shape(type="line",x0=0.45,y0=0.45,x1=0.92,y1=0.92,line=dict(color="#999"
 fig.add_annotation(x=0.50,y=0.88,text="<b>CBC-specific</b><br>hematologic / visceral",showarrow=False,font=dict(color="#9c5b5b",size=13),align="left")
 fig.add_annotation(x=0.85,y=0.49,text="<b>eye-specific</b><br>neurological / microvascular",showarrow=False,font=dict(color="#2b6e6e",size=13),align="right")
 fig.update_traces(marker=dict(opacity=0.78,line=dict(width=0.4,color="#444")))
-fig.update_layout(title=dict(text="<b>Every condition, ranked by which modality carries it</b><br><sup>each point one of 535 systemic conditions; above the diagonal = blood-count-led, below = eye-led</sup>",x=0.5),
+fig.update_layout(title=dict(text="<b>Every condition, ranked by which modality carries it</b><br><sup>each point one of 528 systemic conditions; above the diagonal = blood-count-led, below = eye-led</sup>",x=0.5),
     width=1000,height=760,legend=dict(title="organ system",font=dict(size=10)),
     xaxis=dict(range=[0.45,0.92]),yaxis=dict(range=[0.45,0.92]))
 fig.write_image(f"{HERE}/landscape_plotly.png",scale=2)

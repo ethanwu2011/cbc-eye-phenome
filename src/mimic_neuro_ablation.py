@@ -1,4 +1,4 @@
-"""Reverse-causation / manifestation safeguard for the neuro headline (reviewer's #1 ask).
+"""Reverse-causation / manifestation safeguard for the neurological result.
 For ischemic stroke and MS in MIMIC, re-estimate the eye-only and eye-over-CBC AUROC after
 ABLATING downstream neuro-ophthalmic SEQUELA codes (visual-field defects/homonymous hemianopia,
 diplopia, optic neuritis/atrophy, papilledema, nystagmus, transient visual loss, retinal-artery

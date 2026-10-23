@@ -1,4 +1,4 @@
-"""Fig 1B (organ-level) - readable companion to the 559-disease landscape.
+"""Fig 1B (organ-level) - readable companion to the 528-disease landscape.
 Each point = one organ system at MEAN AUROC(eye) vs MEAN AUROC(CBC); bubble size = # diseases.
 EQUAL square axes (true 45-deg diagonal) + a diverging gradient background: maroon above the
 diagonal = CBC-led, teal below = eye-led."""

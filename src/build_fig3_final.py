@@ -1,17 +1,11 @@
-"""FIGURE 3 (final) — the eye-vs-CBC partition holds prospectively.
+"""Figure 3: the eye-versus-CBC partition with a two-year separation between eye and outcome.
 
-Synergy is NOT shown here on purpose: it requires more power than a leading-modality test
-and this leg has only 10/622 confirmed. The synergy claim rests on the concurrent leg and
-NHANES, which are powered for it. This figure asks one question: which modality leads.
-
-A) The prospective landscape: C(eye) vs C(CBC) for every phenotype, same geometry as Fig 1B,
-   but every event occurs >=1 year AFTER the ophthalmic encounter. Classes are assigned by
-   400-resample patient bootstrap + BH-FDR, NOT by threshold: grey means "underpowered to
-   distinguish", which is an honest absence of a claim rather than an assertion of equality.
-B) The same diseases concurrently vs prospectively (identical PheCodes, no mapping step):
-   if the partition were an artifact of concurrent coding this would be a cloud.
-C) Organ-system ordering, concurrent vs prospective.
-D) Dose-response: the partition attenuates as the required lead grows, but survives.
+A) The index-anchored landscape: C-index with demographics plus eye against demographics plus
+   CBC for the 449 screened phenotypes, every outcome at least 730 days after the index.
+   Classes are effect-size strata (C-index difference of at least 0.030), as in the Methods.
+B) The same PheCodes concurrently and index-anchored (identical codes, no mapping step).
+C) Organ-system ordering, concurrent against index-anchored.
+D) Agreement with the concurrent landscape at required leads of 90, 365 and 730 days.
 
 Correlations carry bootstrap 95% CIs (1000 phenotype-level resamples); per-phenotype
 classes carry 400-resample patient-level bootstrap CIs with BH-FDR.
@@ -65,17 +59,12 @@ main=[s for s in stats_rows if s["days"]==730][0]
 pr1=load("_B730")
 m1=xs[["phecode","adv_xs"]].merge(pr1[["phecode","adv_pr","events","description"]],on="phecode")
 
-# ---------------- A (significance-based, not arbitrary cutoffs) ----------------
-# the canonical screened set, 449 of 533, matching the Results and the Figure 3 legend.
-# prospective_2yr_final.csv is a 474-row export missing PheCodes 270.38 and 747.11.
+# ---------------- A ----------------
+# the screened set, 449 of 533, matching the Results and the Figure 3 legend.
 sig=pd.read_csv(f"{HERE}/prospective_landscape_B730_canonical.csv",dtype={"phecode":str})
 sig=sig[sig.canonical].copy()
 sig["klass"]=sig.klass.replace({"comparable":"indeterminate"})
 excl=pd.DataFrame(columns=sig.columns)   # already screened upstream
-# NOTE: synergy is deliberately NOT a class here. Detecting synergy (both > the BETTER
-# single) needs more power than detecting which modality leads, and this leg has too few
-# events (10/622). Synergy is claimed from the concurrent leg (69/559) and NHANES (19/66),
-# where it is powered. This panel asks only: which modality leads, prospectively.
 sig["cls"]=sig.klass.map({"eye-specific":"eye-specific","CBC-specific":"CBC-specific","synergy":"synergy","indeterminate":"indeterminate (underpowered)"})
 CMAP={"indeterminate (underpowered)":"#dcdcdc","CBC-specific":CBCc,"eye-specific":EYE,"synergy":SYN}
 figA=go.Figure(); lo_,hi_=0.35,0.92

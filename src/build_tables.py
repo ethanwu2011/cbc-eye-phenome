@@ -1,6 +1,5 @@
-"""Build manuscript Tables T1 (cohort+design), T2 (representative diseases by class), and a
-T3 generator (per-class MIMIC<->AoU concordance, fills after the AoU run). Aggregates only (DUA).
-Writes markdown + csv into final_manuscript/."""
+"""Build manuscript Table 1 (cohort and design) and Table 2 (representative diseases by class).
+Aggregates only. Writes markdown + csv into final_manuscript/."""
 from config import CBCEYE_ROOT
 import os, re, numpy as np, pandas as pd
 HERE=CBCEYE_ROOT; OUT=f"{HERE}/final_manuscript"; os.makedirs(OUT,exist_ok=True)
@@ -41,27 +40,29 @@ ncodes=med_iqr(tb.n_codes_le_t0); nadm=med_iqr(tb.n_adm_le_t0); fup=med_iqr(tb.f
 pct_death=100*tb.death_days.notna().mean()
 
 t1=[]
-t1.append("## Table 1 — Cohort characteristics and study design\n")
+t1.append("## Table 1. Cohort characteristics and study design\n")
 t1.append("| Characteristic | Value |")
 t1.append("|---|---|")
 t1.append(f"| Patients (≥1 ophthalmic ICD code) | {N:,} |")
-t1.append(f"| Age at index, years — median [IQR] | {age} |")
+t1.append(f"| Age at index, years, median [IQR] | {age} |")
 t1.append(f"| Female sex, % | {pct_f:.1f} |")
-for k,v in race.items(): t1.append(f"| Race — {k}, % | {v} |")
-t1.append(f"| Distinct ICD codes by index — median [IQR] | {ncodes} |")
-t1.append(f"| Hospital admissions by index — median [IQR] | {nadm} |")
-t1.append(f"| Follow-up after index, days — median [IQR] | {fup} |")
+for k,v in race.items(): t1.append(f"| Race: {k}, % | {v} |")
+t1.append(f"| Distinct ICD codes by index, median [IQR] | {ncodes} |")
+t1.append(f"| Hospital admissions by index, median [IQR] | {nadm} |")
+t1.append(f"| Follow-up after index, days, median [IQR] | {fup} |")
 t1.append(f"| Death recorded during follow-up, % | {pct_death:.1f} |")
 t1.append("| **Features** | |")
 t1.append("| Ophthalmic ICD codes (binary) | 187 |")
 t1.append("| Complete-blood-count analytes (continuous) | 20 |")
 t1.append("| PheCode v1.2 diagnosis-row coverage, % | 87 |")
 t1.append("| **Systemic phenotypes** | |")
-t1.append(f"| Modelled (≥150 cases) | {len(L)} |")
-t1.append("| Circular — tautological / expected-CBC / expected-manifestation | 41 (13 / 5 / 23) |")
+t1.append(f"| Modeled (≥150 cases) | {len(L)} |")
+tiers=L.circularity_tier.value_counts()
+circ=[int(tiers.get(k,0)) for k in ("tautological","expected_cbc","expected_manifestation","care_process")]
+t1.append(f"| Circular: tautological / expected-CBC / expected-manifestation / care-process | {sum(circ)} ({' / '.join(map(str,circ))}) |")
 t1.append(f"| Clean | {(L.circularity_tier=='clean').sum()} |")
 t1.append(f"| Clean with discriminative signal (analysis set) | {len(clean)} |")
-t1.append("| **Taxonomy of the 559** | |")
+t1.append(f"| **Taxonomy of the {len(clean)}** | |")
 for k in ["CBC-specific","comparable","synergy","eye-specific"]:
     t1.append(f"| &nbsp;&nbsp;{k} | {(clean.klass==k).sum()} |")
 open(f"{OUT}/Table1.md","w").write("\n".join(t1)+"\n")
@@ -104,37 +105,6 @@ for _,r in T2.iterrows():
     t2.append(f"| {r.Disease} | {r.Class} | {r.Organ} | {r.N:,} | {r.Eye} | {r.CBC} | {r.Both} | {r.TopEye} | {r.TopCBC} |")
 open(f"{OUT}/Table2.md","w").write("\n".join(t2)+"\n")
 
-# ========================= TABLE 3 (generator + skeleton) =========================
-def build_t3(merged_csv=f"{HERE}/aou_replication/aou_vs_mimic_merged.csv"):
-    from scipy import stats
-    cmp=pd.read_csv(merged_csv)
-    out=["## Table 3 — Cross-cohort concordance, MIMIC-IV vs All of Us\n",
-         "| Class | n | mean AUROC eye+CBC (MIMIC) | mean AUROC eye+CBC (AoU) | Spearman ρ (both) | replication rate* |",
-         "|---|--:|--:|--:|--:|--:|"]
-    for k in ["eye-specific","synergy","comparable","CBC-specific","ALL"]:
-        sub=cmp if k=="ALL" else cmp[cmp.klass==k]
-        if len(sub)<3: continue
-        rho=stats.spearmanr(sub.auc_both,sub.auc_both_aou).correlation
-        rep=((sub.auc_both_aou>0.55)&(sub.auc_both>0.55)).mean()  # same-direction signal
-        out.append(f"| {k} | {len(sub)} | {sub.auc_both.mean():.3f} | {sub.auc_both_aou.mean():.3f} | {rho:.2f} | {rep:.0%} |")
-    out.append("\n*replication rate = fraction with AUROC>0.55 in both cohorts.")
-    open(f"{OUT}/Table3.md","w").write("\n".join(out)+"\n"); print("built Table3.md from",merged_csv)
-
-if os.path.exists(f"{HERE}/aou_replication/aou_vs_mimic_merged.csv"):
-    build_t3()
-else:
-    # skeleton with MIMIC side pre-filled
-    sk=["## Table 3 — Cross-cohort concordance, MIMIC-IV vs All of Us  *(AoU columns pending the Workbench run)*\n",
-        "| Class | n | mean AUROC eye+CBC (MIMIC) | mean AUROC eye+CBC (AoU) | Spearman ρ (both) | replication rate |",
-        "|---|--:|--:|--:|--:|--:|"]
-    for k in ["eye-specific","synergy","comparable","CBC-specific"]:
-        sub=clean[clean.klass==k]; sk.append(f"| {k} | {len(sub)} | {sub.auc_both.mean():.3f} | _pending_ | _pending_ | _pending_ |")
-    sk.append(f"| ALL | {len(clean)} | {clean.auc_both.mean():.3f} | _pending_ | _pending_ | _pending_ |")
-    sk.append("\n_Preliminary eye-only name-matched check (not this table): organ-level Pearson r=0.62; disease-level Spearman ρ≈0.24._")
-    sk.append("_Run `build_tables.py` after `aou_vs_mimic_merged.csv` lands to fill the AoU columns._")
-    open(f"{OUT}/Table3.md","w").write("\n".join(sk)+"\n")
-    print("wrote Table3.md SKELETON (AoU pending)")
-
-print("\nwrote Table1.md, Table2.md/.csv, Table3.md ->",OUT)
+print("\nwrote Table1.md, Table2.md/.csv ->",OUT)
 print(f"\nT1 quick check: N={N:,}  age {age}  %F {pct_f:.1f}  death {pct_death:.1f}%")
 print("T2 rows:",len(T2))

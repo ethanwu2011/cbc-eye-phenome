@@ -1,8 +1,6 @@
 """Figure — the partition reproduces across three designs.
 
-This is the honest successor to the old AoU-vs-MIMIC comparison figure, which relied on
-fuzzy SNOMED-to-PheCode matching (rho ~0.24, dental caries as the top 'signal'). Here the
-per-disease comparison uses IDENTICAL PheCodes within MIMIC, so there is no mapping step
+The per-disease comparison uses identical PheCodes within MIMIC, so there is no mapping step
 at all, and NHANES enters at the organ level where its 66 measured conditions are comparable.
 
 A) Per-disease: the eye's advantage over the CBC concurrently (x) vs >=1 year ahead (y),

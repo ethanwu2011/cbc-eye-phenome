@@ -1,4 +1,4 @@
-"""Put inference on the diabetes-stratification (reviewer P1). For the 23 NHANES conditions,
+"""Inference for the diabetes stratification. For the 23 NHANES conditions,
 DeLong paired tests + BH-FDR for three contrasts: (i) eye+CBC > demo+diabetes+HbA1c (full),
 (ii) eye+CBC > demo (non-diabetics), (iii) eye+CBC > CBC = eye adds (non-diabetics). Reports
 FDR-surviving counts with 95% CIs, replacing the bare ΔAUROC>0.01 tallies. Reuses NHANES prep."""

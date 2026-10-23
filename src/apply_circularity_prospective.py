@@ -1,6 +1,6 @@
 """Port the paper's circularity screen onto the PROSPECTIVE leg.
 
-The concurrent landscape screens 639 -> 41 circular -> 559 clean, but the prospective
+The concurrent landscape screens 635 -> 61 circular -> 574 clean (528 with signal), but the prospective
 scripts never applied it. Consequence before the fix: the largest single effect in the
 paper was primary open-angle glaucoma (+0.203, the eye predicting the eye), and 16 of the
 47 "CBC-led" phenotypes were hematopoietic, i.e. the CBC predicting a CBC measurement.

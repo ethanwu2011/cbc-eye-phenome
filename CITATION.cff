@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: If you use this code or the aggregate results, please cite the paper.
-title: Ophthalmic and hematologic data carry organ-partitioned, non-redundant information about systemic disease
+title: Ophthalmic and hematologic data carry organ-partitioned non-redundant information about systemic disease
 authors:
   - family-names: Wu
     given-names: Ethan
   - family-names: Navidzadeh
     given-names: Justin O.
   - family-names: Sahel
-    given-names: Jose-Alain
+    given-names: José-Alain
   - family-names: Xing
     given-names: Eric P.
   - family-names: Chhablani
