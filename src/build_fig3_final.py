@@ -76,26 +76,26 @@ excl=pd.DataFrame(columns=sig.columns)   # already screened upstream
 # single) needs more power than detecting which modality leads, and this leg has too few
 # events (10/622). Synergy is claimed from the concurrent leg (69/559) and NHANES (19/66),
 # where it is powered. This panel asks only: which modality leads, prospectively.
-sig["cls"]=sig.klass.map({"eye-specific":"eye-led","CBC-specific":"CBC-led","synergy":"synergy","indeterminate":"indeterminate (underpowered)"})
-CMAP={"indeterminate (underpowered)":"#dcdcdc","CBC-led":CBCc,"eye-led":EYE,"synergy":SYN}
+sig["cls"]=sig.klass.map({"eye-specific":"eye-specific","CBC-specific":"CBC-specific","synergy":"synergy","indeterminate":"indeterminate (underpowered)"})
+CMAP={"indeterminate (underpowered)":"#dcdcdc","CBC-specific":CBCc,"eye-specific":EYE,"synergy":SYN}
 figA=go.Figure(); lo_,hi_=0.35,0.92
 figA.add_trace(go.Scatter(x=[lo_,hi_],y=[lo_,hi_],mode="lines",line=dict(color="#ddd",width=1,dash="dash"),showlegend=False,hoverinfo="skip"))
-for k in ["indeterminate (underpowered)","CBC-led","synergy","eye-led"]:
+for k in ["indeterminate (underpowered)","CBC-specific","synergy","eye-specific"]:
     s_=sig[sig.cls==k]
     if not len(s_): continue
-    figA.add_trace(go.Scatter(x=s_.c_cbc,y=s_.c_eye,mode="markers",name=f"{k} — {len(s_)}",
+    figA.add_trace(go.Scatter(x=s_.c_cbc,y=s_.c_eye,mode="markers",name=f"{k} ({len(s_)})",
         marker=dict(size=5+np.sqrt(s_.events.clip(0,900))*0.30,color=CMAP[k],
                     opacity=0.45 if k.startswith("indet") else 0.85,line=dict(width=0.4,color="#fff")),
         text=s_.description,hovertemplate="%{text}<br>CBC %{x:.3f} · eye %{y:.3f}<extra></extra>"))
 figA.add_trace(go.Scatter(x=excl.c_cbc,y=excl.c_eye,mode="markers",name=f"excluded: circular \u2014 {len(excl)}",
     marker=dict(size=6,color="rgba(0,0,0,0)",line=dict(width=1.1,color="#b9b9b9")),
     text=excl.description,hovertemplate="%{text}<br>excluded<extra></extra>"))
-figA.add_annotation(x=0.855,y=0.60,text="<b>CBC-led</b>",showarrow=False,font=dict(size=13,color=CBCc))
-figA.add_annotation(x=0.44,y=0.875,text="<b>eye-led</b>",showarrow=False,font=dict(size=13,color=EYE))
+figA.add_annotation(x=0.855,y=0.60,text="<b>CBC-specific</b>",showarrow=False,font=dict(size=13,color=CBCc))
+figA.add_annotation(x=0.44,y=0.875,text="<b>eye-specific</b>",showarrow=False,font=dict(size=13,color=EYE))
 figA.update_layout(template="simple_white",font=dict(family="Helvetica",size=12),width=700,height=650,
     title=dict(text=f"<b>A   The prospective landscape</b>  <sub>{len(sig)} phenotypes, every event \u22652 yr ahead</sub>",x=0.02),
-    xaxis=dict(title="C-index \u2014 demographics + CBC",range=[lo_,hi_]),
-    yaxis=dict(title="C-index \u2014 demographics + eye",range=[lo_,hi_],scaleanchor="x",scaleratio=1),
+    xaxis=dict(title="C-index, demographics + CBC",range=[lo_,hi_]),
+    yaxis=dict(title="C-index, demographics + eye",range=[lo_,hi_],scaleanchor="x",scaleratio=1),
     legend=dict(font=dict(size=9),y=0.015,x=0.985,xanchor="right",yanchor="bottom",
                 bgcolor="rgba(255,255,255,0.88)",bordercolor="#e5e5e5",borderwidth=1))
 figA.write_image(f"{OUT}/F3_A.png",scale=3)
@@ -114,8 +114,8 @@ figB.add_annotation(x=0.06,y=0.122,xanchor="left",align="left",showarrow=False,f
 figB.add_annotation(x=0.155,y=-0.115,text="eye-led concurrently<br>stays eye-led 2 yr ahead",showarrow=False,font=dict(size=10,color=EYE))
 figB.update_layout(template="simple_white",font=dict(family="Helvetica",size=12),width=700,height=650,
     title=dict(text="<b>B   Same diseases, concurrent vs ≥2 yr ahead</b>  <sub>identical PheCodes</sub>",x=0.02),
-    xaxis=dict(title="eye advantage over CBC — concurrent (AUROC)",range=[-0.30,0.22]),
-    yaxis=dict(title="eye advantage over CBC — ≥2 yr ahead (C-index)",range=[-0.17,0.15]))
+    xaxis=dict(title="eye advantage over CBC, concurrent (AUROC)",range=[-0.30,0.22]),
+    yaxis=dict(title="eye advantage over CBC, ≥2 yr ahead (C-index)",range=[-0.17,0.15]))
 figB.write_image(f"{OUT}/F3_B.png",scale=3)
 
 # ---------------- C ----------------

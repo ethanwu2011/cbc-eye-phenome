@@ -135,6 +135,15 @@ phenotype's matched-control draw from Python's `hash()`, which is salted per pro
 draw cannot be replayed exactly; `landscape_phewide.py` now derives the seed from SHA-256, and a
 rerun reproduces the landscape up to matched-control sampling.
 
+The diabetes stratification (`mimic_diabetes_strat.py`) and the manifestation ablation
+(`mimic_neuro_ablation.py`) define their conditions by the ICD-9 and ICD-10 prefixes listed in
+`mimic_landscape.py`, not by PheCode, so their case counts differ from the landscape. Ischemic
+stroke there is ICD-9 434 or 436 or ICD-10 I63 (2,482 matched cases), against PheCode 433.21 in
+the landscape (1,946). In `diabetes_strat_delong.csv`, contrast i compares eye+CBC+demographics
+with demographics plus diabetes status and HbA1c in the full NHANES cohort, ii compares
+eye+CBC+demographics with demographics among non-diabetics, and iii is the eye's increment over
+CBC+demographics among non-diabetics.
+
 The neurological and microvascular-renal territories in `build_fig5_territory.py` are keyword
 sets on the phenotype description, with an `EXCLUDE` pattern that removes lexical matches that
 are not mechanistic members (poisonings, neoplasms, gastrointestinal ulcers, myeloproliferative

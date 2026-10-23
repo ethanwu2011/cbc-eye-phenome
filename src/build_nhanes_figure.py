@@ -9,6 +9,7 @@ HERE=CBCEYE_ROOT; OUT=f"{HERE}/final_manuscript/figures"
 COL={"synergy":"#2e7d52","eye-specific":"#2b6e6e","CBC-specific":"#9c5b5b","indeterminate":"#bdbdbd"}
 r=pd.read_csv(f"{HERE}/nhanes_validation_results.csv")
 r["klass"]=r.klass.replace({"comparable":"indeterminate"})   # match the manuscript wording
+r["label"]=r.condition.str.replace(">=","≥",regex=False)    # typographic operators on display
 
 # ---------- Panel A: complementarity map ----------
 figA=go.Figure()
@@ -26,9 +27,9 @@ for _,row in r.iterrows():
         dx,dy=LAB[row.condition]; nm=row.condition.split(" [")[0].split(" (")[0]
         figA.add_annotation(x=min(row.cbc_adds,0.17),y=row.eye_adds,text=nm,showarrow=True,arrowwidth=0.6,
             arrowcolor="#999",ax=18*dx,ay=-14*dy,font=dict(size=9,color="#333"))
-figA.add_annotation(x=0.13,y=0.042,text="<b>SYNERGY</b> — both add",showarrow=False,font=dict(size=11,color="#2e7d52"))
-figA.add_annotation(x=-0.025,y=0.042,text="<b>eye-led</b> (neuro)",showarrow=False,font=dict(size=11,color="#2b6e6e"),xanchor="left")
-figA.add_annotation(x=0.13,y=-0.05,text="<b>CBC-led</b> (inflammatory / visceral)",showarrow=False,font=dict(size=11,color="#9c5b5b"))
+figA.add_annotation(x=0.13,y=0.048,text="<b>synergy</b>: both add",showarrow=False,font=dict(size=11,color="#2e7d52"))
+figA.add_annotation(x=-0.025,y=0.033,text="<b>eye-specific</b> (neuro)",showarrow=False,font=dict(size=11,color="#2b6e6e"),xanchor="left")
+figA.add_annotation(x=0.13,y=-0.05,text="<b>CBC-specific</b> (inflammatory / visceral)",showarrow=False,font=dict(size=11,color="#9c5b5b"))
 figA.update_layout(template="simple_white",font=dict(family="Helvetica",size=12),width=720,height=620,
     title=dict(text="<b>A   What each modality adds, by condition</b>  <sub>(NHANES, n=5,704)</sub>",x=0.02),
     xaxis=dict(title="CBC marginal value (ΔAUROC over demographics+eye)",range=[-0.045,0.175]),
@@ -41,11 +42,11 @@ rb=r[(~r.condition.str.contains("circular",case=False))&(r.both<0.99)].copy()
 rb["gain"]=rb.both-rb.demo; t=rb.sort_values("gain",ascending=False).head(24).iloc[::-1]
 figB=go.Figure()
 for _,row in t.iterrows():
-    figB.add_trace(go.Scatter(x=[row.demo,row.both],y=[row.condition,row.condition],mode="lines",
+    figB.add_trace(go.Scatter(x=[row.demo,row.both],y=[row.label,row.label],mode="lines",
         line=dict(color="#e3e3e3",width=3),showlegend=False,hoverinfo="skip"))
-figB.add_trace(go.Scatter(x=t.demo,y=t.condition,mode="markers",name="demographics only",
+figB.add_trace(go.Scatter(x=t.demo,y=t.label,mode="markers",name="demographics only",
     marker=dict(color="#bdbdbd",size=8,line=dict(width=0.5,color="#fff")),hovertemplate="demo %{x:.3f}<extra></extra>"))
-figB.add_trace(go.Scatter(x=t.both,y=t.condition,mode="markers",name="eye + CBC + demographics",
+figB.add_trace(go.Scatter(x=t.both,y=t.label,mode="markers",name="eye + CBC + demographics",
     marker=dict(color=[COL[k] for k in t.klass],size=11,line=dict(width=0.5,color="#fff")),
     hovertemplate="eye+CBC %{x:.3f}<extra></extra>"))
 figB.update_layout(template="simple_white",font=dict(family="Helvetica",size=11),width=720,height=620,

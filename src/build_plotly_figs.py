@@ -5,6 +5,14 @@ HERE=CBCEYE_ROOT
 EYE,CBC,BOTH,COMP="#2b6e6e","#9c5b5b","#3a7a3a","#a7a7a7"
 L=pd.read_parquet(f"{HERE}/landscape_full.parquet"); L["phecode"]=L.phecode.astype(str)
 clean=L[(L.circularity_tier=="clean")&(L.klass!="no signal")]
+def wrap(s, width=30):
+    """Break a long label onto lines at word boundaries instead of cutting it."""
+    out, line = [], ""
+    for w in str(s).split():
+        if line and len(line) + 1 + len(w) > width: out.append(line); line = w
+        else: line = f"{line} {w}".strip()
+    return "<br>".join(out + [line])
+
 def save(fig,name,**lay):
     fig.update_layout(template="simple_white",font=dict(family="Helvetica",size=13),**lay)
     fig.write_image(f"{HERE}/{name}.png",scale=2); fig.write_html(f"{HERE}/{name}.html"); print("saved",name)
@@ -29,7 +37,7 @@ reps=[("Multiple sclerosis","eye-specific"),("Cerebral artery occlusion","eye-sp
 rows=[]
 for term,_ in reps:
     m=clean[clean.description.str.contains(term,case=False,na=False)]
-    if len(m): r=m.nlargest(1,"n_cases").iloc[0]; rows.append((r.description[:30],r.auc_eye,r.auc_cbc,r.auc_both))
+    if len(m): r=m.nlargest(1,"n_cases").iloc[0]; rows.append((wrap(r.description),r.auc_eye,r.auc_cbc,r.auc_both))
 rd=pd.DataFrame(rows,columns=["disease","eye","CBC","both"]).iloc[::-1]
 fig=go.Figure()
 for col,c in [("eye",EYE),("CBC",CBC),("both",BOTH)]:

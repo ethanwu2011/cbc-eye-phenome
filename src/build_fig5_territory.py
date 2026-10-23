@@ -110,16 +110,23 @@ MC={"neurological":EYE,"diabetic foot":"#8a6a3f","peripheral vascular":MICRO,"re
     "cardiac / metabolic":"#b08968","other":GREY}
 e=pr[pr.klass=="eye-specific"].copy(); e["mech"]=e.description.map(mech)
 e=e[e["mech"]!="other"].sort_values("adv",ascending=False).head(14).iloc[::-1]
+def lab(s):
+    """Display label: drop the bracketed PheCode gloss and spell out EF."""
+    s = re.sub(r"\s*\[[^\]]*\]", "", str(s)).strip()
+    return s.replace(" EF", " ejection fraction")
+
 figB=go.Figure()
 for _,r in e.iterrows():
-    figB.add_trace(go.Scatter(x=[r.c_cbc,r.c_eye],y=[r.description[:58]]*2,mode="lines",
+    figB.add_trace(go.Scatter(x=[r.c_cbc,r.c_eye],y=[lab(r.description)]*2,mode="lines",
         line=dict(color="#e8e8e8",width=3),showlegend=False,hoverinfo="skip"))
-figB.add_trace(go.Scatter(x=e.c_cbc,y=[d[:58] for d in e.description],mode="markers",name="CBC",
+figB.add_trace(go.Scatter(x=e.c_cbc,y=[lab(d) for d in e.description],mode="markers",name="CBC",
     marker=dict(color=GREY,size=9)))
-figB.add_trace(go.Scatter(x=e.c_eye,y=[d[:58] for d in e.description],mode="markers",name="eye",
+figB.add_trace(go.Scatter(x=e.c_eye,y=[lab(d) for d in e.description],mode="markers",name="eye",showlegend=False,
     marker=dict(color=[MC[m] for m in e["mech"]],size=13,line=dict(width=0.6,color="#fff"))))
+figB.add_trace(go.Scatter(x=[None],y=[None],mode="markers",name="eye (colored by mechanism)",
+    marker=dict(color="#555555",size=13)))
 for _,r in e.iterrows():
-    figB.add_annotation(x=max(r.c_eye,r.c_cbc)+0.006,y=r.description[:58],text=f"{r['mech']}  ({r.events})",
+    figB.add_annotation(x=max(r.c_eye,r.c_cbc)+0.006,y=lab(r.description),text=f"{r['mech']}  ({r.events})",
         showarrow=False,xanchor="left",font=dict(size=8.5,color=MC[r["mech"]]))
 figB.update_layout(template="simple_white",font=dict(family="Helvetica",size=11),width=900,height=560,
     xaxis=dict(title="C-index",range=[0.42,0.92]),margin=dict(l=330,r=160),
@@ -129,11 +136,11 @@ figB.write_image(f"{OUT}/F5_d.png",scale=3)
 c=pr[pr.klass=="CBC-specific"].sort_values("adv").head(12).iloc[::-1]
 figC=go.Figure()
 for _,r in c.iterrows():
-    figC.add_trace(go.Scatter(x=[r.c_eye,r.c_cbc],y=[r.description[:58]]*2,mode="lines",
+    figC.add_trace(go.Scatter(x=[r.c_eye,r.c_cbc],y=[lab(r.description)]*2,mode="lines",
         line=dict(color="#e8e8e8",width=3),showlegend=False,hoverinfo="skip"))
-figC.add_trace(go.Scatter(x=c.c_eye,y=[d[:58] for d in c.description],mode="markers",name="eye",
+figC.add_trace(go.Scatter(x=c.c_eye,y=[lab(d) for d in c.description],mode="markers",name="eye",
     marker=dict(color=GREY,size=9)))
-figC.add_trace(go.Scatter(x=c.c_cbc,y=[d[:58] for d in c.description],mode="markers",name="CBC",
+figC.add_trace(go.Scatter(x=c.c_cbc,y=[lab(d) for d in c.description],mode="markers",name="CBC",
     marker=dict(color=CBCc,size=13,line=dict(width=0.6,color="#fff"))))
 figC.update_layout(template="simple_white",font=dict(family="Helvetica",size=11),width=880,height=560,
     xaxis=dict(title="C-index",range=[0.42,0.92]),margin=dict(l=330,r=60),

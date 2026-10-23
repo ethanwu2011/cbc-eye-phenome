@@ -12,7 +12,7 @@ fig=px.scatter(d,x="auc_eye",y="auc_cbc",color="organ system",size="cases",size_
     hover_name="description",
     hover_data={"klass":True,"auc_eye":True,"auc_cbc":True,"auc_both":True,"cases":True,"organ system":False},
     color_discrete_sequence=px.colors.qualitative.Safe, template="simple_white",
-    labels={"auc_eye":"AUROC — eye findings only","auc_cbc":"AUROC — CBC only"})
+    labels={"auc_eye":"AUROC, eye findings only","auc_cbc":"AUROC, CBC only"})
 fig.add_shape(type="line",x0=0.45,y0=0.45,x1=0.92,y1=0.92,line=dict(color="#999",dash="dash",width=1))
 fig.add_annotation(x=0.50,y=0.88,text="<b>CBC-specific</b><br>hematologic / visceral",showarrow=False,font=dict(color="#9c5b5b",size=13),align="left")
 fig.add_annotation(x=0.85,y=0.49,text="<b>eye-specific</b><br>neurological / microvascular",showarrow=False,font=dict(color="#2b6e6e",size=13),align="right")

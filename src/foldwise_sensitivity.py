@@ -1,6 +1,6 @@
 """Fold-wise preprocessing sensitivity for the index-anchored landscape, all 449 phenotypes.
 
-Identical to the published pipeline except that the eye vocabulary filter (>= 20 carriers)
+Identical to the main pipeline (prospective_landscape.py) except that the eye vocabulary filter (>= 20 carriers)
 and median imputation are fitted inside each training fold rather than once on the full
 eligible set. Reports how far every C-index moves and whether any class assignment flips.
 
@@ -26,7 +26,7 @@ from config import CBCEYE_ROOT
 
 HERE = CBCEYE_ROOT
 B, SEED = 730, 42
-RATIOS = (0.1, 0.2, 0.3, 0.5)   # 0.1 is the published setting; larger values stop the path earlier
+RATIOS = (0.1, 0.2, 0.3, 0.5)   # 0.1 is the main analysis setting; larger values stop the path earlier
 OUT = f"{HERE}/foldwise_sensitivity_B730.csv"
 
 base = pd.read_parquet(f"{HERE}/temporal_base.parquet")
@@ -131,7 +131,7 @@ ONLY = sys.argv[1].split(",") if len(sys.argv) > 1 else None
 todo = ONLY or list(pub.index)
 out = Parallel(n_jobs=min(8, len(todo)))(delayed(run)(p) for p in todo)
 fw = pd.DataFrame([r for r in out if r]).set_index("phecode")
-both = fw.join(pub[["c_base", "c_eye", "c_cbc", "c_both", "klass"]], rsuffix="_pub", how="inner")
+both = fw.join(pub[["c_base", "c_eye", "c_cbc", "c_both", "klass"]], rsuffix="_main", how="inner")
 if ONLY:
     prev = pd.read_csv(OUT, dtype={"phecode": str}, float_precision="round_trip").set_index("phecode")
     both = pd.concat([prev.drop(index=both.index, errors="ignore"), both])
@@ -139,7 +139,7 @@ if ONLY:
 print(f"phenotypes compared: {len(both)} of {len(pub)}")
 print(f"failed fits (NaN)  : {int(both[['c_base','c_eye','c_cbc','c_both']].isna().any(axis=1).sum())}\n")
 for c in ("c_base", "c_eye", "c_cbc", "c_both"):
-    d = (both[c] - both[c + "_pub"]).abs()
+    d = (both[c] - both[c + "_main"]).abs()
     print(f"  {c:<7} |delta|  median {d.median():.4f}   95th pct {d.quantile(.95):.4f}   max {d.max():.4f}")
 both["fallback"] = both.get("fallback", pd.Series("", index=both.index)).fillna("")
 both["klass_fw"] = both.apply(tax, axis=1)
@@ -147,27 +147,27 @@ flips = both[both.klass_fw != both.klass]
 print(f"\nclass flips: {len(flips)} of {len(both)}")
 if len(flips):
     print(flips[["klass", "klass_fw", "c_eye", "c_cbc", "c_both"]].to_string())
-print("\npublished classes :", both.klass.value_counts().to_dict())
+print("\nmain classes      :", both.klass.value_counts().to_dict())
 print("fold-wise classes :", both.klass_fw.value_counts().to_dict())
-both = both[["c_base", "c_eye", "c_cbc", "c_both", "c_base_pub", "c_eye_pub", "c_cbc_pub",
-             "c_both_pub", "klass", "klass_fw", "fallback"]]
+both = both[["c_base", "c_eye", "c_cbc", "c_both", "c_base_main", "c_eye_main", "c_cbc_main",
+             "c_both_main", "klass", "klass_fw", "fallback"]]
 both.to_csv(OUT)
 print(f"\nsaved {OUT}")
 print(f"fits that needed a shorter path: {int((both.fallback != '').sum())}")
 print(both[both.fallback != ""][["fallback"]].to_string())
 
 # the numbers quoted in Methods
-d = {c: both[c] - both[c + "_pub"] for c in ("c_base", "c_eye", "c_cbc", "c_both")}
+d = {c: both[c] - both[c + "_main"] for c in ("c_base", "c_eye", "c_cbc", "c_both")}
 print(f"\nMETHODS  compared {len(both)}, complete {int(both[['c_base','c_eye','c_cbc','c_both']].notna().all(axis=1).sum())}")
 print(f"  median |change|  base {d['c_base'].abs().median():.4f}  cbc {d['c_cbc'].abs().median():.4f}"
       f"  eye {d['c_eye'].abs().median():.4f}   mean change eye {d['c_eye'].mean():+.4f}")
-gap = both.c_eye_pub - both.c_cbc_pub
-syn = both.c_both_pub - np.maximum(both.c_eye_pub, both.c_cbc_pub)
+gap = both.c_eye_main - both.c_cbc_main
+syn = both.c_both_main - np.maximum(both.c_eye_main, both.c_cbc_main)
 fl = both.klass_fw != both.klass
 near = ((gap.abs() - 0.03).abs() < 0.01) | ((syn - 0.015).abs() < 0.01)
 print(f"  eye-specific {int((both.klass == 'eye-specific').sum())} -> {int((both.klass_fw == 'eye-specific').sum())};"
       f"  class changed {int(fl.sum())} of {len(both)}, {int((fl & near).sum())} of them within 0.01 of a"
-      f" class threshold (published C-indices)")
+      f" class threshold (main-analysis C-indices)")
 xs = pd.read_parquet(f"{HERE}/landscape_full.parquet").drop_duplicates("phecode")
 xs["phecode"] = xs.phecode.astype(str)
 xs = xs[(xs.circularity_tier == "clean") & (xs.klass != "no signal")]
@@ -176,4 +176,4 @@ m = (xs.assign(adv=xs.auc_eye - xs.auc_cbc)[["phecode", "adv"]]
 from scipy import stats
 print(f"  concordance with the concurrent landscape on {len(m)} shared phenotypes: Spearman rho"
       f" {stats.spearmanr(m.adv, m.c_eye - m.c_cbc).statistic:.3f} fold-wise against"
-      f" {stats.spearmanr(m.adv, m.c_eye_pub - m.c_cbc_pub).statistic:.3f} published")
+      f" {stats.spearmanr(m.adv, m.c_eye_main - m.c_cbc_main).statistic:.3f} main analysis")

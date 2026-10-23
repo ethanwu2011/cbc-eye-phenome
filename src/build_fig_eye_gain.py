@@ -6,7 +6,7 @@ Each arrow annotated with the dominant ophthalmic sign that drives it."""
 from config import CBCEYE_ROOT
 import pandas as pd, numpy as np, plotly.graph_objects as go
 HERE=CBCEYE_ROOT; OUT=f"{HERE}/final_manuscript/figures"
-EYEC,SYN,CBCC="#2b6e6e","#2e7d52","#9c5b5b"
+EYEC,SYN,CBCC,GREYC="#2b6e6e","#2e7d52","#9c5b5b","#9a9a9a"
 L=pd.read_parquet(f"{HERE}/landscape_full.parquet")
 drv=pd.read_csv(f"{HERE}/modality_drivers.csv")[["name","top_eye_drivers"]]
 d=L[(L.circularity_tier=="clean")&(L.klass!="no signal")].merge(drv,left_on="description",right_on="name",how="left")
@@ -53,7 +53,7 @@ print(g[["label","klass","auc_cbc","auc_both","gain","sign"]].round(3).to_string
 
 fig=go.Figure()
 for i,r in g.iterrows():
-    col=EYEC if r.klass=="eye-specific" else SYN
+    col={"eye-specific":EYEC,"synergy":SYN}.get(r.klass,GREYC)
     fig.add_trace(go.Scatter(x=[r.auc_cbc,r.auc_both],y=[i,i],mode="lines",
         line=dict(color=col,width=3),hoverinfo="skip",showlegend=False))
     fig.add_trace(go.Scatter(x=[r.auc_both],y=[i],mode="markers",
@@ -67,13 +67,14 @@ for i,r in g.iterrows():
 # legend proxies
 for nm,c in [("blood count alone (CBC)",CBCC)]:
     fig.add_trace(go.Scatter(x=[None],y=[None],mode="markers",marker=dict(symbol="circle",size=9,color=c),name=nm))
-for nm,c in [("+ eye, carries it (eye-specific)",EYEC),("+ eye, complements CBC (synergy)",SYN)]:
+for nm,c in [("+ eye, carries it (eye-specific)",EYEC),("+ eye, complements CBC (synergy)",SYN),
+              ("+ eye (indeterminate)",GREYC)]:
     fig.add_trace(go.Scatter(x=[None],y=[None],mode="lines+markers",line=dict(color=c,width=3),
         marker=dict(symbol="triangle-right",size=11,color=c),name=nm))
 
 fig.update_layout(template="simple_white",font=dict(family="Helvetica",size=13),
     title=dict(text="<b>What the eye adds, on top of the blood count</b>"
-        "<br><sup>arrow = gain in AUROC when ophthalmic findings are added to the CBC · across all 535 diseases the median gain is +0.006, "
+        "<br><sup>arrow = gain in AUROC when ophthalmic findings are added to the CBC · across all 528 diseases the median gain is +0.006, "
         "but a neuro-vascular tail gains up to +0.20</sup>",x=0.5),
     width=940,height=780,margin=dict(b=130),
     xaxis=dict(title="AUROC for systemic disease",range=[0.46,0.96],showgrid=True,gridcolor="#eee"),
