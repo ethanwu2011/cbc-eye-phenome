@@ -4,9 +4,9 @@ Identical to the published pipeline except that the eye vocabulary filter (>= 20
 and median imputation are fitted inside each training fold rather than once on the full
 eligible set. Reports how far every C-index moves and whether any class assignment flips.
 
-With few events a fold's Coxnet path can diverge at its smallest penalty (sksurv raises
-"weights are too large, consider increasing alpha"). That fold is then refitted with the path
-stopped at a larger penalty, and the `fallback` column records where this happened.
+A fold's Coxnet fit can fail numerically (sksurv raises "weights are too large, consider
+increasing alpha"). That fold is then refitted on a penalty path ending at a larger penalty, and
+the `fallback` column records the model, fold and alpha_min_ratio.
 
     python foldwise_sensitivity.py                  all phenotypes
     python foldwise_sensitivity.py 290,807          refit these and update their rows
@@ -133,7 +133,7 @@ out = Parallel(n_jobs=min(8, len(todo)))(delayed(run)(p) for p in todo)
 fw = pd.DataFrame([r for r in out if r]).set_index("phecode")
 both = fw.join(pub[["c_base", "c_eye", "c_cbc", "c_both", "klass"]], rsuffix="_pub", how="inner")
 if ONLY:
-    prev = pd.read_csv(OUT, dtype={"phecode": str}).set_index("phecode")
+    prev = pd.read_csv(OUT, dtype={"phecode": str}, float_precision="round_trip").set_index("phecode")
     both = pd.concat([prev.drop(index=both.index, errors="ignore"), both])
     both = both.loc[[p for p in pub.index if p in both.index]]
 print(f"phenotypes compared: {len(both)} of {len(pub)}")

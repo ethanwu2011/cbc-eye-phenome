@@ -128,8 +128,8 @@ label blind but a weaker control; they are the cross-predictability test, the
 index-anchored landscape and the diabetes stratification, and the manuscript Methods say
 so. `foldwise_sensitivity.py` refits the index-anchored landscape with both steps moved
 inside each training fold; base and CBC C-indices are unchanged and the eye C-index moves by a
-median of 0.002. A fold whose regularization path diverges at its smallest penalty is refitted
-with the path stopped earlier, and the `fallback` column records where (one fold in each of four
+median of 0.002. A fold whose regularized fit fails numerically is refitted on a penalty path
+ending at a larger penalty, and the `fallback` column records where (one fold in each of four
 phenotypes); every row is complete. Random operations are seeded. The published concurrent run seeded each
 phenotype's matched-control draw from Python's `hash()`, which is salted per process, so that
 draw cannot be replayed exactly; `landscape_phewide.py` now derives the seed from SHA-256, and a
