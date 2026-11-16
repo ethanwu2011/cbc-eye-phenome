@@ -71,7 +71,7 @@ Build the intermediate tables, then run any stage independently.
 | Circularity screen | `circularity.py`, `apply_circularity_prospective.py` |
 | AUROC inference | `stats_utils.py` (fast DeLong covariance, used throughout) |
 | Concurrent landscape | `landscape_phewide.py`, `mimic_landscape.py`, `make_figures.py` |
-| Complementarity tests | `mimic_orthogonality.py`, `eye_predicts_cbc.py`, `orthogonality_interaction_test.py`, `interaction_fair.py` |
+| Complementarity tests | `mimic_orthogonality.py`, `eye_predicts_cbc.py`, `orthogonality_interaction_test.py`, `interaction_fair.py`, `synergy_joint_test.py` |
 | Index-anchored landscape | `prospective_landscape.py`, `canonical_index_screen.py`, `foldwise_sensitivity.py`, `prospective_significance.py`, `leadtime_organ_partition.py`, `temporal_leadtime.py`, `leadtime_screen.py`, `leadtime_survival.py` |
 | Confound controls | `mimic_diabetes_strat.py`, `diabetes_strat_delong.py`, `mimic_neuro_ablation.py` |
 | Neurological and microvascular axis | `neuro_axis.py`, `neuro_why_not.py`, `micro_vs_macro.py`, `territory_permutation.py` |
@@ -113,9 +113,10 @@ analysis = d[(d.circularity_tier == "clean") & (d.klass != "no signal")]   # 528
 | Figure 3 index-anchored | `prospective_landscape_B730_canonical.csv` and the `_B90` and 365-day canonical files, `prospective_significance_B730.csv`, `fig3_stats.csv` |
 | Figure 4 NHANES | `nhanes_validation_results.csv`, `nhanes_diabetes_adjusted.csv` |
 | Figure 5 territories | `fig5_territory.csv`, `territory_permutation.csv`, `prospective_landscape_B730_canonical.csv`, `nhanes_validation_results.csv` |
-| Supplementary Figure 1 | `mimic_diabetes_strat.csv`, `diabetes_strat_delong.csv`, `mimic_neuro_ablation.csv` |
-| Supplementary Figure 2 | `utility_rebuild.csv`, `utility_calib.csv`, `utility_dca.csv` |
+| Figure S1 | `mimic_diabetes_strat.csv`, `diabetes_strat_delong.csv`, `mimic_neuro_ablation.csv` |
+| Figure S2 | `utility_rebuild.csv`, `utility_calib.csv`, `utility_dca.csv` |
 | Methods sensitivity analysis | `foldwise_sensitivity_B730.csv` (index-anchored landscape refit with vocabulary selection and imputation inside each fold) |
+| Methods stricter synergy gate | `synergy_joint_test.csv` (Benjamini-Hochberg applied to the larger of the two synergy p-values for each phenotype) |
 
 ## Notes on the methods
 

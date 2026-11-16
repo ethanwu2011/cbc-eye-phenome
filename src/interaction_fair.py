@@ -113,7 +113,7 @@ def main():
     _drive(list(cand.phecode)[:n2],pass2,OUT2,info,"PASS 2 independently tuned")
     d1=pd.read_csv(OUT); d1["q_equal"]=su.benjamini_hochberg(d1.p_equal.values); d1.to_csv(OUT,index=False)
     print(f"\n=== FAIR INTERACTION TEST ===")
-    print(f"  shipped   C=0.5 vs C=1.0  mean delta -0.0212   0 of 435 significant")
+    print(f"  shipped   C=0.5 vs C=1.0  mean delta -0.0213   0 of 404 significant")
     print(f"  PASS 1    equal C=1.0     mean delta {d1.d_equal.mean():+.4f}   median {d1.d_equal.median():+.4f}   n={len(d1)}")
     print(f"            significant (q<0.05 and delta>0.005): {((d1.q_equal<0.05)&(d1.d_equal>0.005)).sum()} / {len(d1)}")
     print(f"            diseases with ANY positive delta: {(d1.d_equal>0).sum()} / {len(d1)}")
