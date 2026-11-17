@@ -2,13 +2,13 @@
 
 A) The index-anchored landscape: C-index with demographics plus eye against demographics plus
    CBC for the 449 screened phenotypes, every outcome at least 730 days after the index.
-   Classes are effect-size strata (C-index difference of at least 0.030), as in the Methods.
+   Classes are effect-size strata (C-index difference of more than 0.030), as in the Methods.
 B) The same PheCodes concurrently and index-anchored (identical codes, no mapping step).
 C) Organ-system ordering, concurrent against index-anchored.
 D) Agreement with the concurrent landscape at required leads of 90, 365 and 730 days.
 
 Correlations carry bootstrap 95% CIs (1000 phenotype-level resamples); per-phenotype
-classes carry 400-resample patient-level bootstrap CIs with BH-FDR.
+contrasts carry 400-resample patient-level bootstrap CIs.
 """
 from config import CBCEYE_ROOT
 import pandas as pd, numpy as np, plotly.graph_objects as go

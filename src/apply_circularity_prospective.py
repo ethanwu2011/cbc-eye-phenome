@@ -53,20 +53,23 @@ for f in ["prospective_significance.csv","prospective_landscape.csv",
 s=pd.read_csv(f"{HERE}/prospective_significance.csv",dtype={"phecode":str})
 k=s[s.clean]
 print("\n"+"="*86)
-print("PROSPECTIVE CLASSES — circularity screen ported (bootstrap stats unchanged)")
+print("PROSPECTIVE CONTRASTS, 95% bootstrap intervals (circularity screen ported, bootstrap stats unchanged)")
 print("="*86)
-print(f"  {'class':<14}{'pre-screen':>12}{'post-screen':>13}")
-for c,l in [("eye","eye-led"),("CBC","CBC-led")]:
-    print(f"  {l:<14}{int((s.sig_lead==c).sum()):>12}{int((k.sig_lead==c).sum()):>13}")
-print(f"  {'synergy':<14}{int(s.sig_syn.sum()):>12}{int(k.sig_syn.sum()):>13}")
-print(f"  {'indeterminate':<14}{int((s.sig_lead=='ns').sum()):>12}{int((k.sig_lead=='ns').sum()):>13}")
+eye_led=lambda d: d.d_lo>0            # eye minus CBC, whole interval above zero
+cbc_led=lambda d: d.d_hi<0            # whole interval below zero
+syn=lambda d: d.s_lo>0                # both minus the better single modality, interval above zero
+print(f"  {'contrast':<14}{'pre-screen':>12}{'post-screen':>13}")
+for led,l in [(eye_led,"eye-led"),(cbc_led,"CBC-led")]:
+    print(f"  {l:<14}{int(led(s).sum()):>12}{int(led(k).sum()):>13}")
+print(f"  {'synergy':<14}{int(syn(s).sum()):>12}{int(syn(k).sum()):>13}")
+print(f"  {'spans zero':<14}{int((~eye_led(s)&~cbc_led(s)).sum()):>12}{int((~eye_led(k)&~cbc_led(k)).sum()):>13}")
 print(f"\n  excluded ({len(s)-len(k)}):",s[~s.clean].excluded_because.value_counts().to_dict())
 print("\n  post-screen eye-led (verbatim PheCode descriptions):")
-for _,r in k[k.sig_lead=="eye"].sort_values("d_eye_cbc",ascending=False).iterrows():
+for _,r in k[eye_led(k)].sort_values("d_eye_cbc",ascending=False).iterrows():
     print(f"    {str(r.description)[:48]:<50} {r.d_eye_cbc:+.3f} [{r.d_lo:+.3f},{r.d_hi:+.3f}]  ev={r.events}")
 print("\n  post-screen CBC-led, top 10:")
-for _,r in k[k.sig_lead=="CBC"].sort_values("d_eye_cbc").head(10).iterrows():
+for _,r in k[cbc_led(k)].sort_values("d_eye_cbc").head(10).iterrows():
     print(f"    {str(r.description)[:48]:<50} {r.d_eye_cbc:+.3f}  ev={r.events}")
 print("\n  post-screen synergy:")
-for _,r in k[k.sig_syn].sort_values("d_syn",ascending=False).iterrows():
+for _,r in k[syn(k)].sort_values("d_syn",ascending=False).iterrows():
     print(f"    {str(r.description)[:48]:<50} eye {r.c_eye:.3f} cbc {r.c_cbc:.3f} both {r.c_both:.3f} (+{r.d_syn:.3f})")

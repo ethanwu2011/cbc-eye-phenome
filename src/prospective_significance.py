@@ -1,14 +1,18 @@
-"""Per-phenotype INFERENCE for the prospective landscape.
+"""Per-phenotype uncertainty for the prospective landscape.
 
 The taxonomy in Fig 3A currently rests on arbitrary cutoffs (eye-vs-CBC +/-0.03, synergy
 +0.015) with no uncertainty attached. This computes, for every phenotype, a bootstrap
-95% CI and p-value for:
+95% CI for:
     delta_eye_cbc = C(demo+eye) - C(demo+CBC)      does one modality genuinely lead?
     delta_synergy = C(demo+eye+CBC) - max(single)  does combining genuinely help?
 
 Method: fit the same 5-fold Coxnet models, keep the pooled out-of-fold risk scores, then
 resample PATIENTS (not phenotypes) 400x and recompute both concordances on each replicate,
 so the two models are compared on identical resamples and their correlation is preserved.
+
+Only estimates and intervals are written. With 400 resamples the smallest p-value the bootstrap
+can resolve is 1/400, too coarse for a false discovery rate across several hundred phenotypes,
+so no p-values, q-values or significance labels are reported.
 """
 from config import CBCEYE_ROOT
 import warnings; warnings.filterwarnings("ignore")
@@ -90,25 +94,17 @@ def run(p):
     return dict(phecode=p,description=DESC.get(p),group=GRP.get(p),n=len(Y),events=int(ev.sum()),
         c_eye=round(ce,3),c_cbc=round(cc,3),c_both=round(cb,3),
         d_eye_cbc=round(ce-cc,3),d_lo=round(np.percentile(de,2.5),3),d_hi=round(np.percentile(de,97.5),3),
-        p_eye_cbc=round(2*min((de<0).mean(),(de>0).mean()),4),
-        d_syn=round(cb-max(ce,cc),3),s_lo=round(np.percentile(ds,2.5),3),s_hi=round(np.percentile(ds,97.5),3),
-        p_syn=round((ds<=0).mean(),4))
+        d_syn=round(cb-max(ce,cc),3),s_lo=round(np.percentile(ds,2.5),3),s_hi=round(np.percentile(ds,97.5),3))
 
 cands=[p for p in og if len(og[p])>=60]
-print(f"computing bootstrap inference for {len(cands)} phenotypes ({NBOOT} resamples each)...",flush=True)
+print(f"computing bootstrap intervals for {len(cands)} phenotypes ({NBOOT} resamples each)...",flush=True)
 out=Parallel(n_jobs=6,verbose=1)(delayed(run)(p) for p in cands)
 t=pd.DataFrame([r for r in out if r])
-import stats_utils as su
-t["q_eye_cbc"]=su.benjamini_hochberg(t.p_eye_cbc.fillna(1).to_numpy())
-t["q_syn"]=su.benjamini_hochberg(t.p_syn.fillna(1).to_numpy())
-t["sig_lead"]=np.where((t.q_eye_cbc<0.05)&(t.d_eye_cbc>0),"eye",
-              np.where((t.q_eye_cbc<0.05)&(t.d_eye_cbc<0),"CBC","ns"))
-t["sig_syn"]=(t.q_syn<0.05)&(t.d_syn>0)
 t.to_csv(f"{HERE}/prospective_significance{TAG}.csv",index=False)
-print(f"\n{'='*96}\nPER-PHENOTYPE INFERENCE ({len(t)} phenotypes, {NBOOT}-resample patient bootstrap, BH-FDR)\n{'='*96}")
-print("  which modality significantly LEADS:",t.sig_lead.value_counts().to_dict())
-print(f"  significant SYNERGY (both > best single, q<0.05): {int(t.sig_syn.sum())}/{len(t)}")
-print(f"\n  top significantly EYE-led:")
-for _,r in t[t.sig_lead=='eye'].sort_values('d_eye_cbc',ascending=False).head(12).iterrows():
-    print(f"    {str(r.description)[:42]:<44}{str(r.group)[:15]:<17} ev={r.events:>4} Δ={r.d_eye_cbc:+.3f} [{r.d_lo:+.3f},{r.d_hi:+.3f}] q={r.q_eye_cbc:.3g}")
-print("\nsaved prospective_significance.csv")
+print(f"\n{'='*96}\nPER-PHENOTYPE INTERVALS ({len(t)} phenotypes, {NBOOT}-resample patient bootstrap)\n{'='*96}")
+print(f"  95% interval excludes zero, eye minus CBC: eye ahead {int((t.d_lo>0).sum())}, CBC ahead {int((t.d_hi<0).sum())}, of {len(t)}")
+print(f"  95% interval excludes zero, both minus best single: {int((t.s_lo>0).sum())}/{len(t)}")
+print(f"\n  largest eye-minus-CBC differences with an interval above zero:")
+for _,r in t[t.d_lo>0].sort_values('d_eye_cbc',ascending=False).head(12).iterrows():
+    print(f"    {str(r.description)[:42]:<44}{str(r.group)[:15]:<17} ev={r.events:>4} Δ={r.d_eye_cbc:+.3f} [{r.d_lo:+.3f},{r.d_hi:+.3f}]")
+print(f"\nsaved prospective_significance{TAG}.csv")
