@@ -12,6 +12,9 @@ results/    aggregate per-phenotype result files, one row per phenotype or condi
 figures/    output directory, populated by the figure scripts
 ```
 
+`Data_S1_Results.xlsx` is the workbook submitted with the paper as Data S1. It holds the same aggregate
+results as `results/`, one sheet per analysis, with a README sheet describing each.
+
 ## What is not here, and why
 
 No patient-level data. Every file in `results/` is aggregated to the phenotype or
